@@ -1,19 +1,24 @@
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
 
 export default function Status({
   icon,
   children,
+  href,
 }: {
   icon: IconProp;
   children: React.ReactNode;
+  href?: string;
 }) {
-  return (
+  const content = (
     <li className="flex place-items-center flex-row gap-2">
       <div className="h-4">
         <FontAwesomeIcon icon={icon} className="text-primary h-4" />
       </div>
-      <div className="text-center font-medium">{children}</div>
+      <div className="text-center font-medium break-all">{children}</div>
     </li>
   );
+
+  return href ? <Link href={href}>{content}</Link> : content;
 }
