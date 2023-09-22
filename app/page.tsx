@@ -28,7 +28,7 @@ export default function Home() {
             width={300}
             height={300}
             alt="mugisus's icon"
-            className="drag-none"
+            className="transition-all duration-500 hover:translate-y-1"
           />
         </div>
         <div className="grid place-items-center gap-6">
