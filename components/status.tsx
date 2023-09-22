@@ -20,5 +20,11 @@ export default function Status({
     </li>
   );
 
-  return href ? <Link href={href}>{content}</Link> : content;
+  return href ? (
+    <Link href={href} rel="noopener noreferrer" target="_blank">
+      {content}
+    </Link>
+  ) : (
+    content
+  );
 }

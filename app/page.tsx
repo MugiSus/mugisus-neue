@@ -31,9 +31,9 @@ export default function Home() {
             className="transition-all duration-500 hover:translate-y-1"
           />
         </div>
-        <div className="grid place-items-center gap-6">
+        <div className="grid place-items-center gap-8">
           <div className="flex gap-1 text-5xl font-medium">
-            <div className="text-primary mb-4 leading-10">@</div>
+            <div className="text-primary leading-10">@</div>
             <h1>MugiSus</h1>
           </div>
           <ul className="flex gap-x-16 gap-y-2 list-none flex-wrap justify-center">

@@ -30,6 +30,11 @@
   date: 2022-05-07
   image: creations/reactmood.png
 
+# - href: https://www.mugisus.com
+#   title: Old Website (2022)
+#   date: 2022-04-22
+#   # image: creations/neighbours.png
+
 - href: https://www.mugisus.com/neighbours/
   title: Neighbours
   date: 2022-04-12
@@ -88,4 +93,4 @@
 - href: https://scratch.mit.edu/users/MMGISS
   title: MMGISS (Scratch)
   date: 2014-06-02
-  image: https://cdn2.scratch.mit.edu/get_image/project/45872854_480x360.png
+  # image: https://cdn2.scratch.mit.edu/get_image/project/45872854_480x360.png
