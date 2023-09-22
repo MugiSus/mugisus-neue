@@ -16,7 +16,7 @@ export default function Status({
       <div className="h-4">
         <FontAwesomeIcon icon={icon} className="text-primary h-4" />
       </div>
-      <div className="text-center font-medium">{children}</div>
+      <div className="text-center">{children}</div>
     </li>
   );
 

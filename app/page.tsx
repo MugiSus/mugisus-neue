@@ -20,7 +20,7 @@ import CurrentTimeString from "@/components/currentTimeString";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between py-40 px-8 gap-40 max-w-4xl mx-auto">
+    <main className="flex min-h-screen flex-col items-center justify-between py-40 px-8 gap-32 max-w-6xl mx-auto">
       <div className="grid gap-24 place-items-center">
         <div className="mr-8 px-4">
           <Image

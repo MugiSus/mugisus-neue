@@ -18,7 +18,7 @@ export default function CreationItem({
 
   const content = (
     <li
-      className={`flex px-32 py-16 gap-1 place-items-center flex-col rounded-lg font-medium max-w-full transition-all duration-500 hover:-translate-y-1 hover:shadow-xl ${
+      className={`flex px-32 py-16 gap-1 place-items-center flex-col rounded-lg max-w-full transition-all duration-500 hover:-translate-y-1 hover:shadow-xl ${
         ["bg-creation-light", "bg-creation-dark"][index % 2]
       }`}
     >
@@ -32,5 +32,11 @@ export default function CreationItem({
     </li>
   );
 
-  return creation.href ? <Link href={creation.href}>{content}</Link> : content;
+  return creation.href ? (
+    <Link href={creation.href} className="max-w-full">
+      {content}
+    </Link>
+  ) : (
+    content
+  );
 }
