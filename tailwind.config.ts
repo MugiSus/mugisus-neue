@@ -11,6 +11,10 @@ const config: Config = {
       colors: {
         primary: "#E1B5F8",
       },
+      backgroundColor: {
+        "creation-light": "#503B5C",
+        "creation-dark": "#473751",
+      },
     },
   },
   plugins: [],

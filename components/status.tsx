@@ -12,11 +12,11 @@ export default function Status({
   href?: string;
 }) {
   const content = (
-    <li className="flex place-items-center flex-row gap-2">
+    <li className="flex place-items-center place-content-center flex-row gap-x-2 gap-y-1 flex-wrap">
       <div className="h-4">
         <FontAwesomeIcon icon={icon} className="text-primary h-4" />
       </div>
-      <div className="text-center font-medium break-all">{children}</div>
+      <div className="text-center font-medium">{children}</div>
     </li>
   );
 
