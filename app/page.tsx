@@ -20,8 +20,8 @@ import CurrentTimeString from "@/components/currentTimeString";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between py-40 px-8 sm:px-16 gap-32 max-w-7xl mx-auto">
-      <div className="grid gap-24 place-items-center">
+    <main className="flex min-h-screen flex-col items-center justify-between py-32 px-8 sm:px-16 gap-32 max-w-7xl mx-auto">
+      <div className="grid gap-24 place-items-center mt-12">
         <div className="mr-8 px-4">
           <Image
             src="oyagisvg_wireframe_all.svg"
