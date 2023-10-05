@@ -13,7 +13,7 @@ const config: Config = {
       },
       backgroundColor: {
         "creation-light": "#4D305D",
-        "creation-dark": "#3F294D",
+        "creation-dark": "#432952",
       },
     },
   },
