@@ -12,8 +12,8 @@ const config: Config = {
         primary: "#E1B5F8",
       },
       backgroundColor: {
-        "creation-light": "#503B5C",
-        "creation-dark": "#473751",
+        "creation-light": "#4D305D",
+        "creation-dark": "#3F294D",
       },
     },
   },
