@@ -17,19 +17,14 @@ import CreationItem from "@/components/creationItem";
 import { Creations } from "@/lib/creationsLoader";
 import { useEffect, useState } from "react";
 import CurrentTimeString from "@/components/currentTimeString";
+import InteractiveIcon from "@/components/InteractiveIcon";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between py-32 px-8 sm:px-16 gap-32 max-w-7xl mx-auto">
       <div className="grid gap-24 place-items-center mt-12">
         <div className="mr-8 px-4">
-          <Image
-            src="oyagisvg_wireframe_all.svg"
-            width={300}
-            height={300}
-            alt="mugisus's icon"
-            className="transition-all duration-500 hover:translate-y-1"
-          />
+          <InteractiveIcon />
         </div>
         <div className="grid place-items-center gap-20">
           <div className="flex gap-1 text-5xl font-medium">
