@@ -9,6 +9,8 @@ import OyagiIconHeadHalf from "@/public/oyagi_wireframes/variant=head-half.svg";
 import OyagiIconHeadClosed from "@/public/oyagi_wireframes/variant=head-closed.svg";
 import OyagiIconHeadPleased from "@/public/oyagi_wireframes/variant=head-pleased.svg";
 
+const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
 export default function InteractiveIcon() {
   const [isPressed, setIsPressed] = useState(false);
   const [blinkSpliteNumber, setBlinkSpliteNumber] = useState(0);
@@ -16,17 +18,24 @@ export default function InteractiveIcon() {
   useEffect(() => {
     const interval = setInterval(() => {
       const random = Math.random();
-      if (random < 0.4) {
-        setTimeout(() => setBlinkSpliteNumber(2), 0);
-        setTimeout(() => setBlinkSpliteNumber(1), 50);
-        setTimeout(() => setBlinkSpliteNumber(0), 100);
-        if (random < 0.1) {
-          setTimeout(() => setBlinkSpliteNumber(2), 150);
-          setTimeout(() => setBlinkSpliteNumber(1), 200);
-          setTimeout(() => setBlinkSpliteNumber(0), 250);
+      if (random < 0.32) {
+        delay(0)
+          .then(() => setBlinkSpliteNumber(2))
+          .then(() => delay(50))
+          .then(() => setBlinkSpliteNumber(1))
+          .then(() => delay(50))
+          .then(() => setBlinkSpliteNumber(0));
+
+        if (random < 0.08) {
+          delay(150)
+            .then(() => setBlinkSpliteNumber(2))
+            .then(() => delay(50))
+            .then(() => setBlinkSpliteNumber(1))
+            .then(() => delay(50))
+            .then(() => setBlinkSpliteNumber(0));
         }
       }
-    }, 1000);
+    }, 2000);
 
     return () => clearInterval(interval);
   }, []);
