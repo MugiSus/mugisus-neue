@@ -35,7 +35,7 @@ export default function InteractiveIcon() {
       onTouchEnd={() => setIsPressed(false)}
     >
       <OyagiIconBody className="absolute" />
-      <div className="duration-500 group-active:translate-y-0.5">
+      <div className="duration-300 group-active:translate-y-0.5">
         {isPressed ? (
           <OyagiIconHeadPleased className="absolute" />
         ) : blink === 0 ? (
