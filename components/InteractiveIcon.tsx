@@ -27,7 +27,7 @@ export default function InteractiveIcon() {
           .then(() => setBlinkSpliteNumber(0));
 
         if (random < 0.08) {
-          delay(150)
+          delay(200)
             .then(() => setBlinkSpliteNumber(2))
             .then(() => delay(50))
             .then(() => setBlinkSpliteNumber(1))
