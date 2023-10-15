@@ -16,12 +16,17 @@ export default function InteractiveIcon() {
   useEffect(() => {
     const interval = setInterval(() => {
       const random = Math.random();
-      if (random < 0.05) {
+      if (random < 0.4) {
         setTimeout(() => setBlinkSpliteNumber(2), 0);
         setTimeout(() => setBlinkSpliteNumber(1), 50);
         setTimeout(() => setBlinkSpliteNumber(0), 100);
+        if (random < 0.1) {
+          setTimeout(() => setBlinkSpliteNumber(2), 150);
+          setTimeout(() => setBlinkSpliteNumber(1), 200);
+          setTimeout(() => setBlinkSpliteNumber(0), 250);
+        }
       }
-    }, 150);
+    }, 1000);
 
     return () => clearInterval(interval);
   }, []);
@@ -42,9 +47,9 @@ export default function InteractiveIcon() {
           <OyagiIconHead className="absolute" />
         ) : blinkSpliteNumber === 1 ? (
           <OyagiIconHeadHalf className="absolute" />
-        ) : (
+        ) : blinkSpliteNumber === 2 ? (
           <OyagiIconHeadClosed className="absolute" />
-        )}
+        ) : null}
       </div>
       <OyagiIconCap className="absolute duration-300 group-hover:translate-y-1 group-active:translate-y-2" />
     </div>
