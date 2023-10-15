@@ -33,12 +33,12 @@ export default function InteractiveIcon() {
       onMouseUp={() => setIsPressed(false)}
     >
       <OyagiIconBody className="absolute" />
-      <div className="duration-300 group-active:translate-y-0.5">
+      <div className="duration-500 group-active:translate-y-0.5">
         {isPressed ? (
           <OyagiIconHeadPleased className="absolute" />
         ) : blink === 0 ? (
           <OyagiIconHead className="absolute" />
-        ) : blink < 6 ? (
+        ) : blink <= 6 ? (
           <OyagiIconHeadHalf className="absolute" />
         ) : (
           <OyagiIconHeadClosed className="absolute" />
