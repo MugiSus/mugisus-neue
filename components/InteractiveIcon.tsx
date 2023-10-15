@@ -10,20 +10,20 @@ import OyagiIconHeadClosed from "@/public/oyagi_wireframes/variant=head-closed.s
 import OyagiIconHeadPleased from "@/public/oyagi_wireframes/variant=head-pleased.svg";
 
 export default function InteractiveIcon() {
-  const [blink, setBlink] = useState(0);
   const [isPressed, setIsPressed] = useState(false);
+  const [blinkSpliteNumber, setBlinkSpliteNumber] = useState(0);
 
   useEffect(() => {
-    const loop = () => {
-      const rand = Math.random();
+    const interval = setInterval(() => {
+      const random = Math.random();
+      if (random < 0.05) {
+        setTimeout(() => setBlinkSpliteNumber(2), 0);
+        setTimeout(() => setBlinkSpliteNumber(1), 50);
+        setTimeout(() => setBlinkSpliteNumber(0), 100);
+      }
+    }, 150);
 
-      if (rand < 0.003) setBlink(12);
-
-      setBlink((blink) => Math.max(blink - 1, 0));
-      requestAnimationFrame(loop);
-    };
-
-    loop();
+    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -38,9 +38,9 @@ export default function InteractiveIcon() {
       <div className="duration-300 group-active:translate-y-0.5">
         {isPressed ? (
           <OyagiIconHeadPleased className="absolute" />
-        ) : blink === 0 ? (
+        ) : blinkSpliteNumber === 0 ? (
           <OyagiIconHead className="absolute" />
-        ) : blink <= 6 ? (
+        ) : blinkSpliteNumber === 1 ? (
           <OyagiIconHeadHalf className="absolute" />
         ) : (
           <OyagiIconHeadClosed className="absolute" />
