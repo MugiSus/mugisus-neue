@@ -46,7 +46,7 @@ export default function InteractiveIcon() {
           <OyagiIconHeadClosed className="absolute" />
         )}
       </div>
-      <OyagiIconCap className="absolute duration-300 group-hover:translate-y-0.5 group-active:translate-y-1.5" />
+      <OyagiIconCap className="absolute duration-300 group-hover:translate-y-1 group-active:translate-y-2" />
     </div>
   );
 }
