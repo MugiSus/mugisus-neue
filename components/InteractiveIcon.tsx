@@ -49,7 +49,7 @@ export default function InteractiveIcon() {
       onTouchEnd={() => setIsPressed(false)}
     >
       <OyagiIconBody className="absolute" />
-      <div className="duration-300 group-active:translate-y-0.5">
+      <div className={`duration-300 ${isPressed ? "translate-y-0.5" : ""}`}>
         {isPressed ? (
           <OyagiIconHeadPleased className="absolute" />
         ) : blinkSpliteNumber === 0 ? (
@@ -60,7 +60,9 @@ export default function InteractiveIcon() {
           <OyagiIconHeadClosed className="absolute" />
         ) : null}
       </div>
-      <OyagiIconCap className="absolute duration-300 group-hover:translate-y-1 group-active:translate-y-2" />
+      <OyagiIconCap
+        className={`absolute duration-300 ${isPressed ? "translate-y-2" : ""}`}
+      />
     </div>
   );
 }
