@@ -12,16 +12,22 @@ export default function Status({
   href?: string;
 }) {
   const content = (
-    <li className="flex place-items-center place-content-center flex-row gap-x-2 gap-y-1 flex-wrap">
-      <div className="h-4">
-        <FontAwesomeIcon icon={icon} className="text-primary h-4" />
-      </div>
-      <div className="text-center">{children}</div>
+    <li className="place-items-center place-content-center inline text-center">
+      <FontAwesomeIcon
+        icon={icon}
+        className="text-primary h-4 inline mr-2 mb-0.5"
+      />
+      {children}
     </li>
   );
 
   return href ? (
-    <Link href={href} rel="noopener noreferrer" target="_blank">
+    <Link
+      href={href}
+      rel="noopener noreferrer"
+      target="_blank"
+      className="duration-200 hover:-translate-y-0.5"
+    >
       {content}
     </Link>
   ) : (
