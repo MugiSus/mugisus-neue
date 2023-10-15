@@ -31,6 +31,8 @@ export default function InteractiveIcon() {
       className="group w-80 h-80"
       onMouseDown={() => setIsPressed(true)}
       onMouseUp={() => setIsPressed(false)}
+      onTouchStart={() => setIsPressed(true)}
+      onTouchEnd={() => setIsPressed(false)}
     >
       <OyagiIconBody className="absolute" />
       <div className="duration-500 group-active:translate-y-0.5">
