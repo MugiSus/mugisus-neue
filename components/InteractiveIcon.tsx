@@ -13,6 +13,7 @@ const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export default function InteractiveIcon() {
   const [isPressed, setIsPressed] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
   const [blinkSpliteNumber, setBlinkSpliteNumber] = useState(0);
 
   useEffect(() => {
@@ -47,6 +48,8 @@ export default function InteractiveIcon() {
       onMouseUp={() => setIsPressed(false)}
       onTouchStart={() => setIsPressed(true)}
       onTouchEnd={() => setIsPressed(false)}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <OyagiIconBody className="absolute" />
       <div className={`duration-300 ${isPressed ? "translate-y-0.5" : ""}`}>
@@ -61,7 +64,9 @@ export default function InteractiveIcon() {
         ) : null}
       </div>
       <OyagiIconCap
-        className={`absolute duration-300 ${isPressed ? "translate-y-2" : ""}`}
+        className={`absolute duration-300 ${
+          isPressed ? "translate-y-2" : isHovered ? "translate-y-1" : ""
+        }`}
       />
     </div>
   );
