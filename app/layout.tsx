@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     "ポートフォリオ",
     "Keio University",
     "慶應義塾大学",
+    "環境情報学部",
     "SFC",
   ],
   twitter: {
