@@ -8,7 +8,20 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "MugiSus",
-  description: "A Portfolio of MugiSus",
+  description: "MugiSus's Portfolio",
+  keywords: [
+    "MugiSus",
+    "mugisus",
+    "湊真之",
+    "湊 真之",
+    "MinatoMasayuki",
+    "Minato Masayuki",
+    "Minato",
+    "Masayuki",
+    "Portfolio",
+    "MugiSus Portfolio",
+    "ポートフォリオ",
+  ],
 };
 
 export default function RootLayout({
