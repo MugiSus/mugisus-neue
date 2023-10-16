@@ -7,9 +7,10 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://neue.mugisus.com/"),
   title: "MugiSus",
   description:
-    "MugiSus / 湊 真之 / Minato Masayuki's Portfolio / Keio University; Department of Environment and Information Studies",
+    "MugiSus / 湊 真之 / Minato Masayuki / Keio University; Department of Environment and Information Studies",
   keywords: [
     "MugiSus",
     "mugisus",
@@ -30,7 +31,10 @@ export const metadata: Metadata = {
     card: "summary",
     site: "@MugiSus",
     creator: "@MugiSus",
-    title: "MugiSus's Portfolio",
+    title: "MugiSus",
+  },
+  openGraph: {
+    images: "/oyagi-icon.png",
   },
 };
 
