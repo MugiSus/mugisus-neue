@@ -4,20 +4,20 @@ import Link from "next/link";
 
 export default function Status({
   icon,
-  children,
+  content,
   href,
 }: {
   icon: IconProp;
-  children: React.ReactNode;
+  content: string | JSX.Element;
   href?: string;
 }) {
-  const content = (
-    <li className="place-items-center place-content-center inline text-center mx-3">
+  const element = (
+    <li className="inline text-center mx-3">
       <FontAwesomeIcon
         icon={icon}
         className="text-primary h-4 inline mr-2 mb-0.5"
       />
-      {children}
+      {content}
     </li>
   );
 
@@ -28,9 +28,9 @@ export default function Status({
       target="_blank"
       className="duration-200 hover:-translate-y-0.5"
     >
-      {content}
+      {element}
     </Link>
   ) : (
-    content
+    element
   );
 }

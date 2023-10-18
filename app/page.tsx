@@ -32,30 +32,38 @@ export default function Home() {
             <h1 className="font-bold">MugiSus</h1>
           </div>
           <ul className="inline text-center leading-8 max-w-4xl">
-            <Status icon={faBuilding}>
-              Keio University; Department of Environment and Information Studies
-            </Status>
-            <Status icon={faLocationDot}>
-              Sapporo, Hokkaido / Kanagawa, Japan
-            </Status>
-            <Status icon={faClock}>
-              <CurrentTimeString initialDate={new Date()} /> (UTC+09:00)
-            </Status>
-            <Status icon={faGithub} href="https://github.com/MugiSus">
-              MugiSus
-            </Status>
-            <Status icon={faTwitter} href="https://twitter.com/MugiSus">
-              MugiSus
-            </Status>
-            <Status icon={faThreads} href="https://www.threads.net/@mugisus_">
-              mugisus_
-            </Status>
+            <Status
+              icon={faBuilding}
+              content="Keio University; Department of Environment and Information Studies"
+            />
+            <Status
+              icon={faLocationDot}
+              content="Sapporo, Hokkaido / Kanagawa, Japan"
+            />
+            <Status
+              icon={faClock}
+              content={<CurrentTimeString initialDate={new Date()} />}
+            />
+            <Status
+              icon={faGithub}
+              href="https://github.com/MugiSus"
+              content="MugiSus"
+            />
+            <Status
+              icon={faTwitter}
+              href="https://twitter.com/MugiSus"
+              content="MugiSus"
+            />
+            <Status
+              icon={faThreads}
+              href="https://www.threads.net/@mugisus_"
+              content="mugisus_"
+            />
             <Status
               icon={faInstagram}
               href="https://www.instagram.com/mugisus_/"
-            >
-              mugisus_
-            </Status>
+              content="mugisus_"
+            />
           </ul>
         </div>
       </div>
