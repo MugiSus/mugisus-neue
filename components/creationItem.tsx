@@ -27,7 +27,7 @@ export default function CreationItem({
       </div>
       <time
         dateTime={creation.date.toISOString()}
-        className="text-primary text-xs transition-colors duration-300 group-hover:text-stone-500"
+        className="text-primary text-xs transition-colors duration-300 group-hover:text-stone-600 tabular-nums"
       >
         {dateString}
       </time>
