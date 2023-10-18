@@ -26,12 +26,12 @@ export default function Home() {
         <div className="mr-6 select-none">
           <InteractiveIcon />
         </div>
-        <div className="grid place-items-center gap-20">
-          <div className="flex gap-1 text-5xl font-medium">
-            <div className="text-primary leading-10">@</div>
-            <h1>MugiSus</h1>
+        <div className="grid place-items-center gap-4">
+          <div className="flex gap-0.5 text-5xl">
+            <div className="text-primary font-medium">@</div>
+            <h1 className="font-bold">MugiSus</h1>
           </div>
-          <ul className="inline text-center leading-8 max-w-6xl">
+          <ul className="inline text-center leading-8 max-w-4xl">
             <Status icon={faBuilding}>
               Keio University; Department of Environment and Information Studies
             </Status>
