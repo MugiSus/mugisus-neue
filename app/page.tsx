@@ -27,10 +27,10 @@ export default function Home() {
           <InteractiveIcon />
         </div>
         <div className="grid place-items-center gap-4">
-          <div className="flex gap-0.5 text-5xl">
-            <div className="text-primary font-medium">@</div>
-            <h1 className="font-bold">MugiSus</h1>
-          </div>
+          <h1 className="text-5xl">
+            <span className="text-primary font-medium tracking-wide">@</span>
+            <span className="font-bold">MugiSus</span>
+          </h1>
           <ul className="inline text-center leading-8 max-w-4xl">
             <Status
               icon={faBuilding}
