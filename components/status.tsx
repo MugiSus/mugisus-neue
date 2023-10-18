@@ -12,7 +12,7 @@ export default function Status({
   href?: string;
 }) {
   const content = (
-    <li className="place-items-center place-content-center inline text-center mx-4">
+    <li className="place-items-center place-content-center inline text-center mx-3">
       <FontAwesomeIcon
         icon={icon}
         className="text-primary h-4 inline mr-2 mb-0.5"
