@@ -5,7 +5,7 @@
 #   date: Date
 #
 
-- href: https://www.mugisus.com/v?22aq
+- href: https://mugisus.github.io/v?22aq
   title: V-Card
   date: 2023-01-17
   image: creations/virtual-card.png
@@ -34,17 +34,17 @@
   title: Old Website (2022)
   date: 2022-04-22
 
-- href: https://www.mugisus.com/neighbours/
+- href: https://mugisus.github.io/neighbours/
   title: Neighbours
   date: 2022-04-12
   image: creations/neighbours.png
 
-- href: https://www.mugisus.com/genius/
+- href: https://mugisus.github.io/genius/
   title: GeNiUS
   date: 2022-03-05
   image: creations/genius.png
 
-- href: https://www.mugisus.com/lifegameJS/
+- href: https://mugisus.github.io/lifegameJS/
   title: lifegameJS (WebGL)
   date: 2021-12-24
   image: creations/lifegameJS.png
@@ -54,22 +54,22 @@
   date: 2021-11-03
   image: creations/telport.png
 
-# - href: https://www.mugisus.com/misc/logicsim_v2/
+# - href: https://mugisus.github.io/misc/logicsim_v2/
 #   title: logicsim_v2
 #   date: 2021-03-21
 #   image: creations/logicsim-v2.png
 
-# - href: https://www.mugisus.com/misc/LogicSim/?theme=dark
+# - href: https://mugisus.github.io/misc/LogicSim/?theme=dark
 #   title: LogicSim
 #   date: 2019-08-01
 #   image: creations/logicsim.png
 
-# - href: https://www.mugisus.com/misc/morser/
+# - href: https://mugisus.github.io/misc/morser/
 #   title: morser
 #   date: 2019-04-24
 #   image: creations/morser.png
 
-# - href: https://www.mugisus.com/misc/wave/
+# - href: https://mugisus.github.io/misc/wave/
 #   title: wave
 #   date: 2018-11-19
 #   image: creations/wave.png
