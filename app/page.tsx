@@ -31,7 +31,7 @@ export default function Home() {
             <div className="text-primary leading-10">@</div>
             <h1>MugiSus</h1>
           </div>
-          <ul className="inline text-center leading-8 max-w-xl">
+          <ul className="inline text-center leading-8 max-w-6xl">
             <Status icon={faBuilding}>
               Keio University; Department of Environment and Information Studies
             </Status>
