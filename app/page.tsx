@@ -42,7 +42,11 @@ export default function Home() {
             />
             <Status
               icon={faClock}
-              content={<CurrentTimeString initialDate={new Date()} />}
+              content={
+                <>
+                  <CurrentTimeString initialDate={new Date()} /> (UTC+09:00)
+                </>
+              }
             />
             <Status
               icon={faGithub}
