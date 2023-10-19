@@ -35,7 +35,7 @@ export default function CreationItem({
       </time>
       <FontAwesomeIcon
         icon={faArrowRight}
-        className="opacity-0 absolute h-4 right-4 top-0 bottom-0 m-auto text-stone-600 duration-300 group-hover:opacity-100 transition-all"
+        className="opacity-0 absolute h-4 right-5 top-0 bottom-0 m-auto text-stone-600 duration-300 group-hover:opacity-100 transition-all group-hover:translate-x-1"
       />
     </li>
   );
