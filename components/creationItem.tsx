@@ -1,5 +1,7 @@
 import { Creation } from "@/models/creations";
 import Link from "next/link";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function CreationItem({
   creation,
@@ -18,7 +20,7 @@ export default function CreationItem({
 
   const content = (
     <li
-      className={`flex group px-32 py-16 gap-1 place-items-center flex-col rounded-lg max-w-full transition-all duration-300 hover:bg-stone-50 ${
+      className={`flex relative group px-32 py-16 gap-1 place-items-center flex-col rounded-lg max-w-full transition-all duration-300 hover:bg-stone-50 ${
         ["bg-creation-light", "bg-creation-dark"][index % 2]
       }`}
     >
@@ -31,6 +33,10 @@ export default function CreationItem({
       >
         {dateString}
       </time>
+      <FontAwesomeIcon
+        icon={faArrowRight}
+        className="opacity-0 absolute h-4 right-4 top-0 bottom-0 m-auto text-stone-600 duration-300 group-hover:opacity-100 transition-all"
+      />
     </li>
   );
 
