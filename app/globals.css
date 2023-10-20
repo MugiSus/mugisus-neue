@@ -7,3 +7,8 @@ body {
   background-color: #281e2e;
   /* background: linear-gradient(150deg, #35263d, #281e2e); */
 }
+
+::selection {
+  background-color: #a700ff;
+  color: white;
+}
