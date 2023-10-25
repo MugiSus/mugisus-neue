@@ -1,5 +1,4 @@
 import Status from "@/components/status";
-import Image from "next/image";
 
 import {
   faBuilding,
@@ -15,7 +14,6 @@ import {
 
 import CreationItem from "@/components/creationItem";
 import { Creations } from "@/lib/creationsLoader";
-import { useEffect, useState } from "react";
 import CurrentTimeString from "@/components/currentTimeString";
 import InteractiveIcon from "@/components/InteractiveIcon";
 
