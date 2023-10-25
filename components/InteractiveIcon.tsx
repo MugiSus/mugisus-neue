@@ -36,7 +36,7 @@ export default function InteractiveIcon() {
             .then(() => setBlinkSpliteNumber(0));
         }
       }
-    }, 2000);
+    }, 1000);
 
     return () => clearInterval(interval);
   }, []);
