@@ -29,7 +29,7 @@ export default function Home() {
             <span className="text-primary font-medium tracking-wide">@</span>
             <span className="font-bold">MugiSus</span>
           </h1>
-          <ul className="inline text-center leading-8 max-w-4xl">
+          <ul className="inline text-center leading-7 max-w-4xl">
             <Status
               icon={faBuilding}
               content="Keio University; Department of Environment and Information Studies"
