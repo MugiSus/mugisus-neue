@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://neue.mugisus.com/"),
   title: "MugiSus",
   description:
-    "MugiSus / 湊 真之 / Minato Masayuki / Keio University; Department of Environment and Information Studies",
+    "MugiSus / 湊 真之 / Minato Masayuki / Keio University; Department of Environment and Information Studies / Web Engineer / Designer",
   keywords: [
     "MugiSus",
     "mugisus",
