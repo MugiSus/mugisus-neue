@@ -1,5 +1,3 @@
-import Status from "@/components/status";
-
 import {
   faBuilding,
   faClock,
@@ -12,9 +10,10 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
-import CreationItem from "@/components/creationItem";
+import Status from "@/components/Status";
+import CreationItem from "@/components/CreationItem";
 import { Creations } from "@/lib/creationsLoader";
-import CurrentTimeString from "@/components/currentTimeString";
+import CurrentTimeString from "@/components/CurrentTimeString";
 import InteractiveIcon from "@/components/InteractiveIcon";
 
 export default function Home() {

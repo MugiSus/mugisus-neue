@@ -20,16 +20,23 @@ export default function CreationItem({
 
   const content = (
     <li
-      className={`flex relative group px-32 py-16 gap-1 place-items-center flex-col rounded-lg max-w-full transition-all duration-300 hover:bg-stone-50 ${
+      className={`flex relative group px-32 py-16 gap-1 place-items-center flex-col rounded-lg max-w-full overflow-hidden transition-all duration-300 hover:bg-stone-50 ${
         ["bg-creation-light", "bg-creation-dark"][index % 2]
       }`}
     >
-      <div className="text-center whitespace-nowrap transition-colors duration-300 group-hover:text-stone-800">
+      <div
+        className={`absolute -right-8 -bottom-8 whitespace-nowrap text-9xl font-semibold tracking-tighter duration-300 group-hover:text-stone-200 ${
+          ["text-creation-dark", "text-creation-light"][index % 2]
+        }`}
+      >
+        {creation.title}
+      </div>
+      <div className="text-center whitespace-nowrap transition-colors duration-300 group-hover:text-stone-800 z-50">
         {creation.title}
       </div>
       <time
         dateTime={creation.date.toISOString()}
-        className="text-primary text-xs transition-colors duration-300 group-hover:text-stone-600 tabular-nums"
+        className="text-primary text-xs transition-colors duration-300 group-hover:text-stone-600 tabular-nums z-50"
       >
         {dateString}
       </time>
