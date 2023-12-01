@@ -18,7 +18,7 @@ import InteractiveIcon from "@/components/InteractiveIcon";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between py-32 px-8 sm:px-16 gap-32 max-w-7xl mx-auto">
+    <main className="flex min-h-screen flex-col items-center justify-between py-32 px-8 gap-32 mx-auto">
       <div className="grid gap-24 place-items-center mt-12">
         <div className="mr-6 select-none">
           <InteractiveIcon />

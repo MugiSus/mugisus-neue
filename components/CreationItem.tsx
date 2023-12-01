@@ -29,11 +29,17 @@ export default function CreationItem({
           ["text-creation-dark", "text-creation-light"][index % 2]
         }`}
       >
-        <div className={`absolute -left-4 -top-16 font-light`}>
-          {creation.title}
+        <div
+          className={`absolute -left-4 -top-16 font-light animate-marquee-left`}
+          style={{ animationDuration: `${creation.title.length * 10}s` }}
+        >
+          {(creation.title + " ").repeat(4)}
         </div>
-        <div className={`absolute -right-4 -bottom-12 font-semibold`}>
-          {creation.title}
+        <div
+          className={`absolute -right-4 -bottom-12 font-semibold animate-marquee-right`}
+          style={{ animationDuration: `${creation.title.length * 10}s` }}
+        >
+          {(creation.title + " ").repeat(4)}
         </div>
       </div>
       <div className="text-center whitespace-nowrap transition-colors duration-300 group-hover:text-stone-800 z-50">

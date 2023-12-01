@@ -13,6 +13,20 @@ const config: Config = {
         "creation-light": "#4D305D",
         "creation-dark": "#432952",
       },
+      keyframes: {
+        "marquee-left": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-25%)" },
+        },
+        "marquee-right": {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(25%)" },
+        },
+      },
+      animation: {
+        "marquee-left": "marquee-left 60s linear infinite",
+        "marquee-right": "marquee-right 60s linear infinite",
+      },
     },
   },
   plugins: [],
