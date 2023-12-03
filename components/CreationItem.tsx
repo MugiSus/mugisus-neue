@@ -34,7 +34,7 @@ export default function CreationItem({
             animationDirection: index % 2 ? "reverse" : "normal",
           }}
         >
-          {(creation.title + " ").repeat(4)}
+          {creation.title.repeat(4)}
         </div>
         <div
           className={`absolute -right-4 -bottom-14 font-semibold animate-marquee-right`}
@@ -43,7 +43,7 @@ export default function CreationItem({
             animationDirection: index % 2 ? "reverse" : "normal",
           }}
         >
-          {(creation.title + " ").repeat(4)}
+          {creation.title.repeat(4)}
         </div>
       </div>
       <div className="text-center whitespace-nowrap transition-colors duration-300 group-hover:text-stone-800 z-50">
