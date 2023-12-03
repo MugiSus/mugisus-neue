@@ -20,24 +20,28 @@ export default function CreationItem({
 
   const content = (
     <li
-      className={`flex relative group px-32 py-16 gap-1 place-items-center flex-col rounded-lg max-w-full overflow-hidden transition-all duration-300 hover:bg-stone-50 ${
-        ["bg-creation-light", "bg-creation-dark"][index % 2]
-      }`}
+      className={`flex relative group px-32 py-16 gap-0 place-items-center flex-col rounded-xl max-w-full overflow-hidden transition-all duration-300 hover:bg-stone-50`}
     >
       <div
         className={`whitespace-nowrap leading-none tracking-tighter text-9xl duration-300 group-hover:text-stone-200 ${
-          ["text-creation-dark", "text-creation-light"][index % 2]
+          index % 2 ? "text-creation-light" : "text-creation-dark"
         }`}
       >
         <div
           className={`absolute -left-4 -top-16 font-light animate-marquee-left`}
-          style={{ animationDuration: `${creation.title.length * 10}s` }}
+          style={{
+            animationDuration: `${creation.title.length * 8000}ms`,
+            animationDirection: index % 2 ? "reverse" : "normal",
+          }}
         >
           {(creation.title + " ").repeat(4)}
         </div>
         <div
-          className={`absolute -right-4 -bottom-12 font-semibold animate-marquee-right`}
-          style={{ animationDuration: `${creation.title.length * 10}s` }}
+          className={`absolute -right-4 -bottom-14 font-semibold animate-marquee-right`}
+          style={{
+            animationDuration: `${creation.title.length * 8000}ms`,
+            animationDirection: index % 2 ? "reverse" : "normal",
+          }}
         >
           {(creation.title + " ").repeat(4)}
         </div>
