@@ -30,7 +30,7 @@ export default function CreationItem({
         <div
           className={`absolute -left-4 -top-16 font-light animate-marquee-left`}
           style={{
-            animationDuration: `${creation.title.length * 8000}ms`,
+            animationDuration: `${creation.title.length * 12000}ms`,
             animationDirection: index % 2 ? "reverse" : "normal",
           }}
         >
@@ -39,7 +39,7 @@ export default function CreationItem({
         <div
           className={`absolute -right-4 -bottom-14 font-semibold animate-marquee-right`}
           style={{
-            animationDuration: `${creation.title.length * 8000}ms`,
+            animationDuration: `${creation.title.length * 12000}ms`,
             animationDirection: index % 2 ? "reverse" : "normal",
           }}
         >
