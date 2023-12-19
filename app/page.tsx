@@ -18,16 +18,26 @@ import InteractiveIcon from "@/components/InteractiveIcon";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between py-32 px-8 gap-32 mx-auto">
-      <div className="grid gap-24 place-items-center mt-12">
+    <main className="flex min-h-screen flex-col items-center justify-between py-40 px-8 gap-32 mx-auto">
+      <div className="flex flex-col gap-24 place-items-center mt-12">
+        <div className="flex flex-col font-regular tracking-more-widest text-sm gap-1 items-center">
+          <div>ものをつくり、デザインし、働き口を探しています。</div>
+          <div>I create, design, and look for a job.</div>
+        </div>
         <div className="mr-6 select-none">
           <InteractiveIcon />
         </div>
-        <div className="grid place-items-center gap-4">
-          <h1 className="text-5xl">
-            <span className="text-primary font-medium tracking-wide">@</span>
-            <span className="font-bold">MugiSus</span>
-          </h1>
+        <div className="flex flex-col place-items-center gap-24">
+          <div className="flex flex-col text-5xl gap-1 items-end">
+            <h1>
+              <span className="text-primary font-medium tracking-wide">@</span>
+              <span className="font-bold">MugiSus</span>
+            </h1>
+            <div className="flex flex-col font-regular tracking-more-widest text-sm gap-1 items-end">
+              <div>湊　真之</div>
+              <div>MINATO MASAYUKI</div>
+            </div>
+          </div>
           <ul className="inline text-center leading-7 max-w-4xl">
             <Status
               icon={faBuilding}
@@ -73,7 +83,7 @@ export default function Home() {
           <CreationItem creation={creation} index={index} key={index} />
         ))}
       </ul>
-      <div className="text-sm tracking-[0.16rem]">
+      <div className="text-sm tracking-more-widest">
         Copyright ©︎ 2023 MugiSus
       </div>
     </main>

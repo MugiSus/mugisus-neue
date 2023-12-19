@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      letterSpacing: {
+        "more-widest": ".2em",
+      },
       colors: {
         primary: "#E1B5F8",
         "creation-light": "#4D305D",
