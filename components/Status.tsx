@@ -12,10 +12,10 @@ export default function Status({
   href?: string;
 }) {
   const element = (
-    <li className="inline text-center mx-3">
+    <li className="inline text-center mx-1">
       <FontAwesomeIcon
         icon={icon}
-        className="text-primary h-4 inline mr-2 mb-0.5"
+        className="text-primary h-4 inline mx-2 mb-0.5"
       />
       {content}
     </li>
