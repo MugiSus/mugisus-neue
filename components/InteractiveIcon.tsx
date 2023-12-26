@@ -2,12 +2,12 @@
 
 import { useEffect, useState } from "react";
 
-import OyagiIconCap from "@/public/oyagi_wireframes/variant=cap.svg";
-import OyagiIconBody from "@/public/oyagi_wireframes/variant=body.svg";
-import OyagiIconHead from "@/public/oyagi_wireframes/variant=head.svg";
-import OyagiIconHeadHalf from "@/public/oyagi_wireframes/variant=head-half.svg";
-import OyagiIconHeadClosed from "@/public/oyagi_wireframes/variant=head-closed.svg";
-import OyagiIconHeadPleased from "@/public/oyagi_wireframes/variant=head-pleased.svg";
+import OyagiIconCap from "@/public/oyagi_wireframes/variant=cap-light.svg";
+import OyagiIconBody from "@/public/oyagi_wireframes/variant=body-light.svg";
+import OyagiIconHead from "@/public/oyagi_wireframes/variant=head-light.svg";
+import OyagiIconHeadHalf from "@/public/oyagi_wireframes/variant=head-half-light.svg";
+import OyagiIconHeadClosed from "@/public/oyagi_wireframes/variant=head-closed-light.svg";
+import OyagiIconHeadPleased from "@/public/oyagi_wireframes/variant=head-pleased-light.svg";
 
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
