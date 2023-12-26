@@ -20,10 +20,12 @@ export default function CreationItem({
 
   const content = (
     <li
-      className={`flex relative group px-32 py-16 gap-0 place-items-center flex-col rounded-xl max-w-full overflow-hidden transition-all duration-300 hover:bg-stone-50`}
+      className={`flex relative group px-32 py-16 gap-0 place-items-center flex-col rounded-xl max-w-full overflow-hidden transition-all duration-0 hover:bg-neutral-700 ${
+        index % 2 ? "bg-creation-dark" : "bg-creation-light"
+      }`}
     >
       <div
-        className={`whitespace-nowrap leading-none tracking-tighter text-9xl duration-300 group-hover:text-stone-200 ${
+        className={`whitespace-nowrap leading-none tracking-tighter text-9xl duration-0 group-hover:text-neutral-600 ${
           index % 2 ? "text-creation-light" : "text-creation-dark"
         }`}
       >
@@ -46,18 +48,18 @@ export default function CreationItem({
           {creation.title.repeat(4)}
         </div>
       </div>
-      <div className="text-center whitespace-nowrap transition-colors duration-300 group-hover:text-stone-800 z-50">
+      <div className="text-center whitespace-nowrap transition-colors duration-0 group-hover:text-neutral-50 z-50">
         {creation.title}
       </div>
       <time
         dateTime={creation.date.toISOString()}
-        className="text-primary text-xs transition-colors duration-300 group-hover:text-stone-600 tabular-nums z-50"
+        className="text-neutral-800 text-xs transition-colors duration-0 group-hover:text-neutral-200 tabular-nums z-50"
       >
         {dateString}
       </time>
       <FontAwesomeIcon
         icon={faArrowRight}
-        className="opacity-0 absolute h-5 right-4 top-0 bottom-0 m-auto text-stone-600 duration-300 group-hover:opacity-100 transition-all group-hover:translate-x-1"
+        className="opacity-0 absolute h-5 right-4 top-0 bottom-0 m-auto text-neutral-200 duration-0 group-hover:opacity-100 transition-all group-hover:translate-x-1"
       />
     </li>
   );

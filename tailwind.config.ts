@@ -12,9 +12,9 @@ const config: Config = {
         "more-widest": ".2em",
       },
       colors: {
-        primary: "#E1B5F8",
-        "creation-light": "#4D305D",
-        "creation-dark": "#432952",
+        primary: "#51B660",
+        "creation-light": "#F2F2F2",
+        "creation-dark": "#E8E8E8",
       },
       keyframes: {
         "marquee-left": {
