@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      transitionDuration: {
+        4000: "4000ms",
+      },
       letterSpacing: {
         "more-widest": ".2em",
       },
