@@ -84,7 +84,7 @@ export default function Home() {
         ))}
       </ul>
       <div className="text-sm tracking-more-widest">
-        Copyright ©︎ 2023 MugiSus
+        Copyright ©︎ 2024 MugiSus
       </div>
     </main>
   );
