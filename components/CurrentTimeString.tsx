@@ -24,5 +24,5 @@ export default function CurrentTimeString({
     second: "2-digit",
   });
 
-  return <span className="tabular-nums">{currentTimeString}</span>;
+  return <span className="tabular-nums">{currentTimeString} (UTC+09:00)</span>;
 }
