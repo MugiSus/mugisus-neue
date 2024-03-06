@@ -41,7 +41,7 @@ export default function CreationItem({
 
   const content = (
     <li
-      className={`flex relative cursor-none group px-32 py-16 gap-0 place-items-center flex-col rounded-md max-w-full overflow-hidden transition-all duration-500 hover:duration-100 hover:bg-neutral-700 hover:z-50 ${
+      className={`flex relative group px-32 py-16 gap-0 place-items-center flex-col rounded-md max-w-full overflow-hidden transition-all duration-500 hover:duration-100 hover:bg-neutral-700 hover:z-50 ${
         index % 2 ? "bg-creation-dark" : "bg-creation-light"
       }`}
       onMouseMove={subtle3dEffect}
