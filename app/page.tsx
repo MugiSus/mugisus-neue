@@ -31,7 +31,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col place-items-center gap-4">
           <div className="flex flex-col text-5xl gap-1 items-end">
-            <h1 className="pb-2 px-1 duration-500 ease-out hover:duration-0 hover:bg-neutral-600 hover:text-neutral-50">
+            <h1 className="pb-2 px-1 hover-inverse">
               <span className="text-primary font-medium tracking-wide">@</span>
               <span className="font-bold">MugiSus</span>
             </h1>
@@ -78,7 +78,7 @@ export default function Home() {
           <CreationItem creation={creation} index={index} key={index} />
         ))}
       </ul>
-      <div className="text-sm tracking-more-widest">
+      <div className="text-sm tracking-more-widest hover-inverse">
         Copyright ©︎ 2024 MugiSus
       </div>
     </main>

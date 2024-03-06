@@ -19,9 +19,7 @@ export default function Status({
   );
 
   return (
-    <li
-      className={`inline text-center px-1.5 py-1 duration-500 ease-out hover:duration-0 hover:bg-neutral-600 hover:text-neutral-50`}
-    >
+    <li className={`inline text-center px-1.5 py-1 hover-inverse`}>
       {href ? (
         <Link href={href} rel="noopener noreferrer" target="_blank">
           {element}

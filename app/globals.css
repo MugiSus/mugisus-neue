@@ -12,3 +12,9 @@ body {
   background-color: #51b660;
   color: white;
 }
+
+@layer components {
+  .hover-inverse {
+    @apply duration-500 ease-out hover:duration-0 hover:bg-neutral-600 hover:text-neutral-50;
+  }
+}
