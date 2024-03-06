@@ -13,15 +13,24 @@ function subtle3dEffect(event: React.MouseEvent<HTMLElement>) {
   const centerY = rect.height / 2;
   const diffX = (centerX - x) / centerX;
   const diffY = (centerY - y) / centerY;
-  (
-    event.currentTarget as HTMLElement
-  ).style.transform = `perspective(500px) rotateX(${diffY * -5}deg) rotateY(${
-    diffX * 5
-  }deg) translateZ(25px) translateX(${diffX * 4}px) translateY(${diffY * 4}px)`;
+
+  const target = event.currentTarget as HTMLElement;
+
+  target.style.transform = `perspective(500px) rotateX(${
+    diffY * -5
+  }deg) rotateY(${diffX * 5}deg) translateZ(25px) translateX(${
+    diffX * 4
+  }px) translateY(${diffY * 4}px)`;
+  // higher brightness on specific angle
+  target.style.filter = `brightness(${
+    1 + Math.max(0, Math.abs(0.25 - diffX - diffY) / 0.25) * 0.06
+  })`;
 }
 
 function abort3dEffect(event: React.MouseEvent<HTMLElement>) {
-  (event.currentTarget as HTMLElement).style.transform = "";
+  const target = event.currentTarget as HTMLElement;
+  target.style.transform = "";
+  target.style.filter = "";
 }
 
 export default function CreationItem({
