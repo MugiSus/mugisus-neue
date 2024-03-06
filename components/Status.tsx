@@ -13,20 +13,14 @@ export default function Status({
 }) {
   const element = (
     <>
-      <FontAwesomeIcon
-        icon={icon}
-        className="text-primary h-4 inline mr-2 mb-0.5"
-      />
+      <FontAwesomeIcon icon={icon} className="text-primary h-4 inline mr-2" />
       {content}
     </>
   );
 
   return (
     <li
-      className={`inline text-center mx-0.5 px-2 py-0.5 ${
-        href &&
-        "duration-500 ease-out hover:duration-0 hover:bg-neutral-600 hover:text-neutral-50"
-      }`}
+      className={`inline text-center px-1.5 py-1 duration-500 ease-out hover:duration-0 hover:bg-neutral-600 hover:text-neutral-50`}
     >
       {href ? (
         <Link href={href} rel="noopener noreferrer" target="_blank">
