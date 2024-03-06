@@ -17,13 +17,13 @@ function subtle3dEffect(event: React.MouseEvent<HTMLElement>) {
   const target = event.currentTarget as HTMLElement;
 
   target.style.transform = `perspective(500px) rotateX(${
-    diffY * -5
-  }deg) rotateY(${diffX * 5}deg) translateZ(25px) translateX(${
+    diffY * -4
+  }deg) rotateY(${diffX * 4}deg) translateZ(20px) translateX(${
     diffX * 4
   }px) translateY(${diffY * 4}px)`;
   // higher brightness on specific angle
   target.style.filter = `brightness(${
-    1.5 - (Math.abs(diffX + diffY - 1) / 3) * 0.5
+    1.6 - (Math.abs(diffX + diffY - 0.5) / 2.5) * 0.5
   })`;
 }
 
