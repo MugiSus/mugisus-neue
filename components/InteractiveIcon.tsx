@@ -17,24 +17,24 @@ export default function InteractiveIcon() {
   const [blinkSpliteNumber, setBlinkSpliteNumber] = useState(0);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      const random = Math.random();
-      if (random < 0.32) {
-        delay(0)
-          .then(() => setBlinkSpliteNumber(2))
-          .then(() => delay(50))
-          .then(() => setBlinkSpliteNumber(1))
-          .then(() => delay(50))
-          .then(() => setBlinkSpliteNumber(0));
+    const interval = setInterval(async () => {
+      const rand = Math.random();
 
-        if (random < 0.08) {
-          delay(200)
-            .then(() => setBlinkSpliteNumber(2))
-            .then(() => delay(50))
-            .then(() => setBlinkSpliteNumber(1))
-            .then(() => delay(50))
-            .then(() => setBlinkSpliteNumber(0));
-        }
+      if (rand < 0.32) {
+        setBlinkSpliteNumber(2);
+        await delay(50);
+        setBlinkSpliteNumber(1);
+        await delay(50);
+        setBlinkSpliteNumber(0);
+      }
+
+      if (rand < 0.08) {
+        await delay(100);
+        setBlinkSpliteNumber(2);
+        await delay(50);
+        setBlinkSpliteNumber(1);
+        await delay(50);
+        setBlinkSpliteNumber(0);
       }
     }, 1000);
 
