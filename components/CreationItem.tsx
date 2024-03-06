@@ -34,7 +34,7 @@ export default function CreationItem({
         const centerY = rect.height / 2;
         const rotateX = (centerY - y) * 0.05;
         const rotateY = (centerX - x) * -0.05;
-        event.currentTarget.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(40px) scale(102%)`;
+        event.currentTarget.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(40px) scale(104%)`;
       }}
       onMouseLeave={(event) => {
         event.currentTarget.style.transform = "rotateX(0deg) rotateY(0deg)";
