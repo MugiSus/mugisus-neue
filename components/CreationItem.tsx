@@ -23,7 +23,7 @@ function subtle3dEffect(event: React.MouseEvent<HTMLElement>) {
   }px) translateY(${diffY * 4}px)`;
   // higher brightness on specific angle
   target.style.filter = `brightness(${
-    1 + Math.max(0, Math.abs(0.25 - diffX - diffY) / 0.25) * 0.06
+    1.5 - (Math.abs(diffX + diffY - 1) / 3) * 0.5
   })`;
 }
 
@@ -55,7 +55,6 @@ export default function CreationItem({
       }`}
       onMouseMove={subtle3dEffect}
       onMouseLeave={abort3dEffect}
-      style={{ transformStyle: "preserve-3d" }}
     >
       <div
         className={`whitespace-nowrap leading-none tracking-tighter text-9xl duration-500 group-hover:duration-100 group-hover:text-neutral-600 ${
@@ -98,7 +97,12 @@ export default function CreationItem({
   );
 
   return creation.href ? (
-    <Link href={creation.href} className="max-w-full">
+    <Link
+      href={creation.href}
+      className="max-w-full"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
       {content}
     </Link>
   ) : (

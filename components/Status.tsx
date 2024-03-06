@@ -13,7 +13,7 @@ export default function Status({
 }) {
   const element = (
     <>
-      <FontAwesomeIcon icon={icon} className="text-primary h-4 inline mr-2" />
+      <FontAwesomeIcon icon={icon} className="text-primary h-4 inline mr-1.5" />
       {content}
     </>
   );
