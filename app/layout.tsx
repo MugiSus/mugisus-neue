@@ -46,7 +46,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <div className="side-stripe fixed h-full left-0 w-4 -z-50 md:w-8" />
+        <div className="side-stripe fixed h-full right-0 w-4 -z-50 md:w-8" />
+        {children}
+      </body>
       <Analytics />
     </html>
   );

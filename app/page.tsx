@@ -20,7 +20,7 @@ import InteractiveIcon from "@/components/InteractiveIcon";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between py-40 px-8 gap-32 mx-auto">
+    <main className="flex min-h-screen flex-col items-center justify-between py-40 px-8 gap-32 mx-auto md:px-16">
       <div className="flex flex-col gap-24 place-items-center mt-12">
         {/* <div className="flex flex-col font-regular tracking-more-widest text-sm gap-1 items-center text-center mx-4">
           <div>ものをつくり、デザインし、命懸けで働き口を探しています。</div>

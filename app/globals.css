@@ -8,6 +8,16 @@ body {
   /* background: linear-gradient(150deg, #35263d, #281e2e); */
 }
 
+.side-stripe {
+  background: repeating-linear-gradient(
+    135deg,
+    #f0f0f0,
+    #f0f0f0 1rem,
+    #fbfbfb 1rem,
+    #fbfbfb 2rem
+  );
+}
+
 ::selection {
   background-color: #51b660;
   color: white;
