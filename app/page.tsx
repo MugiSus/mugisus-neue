@@ -17,7 +17,7 @@ import CurrentTimeString from "@/components/CurrentTimeString";
 import InteractiveIcon from "@/components/InteractiveIcon";
 import HomeTitle from "@/components/HomeTitle";
 
-import Separator from "@/public/Separator.svg";
+import Separator from "@/public/separator.svg";
 
 export default function Home() {
   return (
