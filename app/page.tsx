@@ -17,13 +17,15 @@ import CurrentTimeString from "@/components/CurrentTimeString";
 import InteractiveIcon from "@/components/InteractiveIcon";
 import HomeTitle from "@/components/HomeTitle";
 
+import Separator from "@/public/Separator.svg";
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between py-36 px-8 gap-24 mx-auto md:px-16">
       <div className="mr-6 select-none">
         <InteractiveIcon />
       </div>
-      <div className="text-primary">▲▼▲▼▲</div>
+      <Separator />
       <div className="flex flex-col place-items-center gap-4">
         <div className="flex flex-col text-5xl gap-1 items-end">
           <HomeTitle />
@@ -60,7 +62,7 @@ export default function Home() {
           />
         </ul>
       </div>
-      <div className="text-primary">▼▲▼▲▼</div>
+      <Separator />
       <ul className="list-none flex flex-wrap flex-row gap-6 place-items-center place-content-center max-w-full">
         {Creations.map((creation, index) => (
           <CreationItem creation={creation} index={index} key={index} />
