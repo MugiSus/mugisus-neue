@@ -5,7 +5,6 @@
 body {
   color: #242424;
   background-color: #fbfbfb;
-  /* background: linear-gradient(150deg, #35263d, #281e2e); */
 }
 
 .side-stripe {
@@ -16,6 +15,7 @@ body {
     #fbfbfb 1rem,
     #fbfbfb 2rem
   );
+  animation: side-stripe 4s linear infinite;
 }
 
 ::selection {
@@ -23,8 +23,17 @@ body {
   color: white;
 }
 
+@keyframes side-stripe {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 2.828rem;
+  }
+}
+
 @layer components {
   .hover-inverse {
-    @apply duration-500 ease-out hover:duration-0 hover:bg-neutral-600 hover:text-neutral-50;
+    @apply duration-500 ease-out hover:duration-80 hover:bg-neutral-600 hover:text-neutral-50;
   }
 }

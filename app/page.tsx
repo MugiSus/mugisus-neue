@@ -1,9 +1,7 @@
 import {
-  faBriefcase,
   faBuilding,
   faClock,
   faLocationDot,
-  faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faTwitter,
@@ -17,6 +15,7 @@ import CreationItem from "@/components/CreationItem";
 import { Creations } from "@/lib/creationsLoader";
 import CurrentTimeString from "@/components/CurrentTimeString";
 import InteractiveIcon from "@/components/InteractiveIcon";
+import HomeTitle from "@/components/HomeTitle";
 
 export default function Home() {
   return (
@@ -31,16 +30,13 @@ export default function Home() {
         </div>
         <div className="flex flex-col place-items-center gap-4">
           <div className="flex flex-col text-5xl gap-1 items-end">
-            <h1 className="pb-2 px-1 hover-inverse">
-              <span className="text-primary font-medium tracking-wide">@</span>
-              <span className="font-bold">MugiSus</span>
-            </h1>
+            <HomeTitle />
             {/* <div className="flex flex-col font-regular tracking-more-widest text-sm gap-1 items-end">
               <div>湊　真之</div>
               <div>MINATO MASAYUKI</div>
             </div> */}
           </div>
-          <ul className="inline-block text-center leading-7 max-w-xl">
+          <ul className="inline-block text-center leading-7 max-w-2xl mx-4">
             <Status
               icon={faBuilding}
               content="Keio University; Department of Environment and Information Studies"
@@ -78,7 +74,7 @@ export default function Home() {
           <CreationItem creation={creation} index={index} key={index} />
         ))}
       </ul>
-      <div className="text-sm tracking-more-widest hover-inverse">
+      <div className="text-sm tracking-widest hover-inverse py-1 px-2">
         Copyright ©︎ 2024 MugiSus
       </div>
     </main>

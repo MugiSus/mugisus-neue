@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       transitionDuration: {
         4000: "4000ms",
+        80: "80ms",
       },
       letterSpacing: {
         "more-widest": ".2em",
