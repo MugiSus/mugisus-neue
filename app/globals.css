@@ -16,6 +16,7 @@ body {
     #fbfbfb 2rem
   );
   animation: side-stripe 4s linear infinite;
+  background-size: 2.828rem 2.828rem;
 }
 
 ::selection {
