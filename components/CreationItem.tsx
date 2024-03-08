@@ -41,14 +41,16 @@ export default function CreationItem({
             animationDirection: index % 2 ? "reverse" : "normal",
           }}
         >
-          {[...Array(4)].fill(
-            <span>
-              <span className="group-hover:text-primary duration-100 group-hover:duration-80">
-                {creation.title.slice(-1)}
+          {Array(4)
+            .fill(0)
+            .map((_, i) => (
+              <span key={i}>
+                <span className="group-hover:text-primary duration-100 group-hover:duration-80">
+                  {creation.title.slice(-1)}
+                </span>
+                {creation.title.slice(0, -1)}
               </span>
-              {creation.title.slice(0, -1)}
-            </span>
-          )}
+            ))}
         </div>
         <div
           className={`absolute -right-4 -bottom-14 font-semibold animate-marquee-right`}
@@ -57,14 +59,16 @@ export default function CreationItem({
             animationDirection: index % 2 ? "reverse" : "normal",
           }}
         >
-          {[...Array(4)].fill(
-            <span>
-              <span className="group-hover:text-primary duration-100 group-hover:duration-80">
-                {creation.title.slice(0, 1)}
+          {Array(4)
+            .fill(0)
+            .map((_, i) => (
+              <span key={i}>
+                <span className="group-hover:text-primary duration-100 group-hover:duration-80">
+                  {creation.title.slice(0, 1)}
+                </span>
+                {creation.title.slice(1)}
               </span>
-              {creation.title.slice(1)}
-            </span>
-          )}
+            ))}
         </div>
       </div>
       <div className="text-center whitespace-nowrap transition-colors duration-500 group-hover:duration-80 group-hover:text-neutral-50 z-50">
