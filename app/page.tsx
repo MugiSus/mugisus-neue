@@ -21,7 +21,7 @@ import Separator from "@/public/separator.svg";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between py-36 px-8 gap-24 mx-auto md:px-16">
+    <main className="flex min-h-screen flex-col items-center justify-between py-48 px-8 gap-24 mx-auto md:px-16">
       <div className="mr-6 select-none">
         <InteractiveIcon />
       </div>
@@ -69,7 +69,7 @@ export default function Home() {
         ))}
       </ul>
 
-      <div className="text-sm tracking-widest hover-inverse py-1 px-2 mt-24">
+      <div className="text-sm tracking-widest hover-inverse py-1 px-2">
         Copyright ©︎ 2024 MugiSus
       </div>
     </main>
