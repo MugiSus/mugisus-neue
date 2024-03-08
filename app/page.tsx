@@ -15,7 +15,7 @@ import CreationItem from "@/components/CreationItem";
 import { Creations } from "@/lib/creationsLoader";
 import CurrentTimeString from "@/components/CurrentTimeString";
 import InteractiveIcon from "@/components/InteractiveIcon";
-import HomeTitle from "@/components/HomeTitle";
+import MugiSus from "@/public/mugisus.svg";
 
 import Separator from "@/public/separator.svg";
 
@@ -27,9 +27,7 @@ export default function Home() {
       </div>
       <Separator />
       <div className="flex flex-col place-items-center gap-4">
-        <div className="flex flex-col text-5xl gap-1 items-end">
-          <HomeTitle />
-        </div>
+        <MugiSus className="hover-inverse fill-content hover:fill-neutral-50" />
         <ul className="inline-block text-center leading-7 max-w-2xl mx-4">
           <Status
             icon={faBuilding}

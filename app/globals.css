@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 body {
-  color: #242424;
   background-color: #fbfbfb;
+  @apply text-content;
 }
 
 .side-stripe {
