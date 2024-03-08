@@ -62,8 +62,8 @@ export default function Home() {
           />
         </ul>
       </div>
-      <Separator />
-      <ul className="list-none flex flex-wrap flex-row gap-6 place-items-center place-content-center max-w-full">
+      <Separator className="rotate-180" />
+      <ul className="list-none flex flex-wrap flex-row gap-6 place-items-center place-content-center max-w-full my-8">
         {Creations.map((creation, index) => (
           <CreationItem creation={creation} index={index} key={index} />
         ))}
