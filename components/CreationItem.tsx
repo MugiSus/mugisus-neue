@@ -80,10 +80,12 @@ export default function CreationItem({
       >
         {dateString}
       </time>
-      <FontAwesomeIcon
-        icon={faArrowRight}
-        className="opacity-0 absolute h-5 right-4 top-0 bottom-0 m-auto text-neutral-200 duration-500 group-hover:duration-80 group-hover:opacity-100 transition-all"
-      />
+      {creation.href && (
+        <FontAwesomeIcon
+          icon={faArrowRight}
+          className="opacity-0 absolute h-5 right-4 top-0 bottom-0 m-auto text-neutral-200 duration-500 group-hover:duration-80 group-hover:opacity-100 transition-all"
+        />
+      )}
     </li>
   );
 

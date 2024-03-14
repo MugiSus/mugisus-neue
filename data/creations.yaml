@@ -4,9 +4,17 @@
 #   date: Date
 #
 
+- href: https://github.com/MugiSus/design-library/tree/main/tokyo-kanagawa-3-in-1-railway-map
+  title: Tokyo-Kanagawa 3 in 1 Railway Map
+  date: 2024-03-01
+
+- href: https://github.com/MugiSus/design-library/tree/main/mitoujr-demo-day-pamphlet-2023
+  title: Mitou Jr Demo Day Pamphlet 2023
+  date: 2023-11-03
+
 - href: https://mugisus.com
   title: Portfolio 2023
-  date: 2023-11-01
+  date: 2023-10-01
 
 - href: https://v-card-mugisus.vercel.app?22aq
   title: V-Card
