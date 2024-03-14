@@ -12,14 +12,14 @@ export default function Status({
   href?: string;
 }) {
   const element = (
-    <>
+    <div className={`text-center px-1.5 hover-inverse`}>
       <FontAwesomeIcon icon={icon} className="text-primary h-4 inline mr-1.5" />
       {content}
-    </>
+    </div>
   );
 
   return (
-    <li className={`inline-block text-center px-1.5 hover-inverse`}>
+    <li className={`inline-block`}>
       {href ? (
         <Link href={href} rel="noopener noreferrer" target="_blank">
           {element}
