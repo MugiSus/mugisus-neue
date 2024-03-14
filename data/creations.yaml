@@ -1,95 +1,81 @@
 # -
 #   href: string
-#   image: string
 #   title: string
 #   date: Date
 #
 
+- href: https://mugisus.com
+  title: Portfolio 2023
+  date: 2023-11-01
+
 - href: https://v-card-mugisus.vercel.app?22aq
   title: V-Card
   date: 2023-01-17
-  image: creations/virtual-card.png
 
 - href: https://openprocessing.org/sketch/1788651
   title: pata-drop (openprocessing)
   date: 2023-01-09
-  image: creations/pata-drop.png
 
 - href: https://www.npmjs.com/package/world-timestamp
   title: world-timestamp (npm package)
   date: 2022-10-14
-  image: creations/npm-package.png
 
 - href: https://themostaccurateclockyoucanget.vercel.app/
   title: TheMostAccurateClockYouCanGet
   date: 2022-08-09
-  image: creations/themostaccurateclockyoucanget.png
 
 - href: https://reactmood.vercel.app/
   title: React:mood
   date: 2022-05-07
-  image: creations/reactmood.png
 
 - href: https://alt.mugisus.com
-  title: Old Website (2022)
+  title: Portfolio 2022
   date: 2022-04-22
 
 - href: https://mugisus.github.io/neighbours/
   title: Neighbours
   date: 2022-04-12
-  image: creations/neighbours.png
 
 - href: https://mugisus.github.io/genius/
   title: GeNiUS
   date: 2022-03-05
-  image: creations/genius.png
 
 - href: https://mugisus.github.io/lifegameJS/
   title: lifegameJS (WebGL)
   date: 2021-12-24
-  image: creations/lifegameJS.png
 
 - href: https://telport.mugisus.com/
   title: TELPort
   date: 2021-11-03
-  image: creations/telport.png
 
 # - href: https://mugisus.github.io/misc/logicsim_v2/
 #   title: logicsim_v2
 #   date: 2021-03-21
-#   image: creations/logicsim-v2.png
 
 # - href: https://mugisus.github.io/misc/LogicSim/?theme=dark
 #   title: LogicSim
 #   date: 2019-08-01
-#   image: creations/logicsim.png
 
 # - href: https://mugisus.github.io/misc/morser/
 #   title: morser
 #   date: 2019-04-24
-#   image: creations/morser.png
 
 # - href: https://mugisus.github.io/misc/wave/
 #   title: wave
 #   date: 2018-11-19
-#   image: creations/wave.png
 
 - href: https://scratch.mit.edu/projects/136146086/
   title: "[3D] Arrow & Ball with editor!"
   date: 2017-05-20
-  image: https://cdn.scratch.mit.edu/get_image/project/136146086_480x360.png
 
 # - href: https://scratch.mit.edu/projects/119005799/
 #   title: "Logic-Simulator [100%pen]"
 #   date: 2016-10-11
-#   image: https://cdn.scratch.mit.edu/get_image/project/119005799_480x360.png
 
 - href: https://scratch.mit.edu/projects/45872854/
   title: arrow & ball with editor!
   date: 2015-02-09
-  image: https://cdn2.scratch.mit.edu/get_image/project/45872854_480x360.png
 
 - href: https://scratch.mit.edu/users/MMGISS
   title: MMGISS (Scratch)
   date: 2014-06-02
-  # image: https://cdn2.scratch.mit.edu/get_image/project/45872854_480x360.png
