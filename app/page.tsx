@@ -2,6 +2,7 @@ import {
   faBuilding,
   faClock,
   faLocationDot,
+  faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faTwitter,
@@ -33,6 +34,7 @@ export default function Home() {
             icon={faBuilding}
             content="Keio University; Department of Environment and Information Studies"
           />
+          <Status icon={faUser} content="Minato Masayuki" />
           <Status icon={faLocationDot} content="Hokkaido / Kanagawa, Japan" />
           <Status
             icon={faClock}
