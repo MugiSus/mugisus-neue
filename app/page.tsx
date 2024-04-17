@@ -29,7 +29,7 @@ export default function Home() {
         <InteractiveIcon />
       </div>
       <Separator />
-      <div className="flex flex-col place-items-center gap-4">
+      <div className="flex flex-col place-items-center gap-12">
         <MugiSus className="hover-inverse fill-content hover:fill-neutral-50" />
         <ul className="inline-block text-center leading-7 max-w-2xl mx-4">
           <Status
@@ -64,18 +64,28 @@ export default function Home() {
           />
         </ul>
       </div>
+
       <Separator className="rotate-180" />
+
       <ul className="list-none flex flex-wrap flex-row gap-4 place-items-center place-content-center max-w-full my-8">
         {Creations.map((creation, index) => (
           <CreationItem creation={creation} index={index} key={index} />
         ))}
       </ul>
+
       <Separator />
-      <ul className="list-none flex flex-col gap-8 place-items-center place-content-center max-w-full my-8">
+
+      <ul className="list-none flex flex-col gap-6 place-items-center place-content-center max-w-full my-8">
         {Careers.map((career, index) => (
-          <CareerItem career={career} key={index} />
+          <CareerItem
+            career={career}
+            isLast={index === Careers.length - 1}
+            key={index}
+          />
         ))}
       </ul>
+
+      <Separator className="rotate-180" />
 
       <div className="text-sm tracking-widest hover-inverse py-1 px-2">
         Copyright ©︎ 2024 MugiSus
