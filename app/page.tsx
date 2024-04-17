@@ -13,12 +13,14 @@ import {
 
 import Status from "@/components/Status";
 import CreationItem from "@/components/CreationItem";
-import { Creations } from "@/lib/creationsLoader";
+import { Creations } from "@/lib/creations";
+import { Careers } from "@/lib/careers";
 import CurrentTimeString from "@/components/CurrentTimeString";
 import InteractiveIcon from "@/components/InteractiveIcon";
 import MugiSus from "@/public/mugisus.svg";
 
 import Separator from "@/public/separator.svg";
+import CareerItem from "@/components/CareerItem";
 
 export default function Home() {
   return (
@@ -63,9 +65,15 @@ export default function Home() {
         </ul>
       </div>
       <Separator className="rotate-180" />
-      <ul className="list-none flex flex-wrap flex-row gap-6 place-items-center place-content-center max-w-full my-8">
+      <ul className="list-none flex flex-wrap flex-row gap-4 place-items-center place-content-center max-w-full my-8">
         {Creations.map((creation, index) => (
           <CreationItem creation={creation} index={index} key={index} />
+        ))}
+      </ul>
+      <Separator />
+      <ul className="list-none flex flex-col gap-8 place-items-center place-content-center max-w-full my-8">
+        {Careers.map((career, index) => (
+          <CareerItem career={career} key={index} />
         ))}
       </ul>
 
