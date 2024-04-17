@@ -77,17 +77,12 @@ export default function Home() {
 
       <ul className="list-none flex flex-col gap-6 place-items-center place-content-center max-w-full my-8">
         {Careers.map((career, index) => (
-          <CareerItem
-            career={career}
-            isLast={index === Careers.length - 1}
-            key={index}
-          />
+          <CareerItem career={career} key={index} />
         ))}
+        <CareerItem career={{ date: new Date(), title: "いま" }} isLast />
       </ul>
 
-      <Separator className="rotate-180" />
-
-      <div className="text-sm tracking-widest hover-inverse py-1 px-2">
+      <div className="text-sm tracking-widest hover-inverse py-1 px-0.5">
         Copyright ©︎ 2024 MugiSus
       </div>
     </main>
