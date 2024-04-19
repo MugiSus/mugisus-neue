@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        gothicmb101: ["a-otf-gothic-mb101-pr6n", "sans-serif"],
+      },
       transitionDuration: {
         4000: "4000ms",
         80: "80ms",
