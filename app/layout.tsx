@@ -3,8 +3,9 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 
 import { Inter } from "next/font/google";
+import TypekitLoader from "@/lib/typekitLoader";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://neue.mugisus.com/"),
@@ -46,7 +47,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <TypekitLoader />
+      <body className="font-gothicmb101 text-content font-light">
         <div className="side-stripe fixed h-full left-0 w-4 -z-40 md:w-8" />
         <div className="side-stripe fixed h-full right-0 w-4 -z-40 md:w-8 -scale-x-100" />
         {children}
