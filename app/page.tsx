@@ -36,7 +36,7 @@ export default function Home() {
             icon={faBuilding}
             content="Keio University; Department of Environment and Information Studies"
           />
-          <Status icon={faUser} content="Minato Masayuki" />
+          <Status icon={faUser} content="Minato Masayuki - 湊 真之" />
           <Status icon={faLocationDot} content="Hokkaido / Kanagawa, Japan" />
           <Status
             icon={faClock}
