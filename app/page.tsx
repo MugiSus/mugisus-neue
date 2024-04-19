@@ -1,6 +1,7 @@
 import {
   faBuilding,
   faClock,
+  faHeart,
   faLocationDot,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
@@ -61,6 +62,12 @@ export default function Home() {
             icon={faInstagram}
             href="https://www.instagram.com/mugisus_/"
             content="mugisus_"
+          />
+          <Status
+            icon={faHeart}
+            content="
+            Programming, Designing, Drawing etc.
+          "
           />
         </ul>
       </div>
