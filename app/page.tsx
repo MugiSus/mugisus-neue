@@ -84,7 +84,7 @@ export default function Home() {
 
       <Separator />
 
-      <ul className="list-none flex flex-col md:flex-wrap md:flex-row gap-4 gap-x-6 gap-y-6 place-items-center place-content-center max-w-full my-8 px-8">
+      <ul className="list-none flex flex-col lg:flex-wrap lg:flex-row gap-4 gap-x-6 gap-y-6 place-items-center place-content-center max-w-full my-8 px-8">
         {Careers.sort((a, b) => a.date.getTime() - b.date.getTime()).map(
           (career, index) => (
             <CareerItem career={career} key={index} />

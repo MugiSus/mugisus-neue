@@ -18,7 +18,7 @@ export default function CareerItem({
     .replaceAll("/", ".");
 
   return (
-    <li className="flex flex-col gap-4 md:flex-row md:gap-6 items-center">
+    <li className="flex flex-col gap-6 lg:flex-row lg:gap-6 items-center">
       <div className="flex flex-col gap-2 items-center">
         <time
           dateTime={career.date.toISOString()}
@@ -30,7 +30,7 @@ export default function CareerItem({
           {career.title}
         </p>
       </div>
-      {!isLast && <CareersSeparator className="rotate-90 md:rotate-0" />}
+      {!isLast && <CareersSeparator className="rotate-90 lg:rotate-0" />}
     </li>
   );
 }
