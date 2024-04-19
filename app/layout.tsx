@@ -37,6 +37,10 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: "/oyagi-icon.png",
+    description: "Official Website of MugiSus",
+    title: "MugiSus",
+    type: "website",
+    url: "https://mugisus.com/",
   },
 };
 
