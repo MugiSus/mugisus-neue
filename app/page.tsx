@@ -68,17 +68,21 @@ export default function Home() {
       <Separator className="rotate-180" />
 
       <ul className="list-none flex flex-wrap flex-row gap-4 place-items-center place-content-center max-w-full my-8">
-        {Creations.map((creation, index) => (
-          <CreationItem creation={creation} index={index} key={index} />
-        ))}
+        {Creations.sort((a, b) => b.date.getTime() - a.date.getTime()).map(
+          (creation, index) => (
+            <CreationItem creation={creation} index={index} key={index} />
+          )
+        )}
       </ul>
 
       <Separator />
 
       <ul className="list-none flex flex-col gap-6 place-items-center place-content-center max-w-full my-8">
-        {Careers.map((career, index) => (
-          <CareerItem career={career} key={index} />
-        ))}
+        {Careers.sort((a, b) => a.date.getTime() - b.date.getTime()).map(
+          (career, index) => (
+            <CareerItem career={career} key={index} />
+          )
+        )}
         <CareerItem career={{ date: new Date(), title: "いま" }} isLast />
       </ul>
 
