@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         gothicmb101: ["var(--font-inter)", "a-otf-gothic-mb101-pr6n"],
+        cezanne: ["var(--font-inter)", "fot-cezanne-pron"],
       },
       transitionDuration: {
         4000: "4000ms",

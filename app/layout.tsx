@@ -46,7 +46,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={inter.variable}>
       <TypekitLoader />
       <body className="font-gothicmb101 text-content font-light">
         <div className="side-stripe fixed h-full left-0 w-4 -z-40 md:w-8" />
