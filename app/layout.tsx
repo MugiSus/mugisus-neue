@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://neue.mugisus.com/"),
   title: "MugiSus",
   description:
-    "MugiSus / 湊 真之 / Minato Masayuki / Keio University; Department of Environment and Information Studies / Web Engineer / Designer",
+    "The official portfolio of MugiSus. / MugiSusの公式ポートフォリオです。",
   keywords: [
     "MugiSus",
     "mugisus",
@@ -37,7 +37,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: "/oyagi-icon.png",
-    description: "Official Website of MugiSus",
+    description:
+      "The official portfolio of MugiSus. / MugiSusの公式ポートフォリオです。",
     title: "MugiSus",
     type: "website",
     url: "https://mugisus.com/",
