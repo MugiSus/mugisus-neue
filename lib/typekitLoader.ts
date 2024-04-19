@@ -6,7 +6,7 @@ export default function TypekitLoader() {
   useEffect(() => {
     (function (d) {
       const config = {
-        kitId: "mng4evd",
+        kitId: "mng4evd", // this shouldn't be public, but, well, it's a public website and even Adobe doesn't care at all
         scriptTimeout: 3000,
         async: true,
       };
