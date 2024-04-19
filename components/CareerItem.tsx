@@ -26,7 +26,7 @@ export default function CareerItem({
         >
           {dateString}
         </time>
-        <p className="text-sm hover-inverse px-0.5 md:text-base">
+        <p className="text-sm hover-inverse px-0.5 sm:text-base">
           {career.title}
         </p>
       </div>
