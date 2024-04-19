@@ -16,7 +16,7 @@ const config: Config = {
         "more-widest": ".2em",
       },
       colors: {
-        content: "#606060",
+        content: "#505050",
         primary: "#51B660",
         "creation-light": "#F2F2F2",
         "creation-dark": "#E8E8E8",
