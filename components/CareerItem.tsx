@@ -18,17 +18,19 @@ export default function CareerItem({
     .replaceAll("/", ".");
 
   return (
-    <li className="flex flex-col gap-1 items-center">
-      <time
-        dateTime={career.date.toISOString()}
-        className="text-sm text-neutral-400"
-      >
-        {dateString}
-      </time>
-      <p className="text-sm hover-inverse px-0.5 md:text-base">
-        {career.title}
-      </p>
-      {!isLast && <CareersSeparator className="text-md mt-5" />}
+    <li className="flex flex-col gap-4 md:flex-row md:gap-6 items-center">
+      <div className="flex flex-col gap-2 items-center">
+        <time
+          dateTime={career.date.toISOString()}
+          className="text-sm text-neutral-400"
+        >
+          {dateString}
+        </time>
+        <p className="text-sm hover-inverse px-0.5 md:text-base">
+          {career.title}
+        </p>
+      </div>
+      {!isLast && <CareersSeparator className="rotate-90 md:rotate-0" />}
     </li>
   );
 }
