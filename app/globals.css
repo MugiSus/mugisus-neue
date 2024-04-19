@@ -4,7 +4,7 @@
 
 body {
   background-color: #fbfbfb;
-  @apply text-content;
+  @apply text-content font-light;
 }
 
 .side-stripe {

@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        gothicmb101: ["a-otf-gothic-mb101-pr6n"],
+        gothicmb101: ["var(--font-inter)", "a-otf-gothic-mb101-pr6n"],
       },
       transitionDuration: {
         4000: "4000ms",
