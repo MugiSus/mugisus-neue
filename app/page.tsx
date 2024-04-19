@@ -87,7 +87,7 @@ export default function Home() {
       </ul>
 
       <div className="text-sm tracking-widest hover-inverse py-1 px-0.5">
-        Copyright ©︎ 2024 MugiSus
+        Copyright © {new Date().getFullYear()} MugiSus
       </div>
     </main>
   );
