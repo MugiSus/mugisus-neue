@@ -35,7 +35,7 @@ export default function CreationItem({
         }`}
       >
         <div
-          className={`absolute -left-4 -top-16 font-light animate-marquee-left select-none`}
+          className={`absolute -left-4 -top-16 font-extralight animate-marquee-left select-none`}
           style={{
             animationDuration: `${creation.title.length * 10000}ms`,
             animationDirection: index % 2 ? "reverse" : "normal",
@@ -53,7 +53,7 @@ export default function CreationItem({
             ))}
         </div>
         <div
-          className={`absolute -right-4 -bottom-14 font-semibold animate-marquee-right select-none`}
+          className={`absolute -right-4 -bottom-14 font-bold animate-marquee-right select-none`}
           style={{
             animationDuration: `${creation.title.length * 10000}ms`,
             animationDirection: index % 2 ? "reverse" : "normal",
@@ -64,7 +64,7 @@ export default function CreationItem({
             .map((_, i) => (
               <span key={i}>
                 <span className="group-hover:text-primary duration-100 group-hover:duration-80">
-                  {creation.title.slice(0, 1)}
+                  {creation.title.charAt(0)}
                 </span>
                 {creation.title.slice(1)}
               </span>
