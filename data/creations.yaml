@@ -36,7 +36,7 @@
     Based on the one actually used at the ticket counter at the time of creation. Actual station names and fares may differ.
     札幌市営地下鉄の非公式の運賃表です。モダンなデザインを意識し、文字の見やすさと一覧性を重視しました。
     作成時点で実際にきっぷうりばで使用されているものを元にデザインしましたが、実際の駅名・運賃とは異なる可能性があります。
-    ご使用による損害については一切の責任を負いません。
+    ご利用による損害については一切の責任を負いません。
 
 - id: mitou-jr-demo-day-pamphlet-2023
   href: https://github.com/MugiSus/design-library/tree/main/mitoujr-demo-day-pamphlet-2023
@@ -54,7 +54,7 @@
     Adjusted the layout to display the full official name without abbreviation, which resulted in a large proportion of layout adjustment in the working time.
     未踏ジュニア2023年度生の成果報告会のためのパンフレットを作成しました。
     コントラスト比の高い配色を意識し、情報の整理と視認性を重視しました。
-    長いプロジェクト名も省略せず正式名称で表記するように調整したため、作業時間におけるレイアウト調整の占める割合が大きかったです。
+    全てのプロジェクト名を省略せず正式名称で表記するように調整したため、作業時間におけるレイアウト調整の占める割合が大きかったです。
 
 - id: portfolio-2023
   href: https://mugisus.com

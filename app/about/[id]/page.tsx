@@ -73,8 +73,8 @@ export default function Page({ params }: { params: { id: string } }) {
             </div>
           ) : (
             <div className="flex flex-col gap-4 leading-loose text-neutral-500">
-              <p>There is no description available for this creation.</p>
-              <p>この作品に説明はありません。</p>
+              <p>There is no description available for this creation yet.</p>
+              <p>現在この作品に説明はありません。</p>
             </div>
           )}
 
