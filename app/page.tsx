@@ -25,7 +25,7 @@ import CareerItem from "@/components/CareerItem";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between py-48 px-8 gap-24 mx-auto md:px-16">
+    <main className="flex min-h-screen flex-col items-center justify-between gap-24 py-32">
       <div className="mr-2 select-none md:mr-6">
         <InteractiveIcon />
       </div>
