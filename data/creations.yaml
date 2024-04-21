@@ -18,11 +18,11 @@
   description: |
     An unofficial railway map focusing on the geographical relationship between the three lines of Odakyu, Keio, and Sotetsu in Tokyo and Kanagawa Prefecture.
     Aiming to create a map that is easy to understand for both residents and tourists, making it easy for each to understand the relationship between the lines. Every element is placed to form a triangle that radiates from right to left.
-    Only major stations and lines are listed. Many stations and some lines are omitted from the map.
+    Only major stations and lines are listed. Most of other stations and some short lines are omitted from the map.
   descriptionJa: |
     東京と神奈川県を結ぶ小田急、京王、相鉄線の三路線の地理的関係を可視化することに重点を置いた非公式の鉄道路線図です。
-    住民と観光客の両方にとって理解しやすく、それぞれ路線の関係を把握しやすい地図を作成することを目指しました。全体的な図形が右から左に放射状に広がる三角形のようになるようデザインされています。
-    主要な駅と路線のみを掲載しているため、多くの駅・一部路線が省略されています。
+    住民と観光客の双方にとって理解しやすく、それぞれ路線の関係を把握しやすい地図を作成することを目指しました。全体的な図形が右から左に放射状に広がる三角形のようになるようデザインされています。
+    主要な駅と路線のみを掲載しており、ほとんどの駅・一部短い路線が省略されています。
 
 - id: sapporo-municipal-subway-fare-table
   href: https://github.com/MugiSus/design-library/tree/main/sapporo-municipal-subway-fare-table
@@ -37,10 +37,10 @@
   description: |
     An unofficial fare table for the Sapporo Municipal Subway.
     Designed with a modern design in mind, focusing on readability and listability.
-    Design based on the one used at the ticket counter at the time. Actual station names and fares may differ.
+    Based on the one actually used at the ticket counter at the time of creation, designed with a dark theme. The actual station names and fares may differ.
   descriptionJa: |
     札幌市営地下鉄の非公式の運賃表です。モダンなデザインを意識し、文字の見やすさと一覧性を重視しました。
-    作成時点で実際にきっぷうりばで使用されているものを元にデザインしました。実際の駅名・運賃とは異なる可能性があります。
+    作成時点で実際にきっぷうりばで使用されているものを元に、ダークテーマにしてデザインしました。実際の駅名・運賃とは異なる可能性があります。
 
 - id: mitou-jr-demo-day-pamphlet-2023
   href: https://github.com/MugiSus/design-library/tree/main/mitoujr-demo-day-pamphlet-2023
@@ -80,8 +80,8 @@
   images:
     [
       "/creations/sotetsu-timetable-for-thru-services-slice-1.png",
-      "/creations/sotetsu-timetable-for-thru-services-slice-3.png",
       "/creations/sotetsu-timetable-for-thru-services-slice-2.png",
+      "/creations/sotetsu-timetable-for-thru-services-slice-3.png",
     ]
   description: |
     A new approach to timetables to intuitively visualize complex through-service operations due to the opening of the Sotetsu / Tokyu Shin-Yokohama Line and the direct operation of the Sotetsu / Tokyu Lines.
