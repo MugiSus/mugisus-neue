@@ -1,9 +1,9 @@
 export interface Creation {
   id: string;
   href: string;
-  images: string[];
   title: string;
   date: Date;
-  description: string;
-  descriptionJa: string;
+  images?: string[];
+  description?: string;
+  descriptionJa?: string;
 }

@@ -20,7 +20,7 @@ export default function Page({ params }: { params: { id: string } }) {
 
       <div className="grid grid-cols-1 gap-16 max-w-xl lg:grid-cols-2 lg:max-w-6xl w-full">
         <div className="grid grid-cols-1 gap-4 lg:sticky self-start top-16">
-          {creation.images?.length > 0 ? (
+          {creation.images && creation.images.length > 0 ? (
             creation.images.map((image, index) => (
               <Link
                 href={creation.href}
