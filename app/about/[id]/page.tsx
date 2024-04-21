@@ -19,7 +19,6 @@ export async function generateMetadata(
     return notFound();
   }
 
-  const previousImages = (await parent).openGraph?.images || [];
   const description =
     creation.description && creation.descriptionJa
       ? `${creation.description}\n${creation.descriptionJa}`
@@ -32,7 +31,9 @@ export async function generateMetadata(
       title: creation.title,
     },
     openGraph: {
-      images: [...(creation.images ?? []), ...previousImages],
+      images: creation.images
+        ? creation.images
+        : (await parent).openGraph?.images,
       description,
       title: creation.title,
       type: "website",
