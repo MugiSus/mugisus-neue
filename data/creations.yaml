@@ -59,15 +59,15 @@
       href: https://jr.mitou.org/english/
     - text: Mitou Junior Demo Day
       href: https://jr.mitou.org/final
-    - text: See projects of Mitou Jr 2023 graduates
-      href: https://jr.mitou.org/projects/#2023
+    - text: See projects of Mitou Junior
+      href: https://jr.mitou.org/projects/
   linksJa:
     - text: 未踏ジュニア
       href: https://jr.mitou.org
     - text: 未踏ジュニア成果報告会
       href: https://jr.mitou.org/final
-    - text: 未踏ジュニア2023年度卒業生プロジェクト一覧
-      href: https://jr.mitou.org/projects/#2023
+    - text: 未踏ジュニア採択プロジェクト一覧
+      href: https://jr.mitou.org/projects/
 
 - id: portfolio-2023
   href: https://mugisus.com
@@ -81,6 +81,34 @@
   descriptionJa: |
     2023年10月に作成され運用が始まった、私の制作物や活動をまとめたポートフォリオサイトです。長期にわたり更新中で、この作品ページが実装されたのも2024年4月になってからです。
     モダンかつクリーンでシンプルなデザインを意識していますが、シンプルをどこかで履き違えていないか心配です。
+
+- id: tshirt-design-for-mitou-jr-2023
+  href: https://github.com/MugiSus/design-library/tree/main/tshirt-design-for-mitou-jr-2023
+  title: A T-Shirt Design for Mitou Junior 2023
+  date: 2023-07-22
+  images:
+    - /creations/tshirt-design-for-mitou-jr-2023-logo.png
+    - /creations/tshirt-design-for-mitou-jr-2023-tshirt.png
+  description: |
+    A T-shirt design for the Mitou Junior 2023 Summer Conference.
+    The design is based on the official logo of the Mitou Junior program. The small triangles radiating from the center represent the activities and passion of the Mitou Junior participants.
+    This is the first time that my own work has been worn as a physical merch and handed to people, which has had a significant impact to me.
+    Every year at Mitou Junior, T-shirts designed by participants are created and given to participants. I'm looking forward to the design for next year.
+  descriptionJa: |
+    未踏ジュニア2023年度中間合宿のためのTシャツデザインを担当しました。
+    公式ロゴをベースにデザインされています。中心から拡散してゆく小さな三角形は未踏ジュニア参加者たちの活動と情熱を表現しています。
+    自身の成果物が物理的なマーチとして着用される形で人の手に渡るのはこれが初めての機会で、自身に大きな影響を与えています。
+    未踏ジュニアでは毎年、参加者がデザインしたTシャツが作成され、参加者に配布されます。来年のデザインも楽しみです。
+  links:
+    - text: Mitou Junior
+      href: https://jr.mitou.org/english/
+    - text: See projects of Mitou Junior
+      href: https://jr.mitou.org/projects/
+  linksJa:
+    - text: 未踏ジュニア
+      href: https://jr.mitou.org
+    - text: 未踏ジュニア採択プロジェクト一覧
+      href: https://jr.mitou.org/projects/
 
 - id: sotetsu-timetable-for-thru-services
   href: https://github.com/MugiSus/design-library/tree/main/sotetsu-timetable-for-thru-services
