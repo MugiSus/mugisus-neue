@@ -19,33 +19,33 @@ export default function Page({ params }: { params: { id: string } }) {
       </div>
 
       <div className="grid grid-cols-1 gap-16 max-w-xl lg:grid-cols-2 lg:max-w-6xl w-full">
-        <Link
-          href={creation.href}
-          rel="noopener noreferrer"
-          target="_blank"
-          className="hover:underline"
-        >
-          <div className="grid grid-cols-1 gap-4 sticky self-start">
-            {creation.images?.length > 0 ? (
-              creation.images.map((image, index) => (
-                // eslint-disable-next-line @next/next/no-img-element
+        <div className="grid grid-cols-1 gap-4 sticky self-start top-16">
+          {creation.images?.length > 0 ? (
+            creation.images.map((image, index) => (
+              <Link
+                href={creation.href}
+                rel="noopener noreferrer"
+                target="_blank"
+                className=""
+                key={index}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  key={index}
                   src={image}
                   alt={creation.title}
                   className="rounded-md w-full"
                 />
-              ))
-            ) : (
-              <div className="flex bg-neutral-200 rounded-md aspect-video sticky self-start top-16">
-                <FontAwesomeIcon
-                  icon={faCameraRetro}
-                  className="m-auto text-neutral-400 h-12"
-                />
-              </div>
-            )}
-          </div>
-        </Link>
+              </Link>
+            ))
+          ) : (
+            <div className="flex bg-neutral-200 rounded-md aspect-video sticky self-start top-16">
+              <FontAwesomeIcon
+                icon={faCameraRetro}
+                className="m-auto text-neutral-400 h-12"
+              />
+            </div>
+          )}
+        </div>
 
         <div className="flex flex-col gap-12 sticky self-start top-16">
           <div className="flex flex-col gap-2 text-lg text-neutral-500">
