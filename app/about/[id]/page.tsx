@@ -3,8 +3,45 @@ import { faCameraRetro } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Metadata, ResolvingMetadata } from "next";
 
-export default function Page({ params }: { params: { id: string } }) {
+type Props = {
+  params: { id: string };
+};
+
+export async function generateMetadata(
+  { params }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const creation = Creations.find((creation) => creation.id === params.id);
+
+  if (!creation) {
+    return notFound();
+  }
+
+  const previousImages = (await parent).openGraph?.images || [];
+  const description =
+    creation.description && creation.descriptionJa
+      ? `${creation.description}\n${creation.descriptionJa}`
+      : creation.description || creation.descriptionJa || creation.title;
+
+  return {
+    title: creation.title,
+    description,
+    twitter: {
+      title: creation.title,
+    },
+    openGraph: {
+      images: [...(creation.images ?? []), ...previousImages],
+      description,
+      title: creation.title,
+      type: "website",
+      url: new URL(params.id, (await parent).metadataBase ?? "").toString(),
+    },
+  };
+}
+
+export default function Page({ params }: Props) {
   const creation = Creations.find((creation) => creation.id === params.id);
 
   if (!creation) {
