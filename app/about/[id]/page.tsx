@@ -91,18 +91,18 @@ export default function Page({ params }: { params: { id: string } }) {
             </div>
           )}
 
-          <time
-            dateTime={creation.date.toISOString()}
-            className="text-neutral-500 mt-4"
-          >
-            {creation.date
-              .toLocaleDateString("ja-JP", {
-                year: "numeric",
-                month: "2-digit",
-                day: "2-digit",
-              })
-              .replaceAll("/", ".")}
-          </time>
+          <div className="text-neutral-500">
+            MugiSus{" "}
+            <time dateTime={creation.date.toISOString()}>
+              {creation.date
+                .toLocaleDateString("ja-JP", {
+                  year: "numeric",
+                  month: "2-digit",
+                  day: "2-digit",
+                })
+                .replaceAll("/", ".")}
+            </time>
+          </div>
         </div>
       </div>
     </main>
