@@ -13,6 +13,7 @@
       "/creations/tokyo-kanagawa-3-in-1-railway-map.png",
       "/creations/tokyo-kanagawa-3-in-1-railway-map-slice-1.png",
       "/creations/tokyo-kanagawa-3-in-1-railway-map-slice-2.png",
+      "/creations/tokyo-kanagawa-3-in-1-railway-map-slice-3.png",
     ]
   description: |
     An unofficial railway map focusing on the geographical relationship between the three lines of Odakyu, Keio, and Sotetsu in Tokyo and Kanagawa Prefecture.
@@ -32,7 +33,6 @@
       "/creations/sapporo-municipal-subway-fare-table.png",
       "/creations/sapporo-municipal-subway-fare-table-slice-1.png",
       "/creations/sapporo-municipal-subway-fare-table-slice-2.png",
-      "/creations/sapporo-municipal-subway-fare-table-slice-3.png",
     ]
   description: |
     An unofficial fare table for the Sapporo Municipal Subway.
