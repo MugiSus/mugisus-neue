@@ -3,7 +3,6 @@ import { faCameraRetro } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import Image from "next/image";
 
 export default function Page({ params }: { params: { id: string } }) {
   const creation = Creations.find((creation) => creation.id === params.id);
@@ -41,8 +40,8 @@ export default function Page({ params }: { params: { id: string } }) {
           )}
         </div>
 
-        <div className="flex flex-col gap-8 sticky self-start top-16">
-          <div className="flex flex-col gap-2 text-lg">
+        <div className="flex flex-col gap-12 sticky self-start top-16">
+          <div className="flex flex-col gap-2 text-lg text-neutral-500">
             <Link
               href={creation.href}
               rel="noopener noreferrer"
@@ -55,8 +54,9 @@ export default function Page({ params }: { params: { id: string } }) {
               <span>&lt;- Go back</span>
             </Link>
           </div>
+
           {creation.description ? (
-            <div className="flex flex-col gap-6 leading-loose">
+            <div className="flex flex-col gap-4 leading-loose">
               {creation.description
                 .split("\n")
                 .slice(0, -1)
@@ -70,6 +70,7 @@ export default function Page({ params }: { params: { id: string } }) {
               <p>この作品に説明はありません。</p>
             </div>
           )}
+
           <time
             dateTime={creation.date.toISOString()}
             className="text-neutral-500"
