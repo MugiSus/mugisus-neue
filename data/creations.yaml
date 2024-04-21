@@ -15,11 +15,13 @@
       "/creations/tokyo-kanagawa-3-in-1-railway-map-slice-2.png",
     ]
   description: |
-    An unofficial railway map focusing on the relationship between the three lines of Odakyu, Keio, and Sotetsu in Tokyo and Kanagawa Prefecture.
+    An unofficial railway map focusing on the geographical relationship between the three lines of Odakyu, Keio, and Sotetsu in Tokyo and Kanagawa Prefecture.
     Aiming to create a map that is easy to understand for both residents and tourists, making it easy for each to understand the relationship between the lines.
+    Only major stations and lines are listed. Many stations and some lines are omitted from the map.
   descriptionJa: |
-    東京と神奈川県を結ぶ小田急、京王、相鉄線の三路線の関係を可視化することにより重点を置いた鉄道路線図(非公式)です。
+    東京と神奈川県を結ぶ小田急、京王、相鉄線の三路線の地理的関係を可視化することに重点を置いた非公式の鉄道路線図です。
     住民と観光客の両方にとって理解しやすく、それぞれ路線の関係を把握しやすい地図を作成することを目指しました。
+    主要な駅と路線のみを掲載しているため、多くの駅・一部路線が省略されています。
 
 - id: sapporo-municipal-subway-fare-table
   href: https://github.com/MugiSus/design-library/tree/main/sapporo-municipal-subway-fare-table
@@ -34,11 +36,10 @@
   description: |
     An unofficial fare table for the Sapporo Municipal Subway.
     Designed with a modern design in mind, focusing on readability and listability.
-    Based on the one actually used at the ticket counter at the time of creation. Actual station names and fares may differ.
+    Design based on the one used at the ticket counter at the time. Actual station names and fares may differ.
   descriptionJa: |
     札幌市営地下鉄の非公式の運賃表です。モダンなデザインを意識し、文字の見やすさと一覧性を重視しました。
-    作成時点で実際にきっぷうりばで使用されているものを元にデザインしましたが、実際の駅名・運賃とは異なる可能性があります。
-    ご利用による損害については一切の責任を負いません。
+    作成時点で実際にきっぷうりばで使用されているものを元にデザインしました。実際の駅名・運賃とは異なる可能性があります。
 
 - id: mitou-jr-demo-day-pamphlet-2023
   href: https://github.com/MugiSus/design-library/tree/main/mitoujr-demo-day-pamphlet-2023
