@@ -38,12 +38,19 @@ export default function Page({ params }: { params: { id: string } }) {
               </Link>
             ))
           ) : (
-            <div className="flex flex-col bg-neutral-200 rounded-md aspect-video lg:sticky self-start top-16 items-center justify-center">
-              <FontAwesomeIcon
-                icon={faCameraRetro}
-                className="text-neutral-400 h-12"
-              />
-            </div>
+            <Link
+              href={creation.href}
+              rel="noopener noreferrer"
+              target="_blank"
+              className=""
+            >
+              <div className="flex flex-col bg-neutral-200 rounded-md aspect-video lg:sticky self-start top-16 items-center justify-center">
+                <FontAwesomeIcon
+                  icon={faCameraRetro}
+                  className="text-neutral-400 h-12"
+                />
+              </div>
+            </Link>
           )}
         </div>
 
