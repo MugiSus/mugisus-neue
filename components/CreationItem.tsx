@@ -89,16 +89,9 @@ export default function CreationItem({
     </li>
   );
 
-  return creation.href ? (
-    <Link
-      href={creation.href}
-      className="max-w-full"
-      rel="noopener noreferrer"
-      target="_blank"
-    >
+  return (
+    <Link href={`/about/${creation.id}`} className="max-w-full">
       {content}
     </Link>
-  ) : (
-    content
   );
 }

@@ -1,0 +1,89 @@
+import { Creations } from "@/lib/creations";
+import { faCameraRetro } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Link from "next/link";
+import { notFound } from "next/navigation";
+import Image from "next/image";
+
+export default function Page({ params }: { params: { id: string } }) {
+  const creation = Creations.find((creation) => creation.id === params.id);
+
+  if (!creation) {
+    return notFound();
+  }
+
+  return (
+    <div className="flex flex-col flex-wrap gap-16 px-16 py-16 w-full items-center">
+      <div className="leading-loose text-center">
+        <h1 className="text-3xl">{creation.title}</h1>
+        <div className="text-md text-neutral-500">{creation.id}</div>
+      </div>
+
+      <div className="grid grid-cols-1 gap-16 max-w-xl lg:grid-cols-2 lg:max-w-6xl w-full">
+        <div className="grid grid-cols-1 gap-8 sticky self-start">
+          {creation.images?.length > 0 ? (
+            creation.images.map((image, index) => (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img
+                key={index}
+                src={image}
+                alt={creation.title}
+                className="rounded-md w-full"
+              />
+            ))
+          ) : (
+            <div className="flex bg-neutral-200 rounded-md aspect-video sticky self-start top-16">
+              <FontAwesomeIcon
+                icon={faCameraRetro}
+                className="m-auto text-neutral-400 h-12"
+              />
+            </div>
+          )}
+        </div>
+
+        <div className="flex flex-col gap-8 sticky self-start top-16">
+          <div className="flex flex-col gap-2 text-lg">
+            <Link
+              href={creation.href}
+              rel="noopener noreferrer"
+              target="_blank"
+              className="hover:underline"
+            >
+              <span>Visit -&gt;</span>
+            </Link>
+            <Link href="/" className="hover:underline text-lg">
+              <span>&lt;- Go back</span>
+            </Link>
+          </div>
+          {creation.description ? (
+            <div className="flex flex-col gap-6 leading-loose">
+              {creation.description
+                .split("\n")
+                .slice(0, -1)
+                .map((line, index) => (
+                  <p key={index}>{line}</p>
+                ))}
+            </div>
+          ) : (
+            <div className="flex flex-col gap-6 leading-loose text-neutral-500">
+              <p>There is no description available for this creation.</p>
+              <p>この作品に説明はありません。</p>
+            </div>
+          )}
+          <time
+            dateTime={creation.date.toISOString()}
+            className="text-neutral-500"
+          >
+            {creation.date
+              .toLocaleDateString("ja-JP", {
+                year: "numeric",
+                month: "2-digit",
+                day: "2-digit",
+              })
+              .replaceAll("/", ".")}
+          </time>
+        </div>
+      </div>
+    </div>
+  );
+}

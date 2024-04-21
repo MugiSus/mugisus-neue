@@ -8,6 +8,17 @@
   href: https://github.com/MugiSus/design-library/tree/main/tokyo-kanagawa-3-in-1-railway-map
   title: Tokyo-Kanagawa 3 in 1 Railway Map
   date: 2024-03-01
+  images:
+    [
+      "/creations/tokyo-kanagawa-3-in-1-railway-map.png",
+      "/creations/tokyo-kanagawa-3-in-1-railway-map-slice-1.png",
+      "/creations/tokyo-kanagawa-3-in-1-railway-map-slice-2.png",
+    ]
+  description: |
+    An unofficial railway map focusing on the relationship between the three lines of Odakyu, Keio, and Sotetsu in Tokyo and Kanagawa Prefecture.
+    Aiming to create a map that is easy to understand for both residents and tourists, making it easy for each to understand the relationship between the lines.
+    東京と神奈川県を結ぶ小田急、京王、相鉄線の三路線の関係を可視化することにより重点を置いた鉄道路線図(非公式)です。
+    住民と観光客の両方にとって理解しやすく、それぞれ路線の関係を把握しやすい地図を作成することを目指しました。
 
 - id: sapporo-municipal-subway-fare-table
   href: https://github.com/MugiSus/design-library/tree/main/sapporo-municipal-subway-fare-table
