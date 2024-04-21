@@ -70,7 +70,7 @@
     A portfolio site that introduces my creations and activities, created and started operation in October 2023. It is being updated in a long term, even this work page was released in April 2024.
     Designed to be modern, clean, and simple. I'm not sure if I've missed the concept of simplicity somewhere.
   descriptionJa: |
-    2023年10月に作成され運用が始まった、私の制作物や活動を紹介するポートフォリオサイトです。長期にわたって更新中で、この作品ページが実装されたのも2024年4月になってからです。
+    2023年10月に作成され運用が始まった、私の制作物や活動をまとめたポートフォリオサイトです。長期にわたり更新中で、この作品ページが実装されたのも2024年4月になってからです。
     モダンかつクリーンでシンプルなデザインを意識していますが、シンプルをどこかで履き違えていないか心配です。
 
 - id: sotetsu-timetable-for-thru-services
@@ -123,6 +123,13 @@
   href: https://alt.mugisus.com
   title: Portfolio 2022
   date: 2022-04-22
+  images: ["/creations/portfolio-2022.png"]
+  description: |
+    A portfolio site that introduces my creations and activities, created and operated in April 2022, until the end of September 2023.
+    It is not updated anymore in principle, but it is still open as of April 2024.
+  descriptionJa: |
+    2022年4月に作成され、2023年9月末まで運用された、私の制作物や活動をまとめたポートフォリオサイトです。
+    原則として更新は行われませんが、2024年4月現在も公開されています。
 
 - id: neighbours
   href: https://mugisus.github.io/neighbours/
