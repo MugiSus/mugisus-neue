@@ -40,7 +40,7 @@
 
 - id: mitou-jr-demo-day-pamphlet-2023
   href: https://github.com/MugiSus/design-library/tree/main/mitoujr-demo-day-pamphlet-2023
-  title: A Pamphlet for Mitou Jr Demo Day 2023
+  title: A Pamphlet for Mitou Junior Demo Day 2023
   date: 2023-11-03
   images:
     - /creations/mitou-jr-demo-day-pamphlet-2023-front.png
@@ -55,11 +55,11 @@
     全体として一貫性を持たせつつもコントラスト比の高い配色を意識し、情報の整理と視認性を重視しました。
     全てのプロジェクト名を省略せず正式名称で表記するように調整したため、全体の制作時間におけるレイアウト調整の占める割合が大きかったです。
   links:
-    - text: Mitou Jr
+    - text: Mitou Junior
       href: https://jr.mitou.org/english/
-    - text: Mitou Jr Demo Day
+    - text: Mitou Junior Demo Day
       href: https://jr.mitou.org/final
-    - text: Projects of Mitou Jr 2023 graduates
+    - text: See projects of Mitou Jr 2023 graduates
       href: https://jr.mitou.org/projects/#2023
   linksJa:
     - text: 未踏ジュニア
