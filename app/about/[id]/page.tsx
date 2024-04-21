@@ -118,6 +118,22 @@ export default function Page({ params }: Props) {
             </div>
           )}
 
+          {creation.links && (
+            <div className="flex flex-col gap-2">
+              {creation.links.map((link, index) => (
+                <Link
+                  href={link.href}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="hover:underline text-neutral-500"
+                  key={index}
+                >
+                  -&gt; {link.text}
+                </Link>
+              ))}
+            </div>
+          )}
+
           {creation.descriptionJa && (
             <div className="flex flex-col gap-4 leading-loose">
               {creation.descriptionJa
@@ -126,6 +142,22 @@ export default function Page({ params }: Props) {
                 .map((line, index) => (
                   <p key={index}>{line}</p>
                 ))}
+            </div>
+          )}
+
+          {creation.linksJa && (
+            <div className="flex flex-col gap-2">
+              {creation.linksJa.map((link, index) => (
+                <Link
+                  href={link.href}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  className="hover:underline text-neutral-500"
+                  key={index}
+                >
+                  -&gt; {link.text}
+                </Link>
+              ))}
             </div>
           )}
 

@@ -1,3 +1,8 @@
+interface Link {
+  text: string;
+  href: string;
+}
+
 export interface Creation {
   id: string;
   href: string;
@@ -6,4 +11,6 @@ export interface Creation {
   images?: string[];
   description?: string;
   descriptionJa?: string;
+  links?: Link[];
+  linksJa?: Link[];
 }
