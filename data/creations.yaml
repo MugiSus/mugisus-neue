@@ -1,97 +1,95 @@
-# -
+# -  id: string
 #   href: string
 #   title: string
 #   date: Date
 #
 
-- href: https://github.com/MugiSus/design-library/tree/main/tokyo-kanagawa-3-in-1-railway-map
+- id: tokyo-kanagawa-3-in-1-railway-map
+  href: https://github.com/MugiSus/design-library/tree/main/tokyo-kanagawa-3-in-1-railway-map
   title: Tokyo-Kanagawa 3 in 1 Railway Map
   date: 2024-03-01
 
-- href: https://github.com/MugiSus/design-library/tree/main/sapporo-municipal-subway-fare-table
+- id: sapporo-municipal-subway-fare-table
+  href: https://github.com/MugiSus/design-library/tree/main/sapporo-municipal-subway-fare-table
   title: Sapporo Municipal Subway Fare Table
   date: 2023-12-06
 
-- href: https://github.com/MugiSus/design-library/tree/main/mitoujr-demo-day-pamphlet-2023
+- id: mitou-jr-demo-day-pamphlet-2023
+  href: https://github.com/MugiSus/design-library/tree/main/mitoujr-demo-day-pamphlet-2023
   title: Mitou Jr Demo Day Pamphlet 2023
   date: 2023-11-03
 
-- href: https://mugisus.com
+- id: portfolio-2023
+  href: https://mugisus.com
   title: Portfolio 2023
   date: 2023-10-01
 
-- href: https://github.com/MugiSus/design-library/tree/main/sotetsu-timetable-for-thru-services
+- id: sotetsu-timetable-for-thru-services
+  href: https://github.com/MugiSus/design-library/tree/main/sotetsu-timetable-for-thru-services
   title: Sotetsu Timetable for Thru Services
   date: 2023-07-09
 
-- href: https://v-card-mugisus.vercel.app?22aq
+- id: v-card
+  href: https://v-card-mugisus.vercel.app?22aq
   title: V-Card
   date: 2023-01-17
 
-- href: https://openprocessing.org/sketch/1788651
+- id: pata-drop-openprocessing
+  href: https://openprocessing.org/sketch/1788651
   title: pata-drop (openprocessing)
   date: 2023-01-09
 
-- href: https://www.npmjs.com/package/world-timestamp
+- id: world-timestamp-npm-package
+  href: https://www.npmjs.com/package/world-timestamp
   title: world-timestamp (npm package)
   date: 2022-10-14
 
-- href: https://themostaccurateclockyoucanget.vercel.app/
+- id: themostaccurateclockyoucanget
+  href: https://themostaccurateclockyoucanget.vercel.app/
   title: TheMostAccurateClockYouCanGet
   date: 2022-08-09
 
-- href: https://reactmood.vercel.app/
+- id: react-mood
+  href: https://reactmood.vercel.app/
   title: React:mood
   date: 2022-05-07
 
-- href: https://alt.mugisus.com
+- id: portfolio-2022
+  href: https://alt.mugisus.com
   title: Portfolio 2022
   date: 2022-04-22
 
-- href: https://mugisus.github.io/neighbours/
+- id: neighbours
+  href: https://mugisus.github.io/neighbours/
   title: Neighbours
   date: 2022-04-12
 
-- href: https://mugisus.github.io/genius/
+- id: genius
+  href: https://mugisus.github.io/genius/
   title: GeNiUS
   date: 2022-03-05
 
-- href: https://mugisus.github.io/lifegameJS/
+- id: lifegamejs-webgl
+  href: https://mugisus.github.io/lifegameJS/
   title: lifegameJS (WebGL)
   date: 2021-12-24
 
-- href: https://telport.mugisus.com/
+- id: telport
+  href: https://telport.mugisus.com/
   title: TELPort
   date: 2021-11-03
 
-# - href: https://mugisus.github.io/misc/logicsim_v2/
-#   title: logicsim_v2
-#   date: 2021-03-21
-
-# - href: https://mugisus.github.io/misc/LogicSim/?theme=dark
-#   title: LogicSim
-#   date: 2019-08-01
-
-# - href: https://mugisus.github.io/misc/morser/
-#   title: morser
-#   date: 2019-04-24
-
-# - href: https://mugisus.github.io/misc/wave/
-#   title: wave
-#   date: 2018-11-19
-
-- href: https://scratch.mit.edu/projects/136146086/
+- id: 3d-arrow-and-ball-with-editor
+  href: https://scratch.mit.edu/projects/136146086/
   title: "[3D] Arrow & Ball with editor!"
   date: 2017-05-20
 
-# - href: https://scratch.mit.edu/projects/119005799/
-#   title: "Logic-Simulator [100%pen]"
-#   date: 2016-10-11
-
-- href: https://scratch.mit.edu/projects/45872854/
+- id: arrow-and-ball-with-editor
+  href: https://scratch.mit.edu/projects/45872854/
   title: arrow & ball with editor!
   date: 2015-02-09
 
-- href: https://scratch.mit.edu/users/MMGISS
+- id: mmgiss-scratch
+  href: https://scratch.mit.edu/users/MMGISS
   title: MMGISS (Scratch)
   date: 2014-06-02
