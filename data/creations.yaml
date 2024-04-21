@@ -24,6 +24,19 @@
   href: https://github.com/MugiSus/design-library/tree/main/sapporo-municipal-subway-fare-table
   title: Sapporo Municipal Subway Fare Table
   date: 2023-12-06
+  images:
+    [
+      "/creations/sapporo-municipal-subway-fare-table.png",
+      "/creations/sapporo-municipal-subway-fare-table-slice-1.png",
+      "/creations/sapporo-municipal-subway-fare-table-slice-2.png",
+    ]
+  description: |
+    An unofficial fare table for the Sapporo Municipal Subway.
+    Designed with a modern design in mind, focusing on readability and listability.
+    Based on the one actually used at the ticket counter at the time of creation. Actual station names and fares may differ.
+    札幌市営地下鉄の非公式の運賃表です。モダンなデザインを意識し、文字の見やすさと一覧性を重視しました。
+    作成時点で実際にきっぷうりばで使用されているものを元にデザインしましたが、実際の駅名・運賃とは異なる可能性があります。
+    ご使用による損害については一切の責任を負いません。
 
 - id: mitou-jr-demo-day-pamphlet-2023
   href: https://github.com/MugiSus/design-library/tree/main/mitoujr-demo-day-pamphlet-2023
