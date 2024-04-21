@@ -17,11 +17,11 @@
     ]
   description: |
     An unofficial railway map focusing on the geographical relationship between the three lines of Odakyu, Keio, and Sotetsu in Tokyo and Kanagawa Prefecture.
-    Aiming to create a map that is easy to understand for both residents and tourists, making it easy for each to understand the relationship between the lines.
+    Aiming to create a map that is easy to understand for both residents and tourists, making it easy for each to understand the relationship between the lines. Every element is placed to form a triangle that radiates from right to left.
     Only major stations and lines are listed. Many stations and some lines are omitted from the map.
   descriptionJa: |
     東京と神奈川県を結ぶ小田急、京王、相鉄線の三路線の地理的関係を可視化することに重点を置いた非公式の鉄道路線図です。
-    住民と観光客の両方にとって理解しやすく、それぞれ路線の関係を把握しやすい地図を作成することを目指しました。
+    住民と観光客の両方にとって理解しやすく、それぞれ路線の関係を把握しやすい地図を作成することを目指しました。全体的な図形が右から左に放射状に広がる三角形のようになるようデザインされています。
     主要な駅と路線のみを掲載しているため、多くの駅・一部路線が省略されています。
 
 - id: sapporo-municipal-subway-fare-table
