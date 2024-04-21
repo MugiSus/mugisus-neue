@@ -12,7 +12,7 @@ export default function Page() {
       <div className="h-10 w-px bg-content" />
       <div className="leading-relaxed">
         <p>This page could not be found.</p>
-        <Link href="/" className="text-neutral-500">
+        <Link href="/" className="text-neutral-500 hover:underline">
           Go back to the main page -&gt;
         </Link>
       </div>
