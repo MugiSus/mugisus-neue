@@ -12,14 +12,14 @@ export default function Page({ params }: { params: { id: string } }) {
   }
 
   return (
-    <main className="flex flex-col flex-wrap min-h-screen gap-16 px-8 py-32 w-full items-center justify-center md:px-16">
+    <main className="flex flex-col flex-wrap min-h-screen gap-16 px-16 py-32 w-full items-center justify-center md:px-16">
       <div className="text-center">
         <h1 className="text-3xl">{creation.title}</h1>
         <div className="text-md text-neutral-500 ">{creation.id}</div>
       </div>
 
       <div className="grid grid-cols-1 gap-16 max-w-xl lg:grid-cols-2 lg:max-w-6xl w-full">
-        <div className="grid grid-cols-1 gap-4 sticky self-start top-16">
+        <div className="grid grid-cols-1 gap-4 lg:sticky self-start top-16">
           {creation.images?.length > 0 ? (
             creation.images.map((image, index) => (
               <Link
@@ -38,7 +38,7 @@ export default function Page({ params }: { params: { id: string } }) {
               </Link>
             ))
           ) : (
-            <div className="flex bg-neutral-200 rounded-md aspect-video sticky self-start top-16">
+            <div className="flex bg-neutral-200 rounded-md aspect-video lg:sticky self-start top-16">
               <FontAwesomeIcon
                 icon={faCameraRetro}
                 className="m-auto text-neutral-400 h-12"
