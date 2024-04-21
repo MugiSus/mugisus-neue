@@ -5,4 +5,5 @@ export interface Creation {
   title: string;
   date: Date;
   description: string;
+  descriptionJa: string;
 }

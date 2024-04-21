@@ -62,7 +62,7 @@ export default function Page({ params }: { params: { id: string } }) {
             </Link>
           </div>
 
-          {creation.description ? (
+          {creation.description && (
             <div className="flex flex-col gap-4 leading-loose">
               {creation.description
                 .split("\n")
@@ -71,16 +71,29 @@ export default function Page({ params }: { params: { id: string } }) {
                   <p key={index}>{line}</p>
                 ))}
             </div>
-          ) : (
+          )}
+
+          {creation.descriptionJa && (
+            <div className="flex flex-col gap-4 leading-loose">
+              {creation.descriptionJa
+                .split("\n")
+                .slice(0, -1)
+                .map((line, index) => (
+                  <p key={index}>{line}</p>
+                ))}
+            </div>
+          )}
+
+          {!creation.description && !creation.descriptionJa && (
             <div className="flex flex-col gap-4 leading-loose text-neutral-500">
               <p>There is no description available for this creation yet.</p>
-              <p>現在この作品に説明はありません。</p>
+              <p>現在この作品に関する説明はありません。</p>
             </div>
           )}
 
           <time
             dateTime={creation.date.toISOString()}
-            className="text-neutral-500"
+            className="text-neutral-500 mt-4"
           >
             {creation.date
               .toLocaleDateString("ja-JP", {
