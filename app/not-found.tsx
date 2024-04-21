@@ -7,10 +7,10 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div className="flex gap-6 min-h-screen items-center w-full justify-center">
+    <div className="flex flex-col gap-6 min-h-screen items-center w-full justify-center md:flex-row">
       <h1 className="text-4xl font-thin">404</h1>
-      <div className="h-10 w-px bg-content" />
-      <div className="leading-relaxed">
+      <div className="w-24 h-px md:h-10 md:w-px bg-content" />
+      <div className="leading-relaxed text-center md:text-left">
         <p>This page could not be found.</p>
         <Link href="/" className="text-neutral-500 hover:underline">
           Go back to the main page -&gt;
