@@ -11,9 +11,9 @@
   images:
     [
       "/creations/tokyo-kanagawa-3-in-1-railway-map.png",
+      "/creations/tokyo-kanagawa-3-in-1-railway-map-slice-3.png",
       "/creations/tokyo-kanagawa-3-in-1-railway-map-slice-1.png",
       "/creations/tokyo-kanagawa-3-in-1-railway-map-slice-2.png",
-      "/creations/tokyo-kanagawa-3-in-1-railway-map-slice-3.png",
     ]
   description: |
     An unofficial railway map focusing on the geographical relationship between the three lines of Odakyu, Keio, and Sotetsu in Tokyo and Kanagawa Prefecture.
@@ -79,9 +79,10 @@
   date: 2023-07-09
   images:
     [
+      "/creations/sotetsu-timetable-for-thru-services-slice-3.png",
       "/creations/sotetsu-timetable-for-thru-services-slice-1.png",
       "/creations/sotetsu-timetable-for-thru-services-slice-2.png",
-      "/creations/sotetsu-timetable-for-thru-services-slice-3.png",
+      "/creations/sotetsu-timetable-for-thru-services-slice-4.png",
     ]
   description: |
     A new approach to timetables to intuitively visualize complex through-service operations due to the opening of the Sotetsu / Tokyu Shin-Yokohama Line and the direct operation of the Sotetsu / Tokyu Lines.
