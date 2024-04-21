@@ -38,10 +38,10 @@ export default function Page({ params }: { params: { id: string } }) {
               </Link>
             ))
           ) : (
-            <div className="flex bg-neutral-200 rounded-md aspect-video lg:sticky self-start top-16">
+            <div className="flex flex-col bg-neutral-200 rounded-md aspect-video lg:sticky self-start top-16 items-center justify-center">
               <FontAwesomeIcon
                 icon={faCameraRetro}
-                className="m-auto text-neutral-400 h-12"
+                className="text-neutral-400 h-12"
               />
             </div>
           )}
