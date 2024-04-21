@@ -56,9 +56,8 @@ export default function RootLayout({
       <body className="font-gothicmb101 text-content font-light">
         <div className="side-stripe fixed h-full left-0 w-4 -z-40 md:w-8" />
         <div className="side-stripe fixed h-full right-0 w-4 -z-40 md:w-8 -scale-x-100" />
-        <div className="flex min-h-screen flex-col items-center justify-center py-16 px-8 mx-auto md:px-16">
-          {children}
-        </div>
+
+        {children}
       </body>
       <Analytics />
     </html>

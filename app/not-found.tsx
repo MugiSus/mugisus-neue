@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div className="flex gap-6 items-center">
+    <div className="flex gap-6 min-h-screen items-center w-full justify-center">
       <h1 className="text-4xl font-thin">404</h1>
       <div className="h-10 w-px bg-content" />
       <div className="leading-relaxed">

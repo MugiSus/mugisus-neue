@@ -12,33 +12,40 @@ export default function Page({ params }: { params: { id: string } }) {
   }
 
   return (
-    <div className="flex flex-col flex-wrap gap-16 px-16 py-16 w-full items-center">
-      <div className="leading-loose text-center">
+    <main className="flex flex-col flex-wrap min-h-screen gap-16 px-8 py-16 w-full items-center justify-center md:px-16">
+      <div className="text-center">
         <h1 className="text-3xl">{creation.title}</h1>
-        <div className="text-md text-neutral-500">{creation.id}</div>
+        <div className="text-md text-neutral-500 ">{creation.id}</div>
       </div>
 
       <div className="grid grid-cols-1 gap-16 max-w-xl lg:grid-cols-2 lg:max-w-6xl w-full">
-        <div className="grid grid-cols-1 gap-8 sticky self-start">
-          {creation.images?.length > 0 ? (
-            creation.images.map((image, index) => (
-              // eslint-disable-next-line @next/next/no-img-element
-              <img
-                key={index}
-                src={image}
-                alt={creation.title}
-                className="rounded-md w-full"
-              />
-            ))
-          ) : (
-            <div className="flex bg-neutral-200 rounded-md aspect-video sticky self-start top-16">
-              <FontAwesomeIcon
-                icon={faCameraRetro}
-                className="m-auto text-neutral-400 h-12"
-              />
-            </div>
-          )}
-        </div>
+        <Link
+          href={creation.href}
+          rel="noopener noreferrer"
+          target="_blank"
+          className="hover:underline"
+        >
+          <div className="grid grid-cols-1 gap-8 sticky self-start">
+            {creation.images?.length > 0 ? (
+              creation.images.map((image, index) => (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  key={index}
+                  src={image}
+                  alt={creation.title}
+                  className="rounded-md w-full"
+                />
+              ))
+            ) : (
+              <div className="flex bg-neutral-200 rounded-md aspect-video sticky self-start top-16">
+                <FontAwesomeIcon
+                  icon={faCameraRetro}
+                  className="m-auto text-neutral-400 h-12"
+                />
+              </div>
+            )}
+          </div>
+        </Link>
 
         <div className="flex flex-col gap-12 sticky self-start top-16">
           <div className="flex flex-col gap-2 text-lg text-neutral-500">
@@ -85,6 +92,6 @@ export default function Page({ params }: { params: { id: string } }) {
           </time>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
