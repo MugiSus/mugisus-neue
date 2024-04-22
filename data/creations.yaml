@@ -138,9 +138,10 @@
     - /creations/v-card-front-slice.png
     - /creations/v-card-front.png
   description: |
-    A virtual business card that can be shared with others by QR code.
+    A virtual business card that can be shared with others by QR code. Powered by Three.js.
   descriptionJa: |
     QRコードで共有できるバーチャル名刺です。
+    Three.jsを使用して実装しています。タッチ操作で回転させることができます。
 
 - id: pata-drop
   href: https://openprocessing.org/sketch/1788651
