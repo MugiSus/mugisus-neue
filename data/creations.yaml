@@ -171,7 +171,7 @@
   description: |
     A PWA clock app that displays the current time in your location with the highest possible accuracy using NTP servers and GPS.
   descriptionJa: |
-    NTPサーバーとGPS情報を使用して、現在位置の時差と時刻を可能な限り高い精度で計算し表示するPWAアプリです。
+    NTPサーバーとGPS情報を使用して、現在位置の時差と時刻を可能な限り高い精度で計算するPWAアプリです。
   links:
     - text: world-timestamp (npm package)
       href: /about/world-timestamp-npm-package
