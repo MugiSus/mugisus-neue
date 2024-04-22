@@ -137,10 +137,18 @@
   title: V-Card
   date: 2023-01-17
 
-- id: pata-drop-openprocessing
+- id: pata-drop
   href: https://openprocessing.org/sketch/1788651
   title: pata-drop (openprocessing)
   date: 2023-01-09
+  images:
+    - /creations/pata-drop.png
+  description: |
+    Press any key to drop a ball and make a sound. Implemented 3D physics using vectors on openprocessing.
+    This is the final project submitted for the 2022 fall semester "Design and Programming" course.
+  descriptionJa: |
+    任意のキーを叩くと球が降ってきて音を奏でます。openprocessingで、ベクトルを活用した3D物理演算を実装しています。
+    2022年度秋学期「デザインとプログラミング」の最終課題で提出した作品です。
 
 - id: world-timestamp-npm-package
   href: https://www.npmjs.com/package/world-timestamp
