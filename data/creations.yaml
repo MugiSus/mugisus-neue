@@ -146,11 +146,37 @@
   href: https://www.npmjs.com/package/world-timestamp
   title: world-timestamp (npm package)
   date: 2022-10-14
+  images:
+    - /creations/npm-package.png
+  description: |
+    An npm package I created when working on The Most Accurate Clock You Can Get, which parses NTP server responses into microsecond timestamps.
+    It is available on npm.js and can be installed by anyone. JSDoc is not supported.
+  descriptionJa: |
+    The Most Accurate Clock You Can Getを作成する際に自作した、NTPサーバーのレスポンスをマイクロ秒単位のタイムスタンプにパースするnpmパッケージです。
+    npm.jsにて公開中です。どなたでもインストールできます。JSDocは未実装です。
+  links:
+    - text: The Most Accurate Clock You Can Get
+      href: /about/themostaccurateclockyoucanget
+  linksJa:
+    - text: The Most Accurate Clock You Can Get
+      href: /about/themostaccurateclockyoucanget
 
 - id: themostaccurateclockyoucanget
   href: https://themostaccurateclockyoucanget.vercel.app/
   title: The Most Accurate Clock You Can Get
   date: 2022-08-09
+  images:
+    - /creations/themostaccurateclockyoucanget.png
+  description: |
+    A PWA clock app that displays the current time in your location with the highest possible accuracy using NTP servers and GPS.
+  descriptionJa: |
+    NTPサーバーとGPS情報を使用して、現在位置の時差と時刻を可能な限り高い精度で計算し表示するPWAアプリです。
+  links:
+    - text: world-timestamp (npm package)
+      href: /about/world-timestamp-npm-package
+  linksJa:
+    - text: world-timestamp (npm package)
+      href: /about/world-timestamp-npm-package
 
 - id: react-mood
   href: https://reactmood.vercel.app/
