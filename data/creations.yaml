@@ -135,8 +135,9 @@
   title: V-Card
   date: 2023-01-17
   images:
-    - /creations/v-card-front-slice.png
+    - /creations/v-card-front-slice-1.png
     - /creations/v-card-front.png
+    - /creations/v-card-front-slice-2.png
   description: |
     A virtual business card that can be shared with others by QR code. Powered by Three.js.
   descriptionJa: |
