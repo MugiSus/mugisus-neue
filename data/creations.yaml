@@ -166,6 +166,7 @@
   title: The Most Accurate Clock You Can Get
   date: 2022-08-09
   images:
+    - /creations/themostaccurateclockyoucanget-light.png
     - /creations/themostaccurateclockyoucanget.png
   description: |
     A PWA clock app that displays the current time in your location with the highest possible accuracy using NTP servers and GPS.
