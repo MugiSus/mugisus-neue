@@ -57,7 +57,7 @@ export default function Page({ params }: Props) {
       </div>
 
       <div className="grid grid-cols-1 gap-16 max-w-xl lg:grid-cols-2 lg:max-w-6xl w-full">
-        <div className="grid grid-cols-1 gap-4 lg:sticky self-start top-16">
+        <div className="flex flex-col gap-4 lg:sticky self-start top-16">
           {creation.images && creation.images.length > 0 ? (
             creation.images.map((image, index) => (
               <Link
@@ -82,7 +82,7 @@ export default function Page({ params }: Props) {
               target="_blank"
               className=""
             >
-              <div className="flex flex-col bg-neutral-200 rounded-md aspect-video lg:sticky self-start top-16 items-center justify-center">
+              <div className="flex flex-col bg-neutral-200 rounded-md aspect-video self-start items-center justify-center top-16 lg:sticky">
                 <FontAwesomeIcon
                   icon={faCameraRetro}
                   className="text-neutral-400 h-12"
