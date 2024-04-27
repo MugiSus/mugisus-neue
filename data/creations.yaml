@@ -4,6 +4,24 @@
 #   date: Date
 #
 
+- id: tokyo-coastline-railway-map
+  href: https://github.com/MugiSus/design-library/tree/main/tokyo-coastline-railway-map
+  title: Tokyo Coastline Railway Map
+  date: 2024-04-26
+  images:
+    - /creations/tokyo-coastline-railway-map-slice-1.png
+    - /creations/tokyo-coastline-railway-map-slice-2.png
+    - /creations/tokyo-coastline-railway-map-slice-3.png
+    - /creations/tokyo-coastline-railway-map-slice-4.png
+  description: |
+    An unofficial railway map of JR East Japan's lines along the Tokyo coastline.
+    This is an attempt to intuitively visualize the complex through-service operations of lines such as the Ueno-Tokyo Line and the Shonan-Shinjuku Line.
+    The map lists the destination lines and station names without abbreviation. The actual operation information may differ.
+  descriptionJa: |
+    東京沿岸部のJR東日本をはじめとした路線をまとめた非公式の路線図です。
+    上野東京ラインと湘南新宿ラインはじめとした、埼京線、横須賀線などの複雑な乗り入れ運用を直感的に可視化する取り組みです。
+    乗り入れ先の路線や駅名を省略せずに掲載しています。実際の運行情報とは異なる可能性があります。
+
 - id: tokyo-kanagawa-3-in-1-railway-map
   href: https://github.com/MugiSus/design-library/tree/main/tokyo-kanagawa-3-in-1-railway-map
   title: Tokyo-Kanagawa 3 in 1 Railway Map
