@@ -112,7 +112,7 @@ export default function Page({ params }: Props) {
           </div>
 
           {creation.description && (
-            <div className="flex flex-col gap-4 leading-loose">
+            <div className="flex flex-col gap-4 leading-loose p-1">
               {creation.description
                 .split("\n")
                 .slice(0, -1)
@@ -140,7 +140,7 @@ export default function Page({ params }: Props) {
           )}
 
           {creation.descriptionJa && (
-            <div className="flex flex-col gap-4 leading-loose">
+            <div className="flex flex-col gap-4 leading-loose p-1">
               {creation.descriptionJa
                 .split("\n")
                 .slice(0, -1)
