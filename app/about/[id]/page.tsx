@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Metadata, ResolvingMetadata } from "next";
+import Image from "next/image";
 
 type Props = {
   params: { id: string };
@@ -67,8 +68,9 @@ export default function Page({ params }: Props) {
                 className=""
                 key={index}
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
+                  width={1024}
+                  height={4096}
                   src={image}
                   alt={creation.title}
                   className="rounded-md w-full"
