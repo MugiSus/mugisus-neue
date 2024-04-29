@@ -26,9 +26,7 @@ export default function CareerItem({
         >
           {dateString}
         </time>
-        <p className="text-sm hover-inverse px-0.5 sm:text-base">
-          {career.title}
-        </p>
+        <p className="text-sm px-0.5 sm:text-base">{career.title}</p>
       </div>
       {!isLast && <CareersSeparator className="rotate-90 lg:rotate-0" />}
     </li>
