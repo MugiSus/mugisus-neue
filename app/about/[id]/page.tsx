@@ -174,7 +174,7 @@ export default function Page({ params }: Props) {
             </div>
           )}
 
-          <div className="text-neutral-500">
+          <div className="text-neutral-500 p-1">
             MugiSus{" "}
             <time dateTime={creation.date.toISOString()}>
               {creation.date
