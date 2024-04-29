@@ -95,17 +95,19 @@ export default function Page({ params }: Props) {
         </div>
 
         <div className="flex flex-col gap-12 sticky self-start top-16">
-          <div className="flex flex-col gap-2 text-lg text-neutral-500">
+          <div className="flex flex-col text-lg text-neutral-500">
             <Link
               href={creation.href}
               rel="noopener noreferrer"
               target="_blank"
-              className="hover:underline hover-inverse px-1"
+              className="group hover-inverse p-1"
             >
-              <span>Visit -&gt;</span>
+              <span className="group-hover:underline">Visit</span>
+              {" ->"}
             </Link>
-            <Link href="/" className="hover:underline hover-inverse px-1">
-              <span>&lt;- Go back</span>
+            <Link href="/" className="group hover-inverse p-1">
+              {"<- "}
+              <span className="group-hover:underline">Go back</span>
             </Link>
           </div>
 
@@ -121,16 +123,17 @@ export default function Page({ params }: Props) {
           )}
 
           {creation.links && (
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col">
               {creation.links.map((link, index) => (
                 <Link
                   href={link.href}
                   rel="noopener noreferrer"
                   target="_blank"
-                  className="hover:underline text-neutral-500 hover-inverse px-0.5"
+                  className="group text-neutral-500 hover-inverse p-1"
                   key={index}
                 >
-                  -&gt; {link.text}
+                  <span className="group-hover:underline">{link.text}</span>
+                  {" ->"}
                 </Link>
               ))}
             </div>
@@ -148,16 +151,17 @@ export default function Page({ params }: Props) {
           )}
 
           {creation.linksJa && (
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col">
               {creation.linksJa.map((link, index) => (
                 <Link
                   href={link.href}
                   rel="noopener noreferrer"
                   target="_blank"
-                  className="hover:underline text-neutral-500 hover-inverse px-0.5"
+                  className="group text-neutral-500 hover-inverse p-1"
                   key={index}
                 >
-                  -&gt; {link.text}
+                  <span className="group-hover:underline">{link.text}</span>
+                  {" ->"}
                 </Link>
               ))}
             </div>
