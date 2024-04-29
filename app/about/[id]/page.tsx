@@ -100,11 +100,11 @@ export default function Page({ params }: Props) {
               href={creation.href}
               rel="noopener noreferrer"
               target="_blank"
-              className="hover:underline"
+              className="hover:underline hover-inverse px-1"
             >
               <span>Visit -&gt;</span>
             </Link>
-            <Link href="/" className="hover:underline text-lg">
+            <Link href="/" className="hover:underline hover-inverse px-1">
               <span>&lt;- Go back</span>
             </Link>
           </div>
@@ -127,7 +127,7 @@ export default function Page({ params }: Props) {
                   href={link.href}
                   rel="noopener noreferrer"
                   target="_blank"
-                  className="hover:underline text-neutral-500"
+                  className="hover:underline text-neutral-500 hover-inverse px-0.5"
                   key={index}
                 >
                   -&gt; {link.text}
@@ -154,7 +154,7 @@ export default function Page({ params }: Props) {
                   href={link.href}
                   rel="noopener noreferrer"
                   target="_blank"
-                  className="hover:underline text-neutral-500"
+                  className="hover:underline text-neutral-500 hover-inverse px-0.5"
                   key={index}
                 >
                   -&gt; {link.text}

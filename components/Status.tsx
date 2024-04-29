@@ -25,7 +25,7 @@ export default function Status({
           href={href}
           rel="noopener noreferrer"
           target="_blank"
-          className="inline-block hover-inverse hover-inverse"
+          className="inline-block hover-inverse hover:underline"
         >
           {element}
         </Link>
