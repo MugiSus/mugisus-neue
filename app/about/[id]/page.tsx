@@ -102,8 +102,8 @@ export default function Page({ params }: Props) {
               target="_blank"
               className="group hover-inverse p-1"
             >
+              {"---> "}
               <span className="group-hover:underline">Visit</span>
-              {" ->"}
             </Link>
             <Link href="/" className="group hover-inverse p-1">
               {"<- "}
@@ -133,7 +133,7 @@ export default function Page({ params }: Props) {
                   key={index}
                 >
                   <span className="group-hover:underline">{link.text}</span>
-                  {" ->"}
+                  {" -->"}
                 </Link>
               ))}
             </div>
@@ -161,7 +161,7 @@ export default function Page({ params }: Props) {
                   key={index}
                 >
                   <span className="group-hover:underline">{link.text}</span>
-                  {" ->"}
+                  {" -->"}
                 </Link>
               ))}
             </div>
