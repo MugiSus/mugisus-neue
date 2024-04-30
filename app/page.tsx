@@ -93,7 +93,7 @@ export default function Home() {
         <CareerItem career={{ date: new Date(), title: "いま" }} isLast />
       </ul>
 
-      <div className="text-sm tracking-widest hover-inverse py-1 px-0.5">
+      <div className="text-sm tracking-widest py-1 px-0.5 hover:-translate-y-0.5 duration-200">
         Copyright © {new Date().getFullYear()} MugiSus
       </div>
     </main>
