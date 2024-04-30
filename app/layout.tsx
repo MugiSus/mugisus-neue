@@ -53,7 +53,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <TypekitLoader />
-      <body className="font-gothicmb101 text-content font-light">
+      <body className="font-gothicmb101 text-content font-light underline-offset-2">
         <div className="side-stripe fixed h-full left-0 w-4 -z-40 md:w-8" />
         <div className="side-stripe fixed h-full right-0 w-4 -z-40 md:w-8 -scale-x-100" />
 
