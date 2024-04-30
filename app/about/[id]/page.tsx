@@ -132,7 +132,7 @@ export default function Page({ params }: Props) {
                   className="group text-neutral-500 hover-inverse p-1"
                   key={index}
                 >
-                  {" ---> "}
+                  {"-> "}
                   <span className="group-hover:underline">{link.text}</span>
                 </Link>
               ))}
@@ -160,7 +160,7 @@ export default function Page({ params }: Props) {
                   className="group text-neutral-500 hover-inverse p-1"
                   key={index}
                 >
-                  {"---> "}
+                  {"-> "}
                   <span className="group-hover:underline">{link.text}</span>
                 </Link>
               ))}
