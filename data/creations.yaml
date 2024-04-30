@@ -14,10 +14,10 @@
     - /creations/tokyo-coastline-railway-map-slice-3.png
     - /creations/tokyo-coastline-railway-map-slice-4.png
   description: |
-    An unofficial railway map of JR East Japan lines along the Tokyo coastline, attempting to visualize intuitively the complex through-service operations of urban JR lines such as the Ueno-Tokyo Line and the Shonan-Shinjuku Line.
+    An unofficial railway map of JR East Japan lines along the Tokyo coastline, attempting to visualize intuitively the complex through-service operations of urban JR lines including the Ueno-Tokyo Line and the Shonan-Shinjuku Line.
     All through-service lines and stations are listed without any abbreviation. The actual operation may differ.
   descriptionJa: |
-    東京沿岸部のJR東日本をはじめとした路線の非公式の路線図です。上野東京ラインと湘南新宿ラインはじめとした、埼京線、横須賀線などの複雑な乗り入れ運用を直感的に可視化する取り組みです。
+    東京沿岸部のJR東日本をはじめとした路線の非公式の路線図です。上野東京ラインや湘南新宿ラインをはじめとした、埼京線、横須賀線などの複雑な乗り入れ運用を直感的に可視化する取り組みです。
     全ての乗り入れ先の路線や駅を省略せずに掲載しています。実際の運行情報とは異なる可能性があります。
 
 - id: tokyo-kanagawa-3-in-1-railway-map
