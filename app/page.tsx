@@ -22,6 +22,7 @@ import MugiSus from "@/public/mugisus.svg";
 
 import Separator from "@/public/separator.svg";
 import CareerItem from "@/components/CareerItem";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -31,7 +32,9 @@ export default function Home() {
       </div>
       <Separator />
       <div className="flex flex-col place-items-center gap-12">
-        <MugiSus className="hover-inverse fill-content hover:fill-neutral-50" />
+        <Link href="/#top">
+          <MugiSus className="hover-inverse fill-content hover:fill-neutral-50" />
+        </Link>
         <ul className="inline-block text-center leading-7 max-w-2xl mx-4">
           <Status
             icon={faBuilding}
