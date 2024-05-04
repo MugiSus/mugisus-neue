@@ -1,8 +1,17 @@
-# -  id: string
+# - id: string
 #   href: string
 #   title: string
 #   date: Date
-#
+#   images:
+#     - string
+#   description: string
+#   descriptionJa: string
+#   links:
+#     - text: string
+#       href: string
+#   linksJa:
+#     - text: string
+#       href: string
 
 - id: tokyo-coastline-railway-map
   href: https://github.com/MugiSus/design-library/tree/main/tokyo-coastline-railway-map
