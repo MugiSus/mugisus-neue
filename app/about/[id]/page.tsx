@@ -70,7 +70,7 @@ export default function Page({ params }: Props) {
               >
                 <Image
                   width={1024}
-                  height={4096}
+                  height={1024}
                   src={image}
                   alt={creation.title}
                   className="rounded-md w-full"
