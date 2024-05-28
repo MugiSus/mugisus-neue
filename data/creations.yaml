@@ -13,6 +13,28 @@
 #     - text: string
 #       href: string
 
+- id: themostaccurateclockyouwouldget
+  href: https://themostaccurateclockyouwouldget.vercel.app/
+  title: The Most Accurate Clock You Would Get
+  date: 2024-05-28
+  images:
+    - /creations/themostaccurateclockyouwouldget-light.png
+    - /creations/themostaccurateclockyouwouldget.png
+  description: |
+    A clock app that displays the current time for your location with the highest possible accuracy using NTP servers and GPS.
+    This is a successor to The Most Accurate Clock You Can Get, released in August 2022.
+    Entirely new design meant to give a more striking impression and improve accessibility.
+  descriptionJa: |
+    NTPサーバーとGPS情報を使用して、現在置の時刻を可能な限り高い精度で計算する時計アプリです。
+    2022年8月にリリースされたThe Most Accurate Clock You Can Getの後継作品です。
+    より鮮烈なインプレッションを与えられるようにデザインを見直し、かつアクセシビリティを向上させることを目指しました。
+  links:
+    - text: The Most Accurate Clock You Can Get (2022)
+      href: /about/themostaccurateclockyoucanget
+  linksJa:
+    - text: The Most Accurate Clock You Can Get (2022)
+      href: /about/themostaccurateclockyoucanget
+
 - id: tokyo-coastline-railway-map
   href: https://github.com/MugiSus/design-library/tree/main/tokyo-coastline-railway-map
   title: Tokyo Coastline Railway Map
@@ -215,9 +237,13 @@
   links:
     - text: world-timestamp (npm package)
       href: /about/world-timestamp-npm-package
+    - text: The Most Accurate Clock You Would Get (2024)
+      href: /about/themostaccurateclockyouwouldget
   linksJa:
     - text: world-timestamp (npm package)
       href: /about/world-timestamp-npm-package
+    - text: The Most Accurate Clock You Would Get (2024)
+      href: /about/themostaccurateclockyouwouldget
 
 - id: react-mood
   href: https://reactmood.vercel.app/

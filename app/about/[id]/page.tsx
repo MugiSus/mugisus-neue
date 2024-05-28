@@ -95,7 +95,7 @@ export default function Page({ params }: Props) {
         </div>
 
         <div className="flex flex-col gap-12 sticky self-start top-16">
-          <div className="flex flex-col text-lg text-neutral-500">
+          <div className="flex flex-col text-lg text-neutral-500 pr-2">
             <Link
               href={creation.href}
               rel="noopener noreferrer"
@@ -123,7 +123,7 @@ export default function Page({ params }: Props) {
           )}
 
           {creation.links && (
-            <div className="flex flex-col">
+            <div className="flex flex-col pr-2">
               {creation.links.map((link, index) => (
                 <Link
                   href={link.href}
@@ -151,7 +151,7 @@ export default function Page({ params }: Props) {
           )}
 
           {creation.linksJa && (
-            <div className="flex flex-col">
+            <div className="flex flex-col pr-2">
               {creation.linksJa.map((link, index) => (
                 <Link
                   href={link.href}
