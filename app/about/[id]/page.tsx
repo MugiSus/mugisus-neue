@@ -100,7 +100,7 @@ export default function Page({ params }: Props) {
               href={creation.href}
               rel="noopener noreferrer"
               target="_blank"
-              className="group hover-inverse p-1"
+              className="group hover-inverse p-1 py-2"
             >
               {"---> "}
               <span className="group-hover:underline">Visit</span>
