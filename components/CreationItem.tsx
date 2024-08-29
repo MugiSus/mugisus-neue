@@ -21,6 +21,8 @@ export default function CreationItem({
     })
     .replaceAll("/", ".");
 
+  const titleSpaceRemoved = creation.title.replaceAll(" ", "");
+
   const content = (
     <li
       className={`flex relative group px-32 py-16 gap-0 place-items-center flex-col rounded-md max-w-full overflow-hidden transition-all cursor-none duration-500 hover:duration-80 hover:bg-neutral-700 hover:z-50 ${
@@ -30,14 +32,14 @@ export default function CreationItem({
       onMouseLeave={abort3dEffect}
     >
       <div
-        className={`whitespace-nowrap leading-none tracking-tighter text-9xl duration-500 group-hover:duration-80 group-hover:text-neutral-600 ${
+        className={`whitespace-nowrap leading-none text-9xl duration-500 group-hover:duration-80 group-hover:text-neutral-600 ${
           index % 2 ? "text-creation-light" : "text-creation-dark"
         }`}
       >
         <div
-          className={`absolute -left-4 -top-16 font-extralight animate-marquee-left select-none`}
+          className={`absolute -left-4 -top-12 font-extralight animate-marquee-left select-none tracking-[-0.1em]`}
           style={{
-            animationDuration: `${creation.title.length * 10000}ms`,
+            animationDuration: `${titleSpaceRemoved.length * 10000}ms`,
             animationDirection: index % 2 ? "reverse" : "normal",
           }}
         >
@@ -46,16 +48,16 @@ export default function CreationItem({
             .map((_, i) => (
               <span key={i}>
                 <span className="group-hover:text-primary duration-100 group-hover:duration-80">
-                  {creation.title.slice(-1)}
+                  {titleSpaceRemoved.charAt(0)}
                 </span>
-                {creation.title.slice(0, -1)}
+                {titleSpaceRemoved.slice(1)}
               </span>
             ))}
         </div>
         <div
-          className={`absolute -right-4 -bottom-14 font-bold animate-marquee-right select-none`}
+          className={`absolute -right-4 -bottom-10 font-bold animate-marquee-right select-none tracking-tighter`}
           style={{
-            animationDuration: `${creation.title.length * 10000}ms`,
+            animationDuration: `${titleSpaceRemoved.length * 10000}ms`,
             animationDirection: index % 2 ? "reverse" : "normal",
           }}
         >
@@ -64,9 +66,9 @@ export default function CreationItem({
             .map((_, i) => (
               <span key={i}>
                 <span className="group-hover:text-primary duration-100 group-hover:duration-80">
-                  {creation.title.charAt(0)}
+                  {titleSpaceRemoved.charAt(0)}
                 </span>
-                {creation.title.slice(1)}
+                {titleSpaceRemoved.slice(1)}
               </span>
             ))}
         </div>
