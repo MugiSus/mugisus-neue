@@ -19,6 +19,8 @@ export const metadata: Metadata = {
     "湊 真之",
     "MinatoMasayuki",
     "Minato Masayuki",
+    "Masayuki Minato",
+    "MasayukiMinato",
     "Minato",
     "Masayuki",
     "Portfolio",
