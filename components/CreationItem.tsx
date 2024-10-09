@@ -38,7 +38,7 @@ export default function CreationItem({
           className={`absolute -left-4 -top-16 font-extralight animate-marquee-left select-none`}
           style={{
             animationDuration: `${creation.title.length * 10000}ms`,
-            animationDirection: index % 2 ? "reverse" : "normal",
+            animationDirection: "normal",
           }}
         >
           {Array(4)
@@ -56,7 +56,7 @@ export default function CreationItem({
           className={`absolute -right-4 -bottom-14 font-semibold animate-marquee-right select-none`}
           style={{
             animationDuration: `${creation.title.length * 10000}ms`,
-            animationDirection: index % 2 ? "reverse" : "normal",
+            animationDirection: "normal",
           }}
         >
           {Array(4)
