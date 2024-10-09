@@ -22,8 +22,8 @@ const config: Config = {
       colors: {
         content: "#505050",
         primary: "#51B660",
-        "creation-light": "#F2F2F2",
-        "creation-dark": "#E8E8E8",
+        "creation-light": "#FBFBFB",
+        "creation-dark": "#F0F0F0",
       },
       keyframes: {
         "marquee-left": {

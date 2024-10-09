@@ -53,7 +53,7 @@ export default function CreationItem({
             ))}
         </div>
         <div
-          className={`absolute -right-4 -bottom-14 font-bold animate-marquee-right select-none`}
+          className={`absolute -right-4 -bottom-14 font-semibold animate-marquee-right select-none`}
           style={{
             animationDuration: `${creation.title.length * 10000}ms`,
             animationDirection: index % 2 ? "reverse" : "normal",
