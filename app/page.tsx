@@ -31,11 +31,11 @@ export default function Home() {
         <InteractiveIcon />
       </div>
       <Separator />
-      <div className="flex flex-col place-items-center gap-12">
+      <div className="flex flex-col place-items-center gap-8">
         <Link href="/#top">
           <MugiSus className="hover-inverse fill-content hover:fill-neutral-50" />
         </Link>
-        <ul className="inline-block text-center leading-7 max-w-2xl mx-4">
+        <ul className="inline-block text-center leading-7 max-w-2xl m-4">
           <Status
             icon={faBuilding}
             content="Keio University; Department of Environment and Information Studies"
