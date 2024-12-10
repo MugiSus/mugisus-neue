@@ -25,22 +25,22 @@ export default function CreationItem({
 
   const content = (
     <li
-      className={`flex relative group px-32 py-16 gap-0 place-items-center flex-col rounded-md max-w-full overflow-hidden transition-all cursor-none duration-500 hover:duration-80 hover:bg-neutral-700 hover:z-50 ${
-        index % 2 ? "bg-creation-dark" : "bg-creation-light"
+      className={`flex relative group px-20 py-14 gap-0 place-items-center flex-col rounded-md max-w-full overflow-hidden transition-all cursor-none duration-500 hover:duration-80 hover:bg-neutral-700 hover:z-50 ${
+        index % 2 ? "bg-creation-light" : "bg-creation-light"
       }`}
       onMouseMove={subtle3dEffect}
       onMouseLeave={abort3dEffect}
     >
       <div
-        className={`whitespace-nowrap leading-none text-9xl duration-500 group-hover:duration-80 group-hover:text-neutral-600 ${
-          index % 2 ? "text-creation-light" : "text-creation-dark"
+        className={`whitespace-nowrap leading-none text-8xl duration-500 group-hover:duration-80 group-hover:text-neutral-600 ${
+          index % 2 ? "text-creation-dark" : "text-creation-dark"
         }`}
       >
         <div
-          className={`absolute -left-4 -top-12 font-extralight animate-marquee-left select-none tracking-[-0.1em]`}
+          className={`absolute font-extralight left-0 top-8 animate-marquee-left select-none tracking-[-0.1em]`}
           style={{
             animationDuration: `${creation.title.length * 10000}ms`,
-            animationDirection: "normal",
+            animationDirection: index % 2 ? "normal" : "reverse",
           }}
         >
           {Array(4)
@@ -54,7 +54,7 @@ export default function CreationItem({
               </span>
             ))}
         </div>
-        <div
+        {/* <div
           className={`absolute -right-4 -bottom-14 font-semibold animate-marquee-right select-none`}
           style={{
             animationDuration: `${creation.title.length * 10000}ms`,
@@ -71,7 +71,7 @@ export default function CreationItem({
                 {titleSpaceRemoved.slice(1)}
               </span>
             ))}
-        </div>
+        </div> */}
       </div>
       <div className="text-center whitespace-nowrap transition-colors duration-500 group-hover:duration-80 group-hover:text-neutral-50 z-50">
         {creation.title}
