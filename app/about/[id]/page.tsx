@@ -51,7 +51,7 @@ export default function Page({ params }: Props) {
   }
 
   return (
-    <main className="flex flex-col flex-wrap min-h-screen gap-16 px-16 py-32 w-full items-center justify-center md:px-16">
+    <main className="flex flex-col flex-wrap min-h-screen gap-16 px-8 py-32 w-full items-center justify-center md:px-16">
       <div className="text-center">
         <h1 className="text-3xl">{creation.title}</h1>
         <div className="text-md text-neutral-500 ">{creation.id}</div>
