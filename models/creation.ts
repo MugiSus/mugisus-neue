@@ -5,7 +5,7 @@ interface Link {
 
 export interface Creation {
   id: string;
-  href: string;
+  href?: string;
   title: string;
   date: Date;
   images?: string[];
