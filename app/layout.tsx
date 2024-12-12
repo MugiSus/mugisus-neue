@@ -56,8 +56,6 @@ export default function RootLayout({
     <html lang="en" className={inter.variable}>
       <TypekitLoader />
       <body className="font-gothicmb101 text-content font-light underline-offset-2">
-        {/* <div className="side-stripe fixed h-full left-2 w-3 -z-40 md:left-4 md:w-8" />
-        <div className="side-stripe fixed h-full right-2 w-3 -z-40 md:right-4 md:w-8 -scale-x-100" /> */}
         {children}
       </body>
       <Analytics />
