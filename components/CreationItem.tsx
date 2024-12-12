@@ -37,7 +37,7 @@ export default function CreationItem({
         }`}
       >
         <div
-          className="absolute flex gap-0 font-extralight left-0 top-8 animate-marquee-left select-none tracking-[-0.1em]"
+          className="absolute flex gap-0 font-extralight left-0 top-[28px] animate-marquee-left select-none tracking-[-0.1em]"
           style={{
             animationDuration: `${creation.title.length * 6000}ms`,
             animationDirection: index % 2 ? "normal" : "reverse",
