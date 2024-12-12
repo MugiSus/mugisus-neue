@@ -5,9 +5,11 @@ import CareersSeparator from "@/public/careers-separator.svg";
 export default function CareerItem({
   career,
   isLast,
+  isJapanese,
 }: {
   career: Career;
   isLast?: boolean;
+  isJapanese?: boolean;
 }) {
   const dateString = career.date
     .toLocaleDateString("ja-JP", {
@@ -26,7 +28,10 @@ export default function CareerItem({
         >
           {dateString}
         </time>
-        <p className="text-sm px-0.5 sm:text-base">{career.title}</p>
+
+        <p className="text-sm px-0.5 sm:text-base">
+          {isJapanese ? career.titleJa : career.title}
+        </p>
       </div>
       {!isLast && <CareersSeparator className="rotate-90 lg:rotate-0" />}
     </li>

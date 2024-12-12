@@ -1,4 +1,5 @@
 export interface Career {
   date: Date;
-  title: string;
+  title?: string;
+  titleJa?: string;
 }
