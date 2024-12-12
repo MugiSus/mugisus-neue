@@ -30,7 +30,7 @@ export default function Home() {
       <div className="mr-2 select-none md:mr-6">
         <InteractiveIcon />
       </div>
-      <Separator />
+      <Separator className="rotate-180" />
       <div className="flex flex-col place-items-center gap-8">
         <Link href="/#top">
           <MugiSus className="hover-inverse fill-content hover:fill-neutral-50" />
@@ -85,7 +85,7 @@ export default function Home() {
         )}
       </ul>
 
-      <Separator />
+      <Separator className="rotate-180" />
 
       <ul className="list-none flex flex-col lg:flex-wrap lg:flex-row gap-4 gap-x-6 gap-y-6 place-items-center place-content-center max-w-full my-8 px-8">
         {Careers.sort((a, b) => a.date.getTime() - b.date.getTime()).map(
