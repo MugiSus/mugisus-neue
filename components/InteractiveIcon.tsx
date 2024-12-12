@@ -22,18 +22,18 @@ export default function InteractiveIcon() {
 
       if (rand < 0.32) {
         setBlinkSpliteNumber(2);
-        await delay(50);
+        await delay(100);
         setBlinkSpliteNumber(1);
-        await delay(50);
+        await delay(100);
         setBlinkSpliteNumber(0);
       }
 
       if (rand < 0.08) {
-        await delay(100);
+        await delay(200);
         setBlinkSpliteNumber(2);
-        await delay(50);
+        await delay(100);
         setBlinkSpliteNumber(1);
-        await delay(50);
+        await delay(100);
         setBlinkSpliteNumber(0);
       }
     }, 1000);
