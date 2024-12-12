@@ -43,7 +43,7 @@ export default function InteractiveIcon() {
 
   return (
     <div
-      className="group w-80 h-80"
+      className="group w-80 h-80 saturate-0 hover:saturate-100 duration-200"
       onMouseDown={() => setIsPressed(true)}
       onMouseUp={() => setIsPressed(false)}
       onTouchStart={() => setIsPressed(true)}
@@ -52,7 +52,7 @@ export default function InteractiveIcon() {
       onMouseLeave={() => setIsHovered(false)}
     >
       <OyagiIconBody className="absolute" />
-      <div className={`duration-300 ${isPressed ? "translate-y-0.5" : ""}`}>
+      <div className={`duration-200 ${isPressed && "translate-y-0.5"}`}>
         {isPressed ? (
           <OyagiIconHeadPleased className="absolute" />
         ) : blinkSpliteNumber === 0 ? (
@@ -64,8 +64,12 @@ export default function InteractiveIcon() {
         ) : null}
       </div>
       <OyagiIconCap
-        className={`absolute duration-300 ${
-          isPressed ? "translate-y-2" : isHovered ? "translate-y-1" : ""
+        className={`absolute duration-200 ${
+          isPressed
+            ? "translate-y-2"
+            : isHovered
+            ? "translate-y-1"
+            : "translate-y-1"
         }`}
       />
     </div>
