@@ -62,7 +62,7 @@ export default function Page({ params }: Props) {
           {creation.images && creation.images.length > 0 ? (
             creation.images.map((image, index) => (
               <Link
-                href={creation.href}
+                href={creation.href || ""}
                 rel="noopener noreferrer"
                 target="_blank"
                 className=""
@@ -79,7 +79,7 @@ export default function Page({ params }: Props) {
             ))
           ) : (
             <Link
-              href={creation.href}
+              href={creation.href || ""}
               rel="noopener noreferrer"
               target="_blank"
               className=""
@@ -96,15 +96,17 @@ export default function Page({ params }: Props) {
 
         <div className="flex flex-col gap-12 sticky self-start top-16">
           <div className="flex flex-col text-lg text-neutral-500 pr-2">
-            <Link
-              href={creation.href}
-              rel="noopener noreferrer"
-              target="_blank"
-              className="group hover-inverse p-1 py-2"
-            >
-              {"---> "}
-              <span className="group-hover:underline">Visit</span>
-            </Link>
+            {creation.href && (
+              <Link
+                href={creation.href}
+                rel="noopener noreferrer"
+                target="_blank"
+                className="group hover-inverse p-1 py-2"
+              >
+                {"---> "}
+                <span className="group-hover:underline">Visit</span>
+              </Link>
+            )}
             <Link href="/" className="group hover-inverse p-1">
               {"<- "}
               <span className="group-hover:underline">Go back</span>
