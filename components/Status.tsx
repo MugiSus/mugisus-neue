@@ -13,7 +13,7 @@ export default function Status({
 }) {
   const element = (
     <div className="text-center px-1.5">
-      <FontAwesomeIcon icon={icon} className="text-primary h-4 inline mr-1.5" />
+      <FontAwesomeIcon icon={icon} className="text-icon h-4 inline mr-1.5" />
       {content}
     </div>
   );
