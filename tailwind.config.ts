@@ -24,7 +24,6 @@ const config: Config = {
         primary: "#51B660",
         "creation-light": "#FBFBFB",
         "creation-dark": "#F0F0F0",
-        icon: "#c0c0c0", // Added lighter color for icons
       },
       keyframes: {
         "marquee-left": {
