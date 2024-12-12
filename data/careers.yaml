@@ -1,27 +1,40 @@
 # - date: 1970-01-01
-#   title: title
+#   title: title in English
+#   titleJa: title in Japanese
 
 - date: 2003-05-05
-  title: 神奈川県三浦半島にうまれる
+  title: Born in Yokosuka, Kanagawa, Japan
+  titleJa: 神奈川県横須賀市にうまれる
 - date: 2004-03-01
-  title: 生後10ヶ月で北海道に引っ越す
+  title: Moved to Hokkaido, Japan
+  titleJa: 北海道に移住する
 - date: 2014-06-02
-  title: Scratchをはじめる
+  title: Started programming with Scratch
+  titleJa: Scratchをはじめる
 - date: 2018-08-23
-  title: Webをはじめる
+  title: Started programming with Web / JavaScript
+  titleJa: Webをはじめる
 - date: 2019-04-01
-  title: 木更津高専 情報工学科に入学
+  title: Entered Nat'l Institute of Technology, Kisarazu College
+  titleJa: 木更津高専 情報工学科に入学
 - date: 2021-06-01
-  title: 2021年度未踏ジュニアに"TELPort”で採択
+  title: Mitou Junior 2021 "TELPort" adopted
+  titleJa: 2021年度未踏ジュニアに"TELPort”で採択
 - date: 2021-09-18
-  title: 技育展2021 無駄開発部門優秀賞 "TELPort"
+  title: Won the Excellence Award in the Muda 'Wasteful' Dev. Dept. at Geekten 2021 "TELPort"
+  titleJa: 技育展2021 無駄開発部門優秀賞 "TELPort"
 - date: 2021-12-13
-  title: 未踏ジュニア スーパークリエータ認定
+  title: Became a Super Creator of Mitou Junior 2021
+  titleJa: 未踏ジュニア スーパークリエータ認定
 - date: 2022-10-01
-  title: 慶應義塾大学 環境情報学部に入学
+  title: Entered Keio Univ. Dept. of Environment and Information Studies
+  titleJa: 慶應義塾大学 環境情報学部に入学
 - date: 2022-11-01
-  title: 株式会社Helpfeelにてインターンシップを開始
+  title: Started internship at Helpfeel
+  titleJa: 株式会社Helpfeelにてインターンシップを開始
 - date: 2023-10-01
-  title: 慶應義塾大学 増井研究会に所属
+  title: Joined Masui Laboratory, Keio University
+  titleJa: 慶應義塾大学 増井研究会に所属
 - date: 2024-04-01
-  title: 慶應義塾大学 脇田研究会に所属
+  title: Joined Wakita Laboratory, Keio University
+  titleJa: 慶應義塾大学 脇田研究会に所属
