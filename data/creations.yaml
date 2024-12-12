@@ -13,6 +13,18 @@
 #     - text: string
 #       href: string
 
+- id: sign-system-me
+  href: https://signsystemme.vercel.app/
+  title: Sign System Me
+  date: 2024-04-26
+  images:
+    - /creations/sign-system-me.png
+    - /creations/sign-system-me-mmgiss.png
+  description: |
+    You can write your name with only the Tokyo Metro sign system perchance. A study of automatic generation of OGP images.
+  descriptionJa: |
+    東京メトロのサインシステムの文字だけで自分の名前が作れるかも。OGP画像を自動で生成する実装の習作です。
+
 - id: tokyo-coastline-railway-map
   href: https://github.com/MugiSus/design-library/tree/main/tokyo-coastline-railway-map
   title: Tokyo Coastline Railway Map
@@ -84,15 +96,15 @@
       href: https://jr.mitou.org/english/
     - text: Mitou Junior Demo Day
       href: https://jr.mitou.org/final
-    - text: See projects of Mitou Junior
-      href: https://jr.mitou.org/projects/
+    - text: See projects of Mitou Junior 2023
+      href: https://jr.mitou.org/projects/#2023
   linksJa:
     - text: 未踏ジュニア
       href: https://jr.mitou.org
     - text: 未踏ジュニア成果報告会
       href: https://jr.mitou.org/final
-    - text: 未踏ジュニア採択プロジェクト一覧
-      href: https://jr.mitou.org/projects/
+    - text: 2023年度未踏ジュニア採択プロジェクト一覧
+      href: https://jr.mitou.org/projects/#2023
 
 - id: portfolio-2023
   href: https://mugisus.com
