@@ -176,8 +176,8 @@ export default function Page({ params }: Props) {
             </div>
           )}
 
-          <div className="text-neutral-500 p-1">
-            MugiSus{" "}
+          <div className="flex gap-1 text-neutral-500 p-1">
+            <p>Copyright ©︎</p>
             <time dateTime={creation.date.toISOString()}>
               {creation.date
                 .toLocaleDateString("ja-JP", {
@@ -186,7 +186,8 @@ export default function Page({ params }: Props) {
                   day: "2-digit",
                 })
                 .replaceAll("/", ".")}
-            </time>
+            </time>{" "}
+            <p>MugiSus</p>
           </div>
         </div>
       </div>
