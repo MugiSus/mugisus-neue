@@ -7,14 +7,16 @@ import { Metadata, ResolvingMetadata } from "next";
 import Image from "next/image";
 
 type Props = {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 };
 
 export async function generateMetadata(
   { params }: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
-  const creation = Creations.find((creation) => creation.id === params.id);
+  const id = (await params).id;
+
+  const creation = Creations.find((creation) => creation.id === id);
 
   if (!creation) {
     return notFound();
@@ -38,13 +40,15 @@ export async function generateMetadata(
       description,
       title: creation.title,
       type: "website",
-      url: new URL(params.id, (await parent).metadataBase ?? "").toString(),
+      url: new URL(id, (await parent).metadataBase ?? "").toString(),
     },
   };
 }
 
-export default function Page({ params }: Props) {
-  const creation = Creations.find((creation) => creation.id === params.id);
+export default async function Page({ params }: Props) {
+  const id = (await params).id;
+
+  const creation = Creations.find((creation) => creation.id === id);
 
   if (!creation) {
     return notFound();
