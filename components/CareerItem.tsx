@@ -29,7 +29,7 @@ export default function CareerItem({
           {dateString}
         </time>
 
-        <p className="text-sm px-0.5 sm:text-base">
+        <p className="text-sm px-0.5 sm:text-base text-center">
           {isJapanese ? career.titleJa : career.title}
         </p>
       </div>
