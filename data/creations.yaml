@@ -25,6 +25,17 @@
   descriptionJa: |
     東京メトロのサインシステムの文字だけで自分の名前が作れるかも。OGP画像を自動で生成する実装の習作です。
 
+- id: the-sundial
+  href: https://sundial.mugisus.com/
+  title: The Sundial / サンダイヤル
+  date: 2024-08-30
+  images:
+    - /creations/the-sundial.png
+  description: |
+    A sundial that displays the current time in your location with the highest possible accuracy using NTP servers and GPS.
+  descriptionJa: |
+    NTPサーバーとGPS情報を使用して、現在位置の時刻を可能な限り高い精度で表示するサンダイヤルです。
+
 - id: mitou-jr-demo-day-pamphlet-2024
   # href:
   title: A Pamphlet for Mitou Junior Demo Day 2024
