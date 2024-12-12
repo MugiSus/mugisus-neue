@@ -10,8 +10,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 export const metadata: Metadata = {
   metadataBase: new URL("https://mugisus.com/"),
   title: "MugiSus",
-  description:
-    "The official portfolio of MugiSus. / MugiSusの公式ポートフォリオです。",
+  description: "The portfolio of MugiSus. / MugiSusのポートフォリオです。",
   keywords: [
     "MugiSus",
     "mugisus",
