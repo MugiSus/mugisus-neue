@@ -18,8 +18,8 @@ import { Creations } from "@/lib/creations";
 import CurrentTimeString from "@/components/CurrentTimeString";
 import InteractiveIcon from "@/components/InteractiveIcon";
 
-import Separator from "@/public/separator.svg";
 import CareerList from "@/components/CareerList";
+import Separator from "@/components/Separator";
 
 export default function Home() {
   return (
@@ -70,7 +70,7 @@ export default function Home() {
         </ul>
       </div>
 
-      <Separator className="rotate-180" />
+      <Separator />
 
       <ul className="list-none flex flex-wrap flex-row gap-4 place-items-center place-content-center max-w-full">
         {Creations.sort((a, b) => b.date.getTime() - a.date.getTime()).map(
@@ -80,14 +80,14 @@ export default function Home() {
         )}
       </ul>
 
-      <Separator className="rotate-180" />
+      <Separator />
 
-      <div className="flex flex-col gap-24 my-8">
+      <div className="flex flex-col gap-32 my-8">
         <CareerList />
         <CareerList isJapanese />
       </div>
 
-      <div className="text-sm tracking-widest py-1 px-0.5 hover:-translate-y-0.5 duration-200">
+      <div className="text-sm tracking-widest py-1 px-0.5 hover:-translate-y-0.5 duration-200 mt-8">
         Copyright © {new Date().getFullYear()} MugiSus
       </div>
     </main>
