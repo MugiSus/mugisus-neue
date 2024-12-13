@@ -12,8 +12,6 @@ import OyagiIconHeadPleased from "@/public/oyagi_wireframes/variant=head-pleased
 const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export default function InteractiveIcon() {
-  const [isPressed, setIsPressed] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
   const [blinkSpliteNumber, setBlinkSpliteNumber] = useState(0);
 
   useEffect(() => {
@@ -22,18 +20,18 @@ export default function InteractiveIcon() {
 
       if (rand < 0.32) {
         setBlinkSpliteNumber(2);
-        await delay(100);
+        await delay(80);
         setBlinkSpliteNumber(1);
-        await delay(100);
+        await delay(80);
         setBlinkSpliteNumber(0);
       }
 
       if (rand < 0.08) {
-        await delay(200);
+        await delay(160);
         setBlinkSpliteNumber(2);
-        await delay(100);
+        await delay(80);
         setBlinkSpliteNumber(1);
-        await delay(100);
+        await delay(80);
         setBlinkSpliteNumber(0);
       }
     }, 1000);
@@ -42,36 +40,19 @@ export default function InteractiveIcon() {
   }, []);
 
   return (
-    <div
-      className="group w-80 h-80 saturate-0 hover:saturate-100 duration-200"
-      onMouseDown={() => setIsPressed(true)}
-      onMouseUp={() => setIsPressed(false)}
-      onTouchStart={() => setIsPressed(true)}
-      onTouchEnd={() => setIsPressed(false)}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
+    <div className="group relative w-80 h-80 saturate-0 hover:saturate-100 duration-200">
       <OyagiIconBody className="absolute" />
-      <div className={`duration-200 ${isPressed && "translate-y-0.5"}`}>
-        {isPressed ? (
-          <OyagiIconHeadPleased className="absolute" />
-        ) : blinkSpliteNumber === 0 ? (
-          <OyagiIconHead className="absolute" />
+      <div className="duration-200 group-active:translate-y-0.5">
+        <OyagiIconHeadPleased className="invisible group-active:visible absolute" />
+        {blinkSpliteNumber === 0 ? (
+          <OyagiIconHead className="group-active:invisible absolute" />
         ) : blinkSpliteNumber === 1 ? (
-          <OyagiIconHeadHalf className="absolute" />
-        ) : blinkSpliteNumber === 2 ? (
-          <OyagiIconHeadClosed className="absolute" />
-        ) : null}
+          <OyagiIconHeadHalf className="group-active:invisible absolute" />
+        ) : (
+          <OyagiIconHeadClosed className="group-active:invisible absolute" />
+        )}
       </div>
-      <OyagiIconCap
-        className={`absolute duration-200 ${
-          isPressed
-            ? "translate-y-2"
-            : isHovered
-            ? "translate-y-1"
-            : "translate-y-1"
-        }`}
-      />
+      <OyagiIconCap className="absolute duration-200 translate-y-1 group-active:translate-y-2 group-hover:translate-y-1" />
     </div>
   );
 }
