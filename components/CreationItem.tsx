@@ -25,38 +25,33 @@ export default function CreationItem({
 
   const content = (
     <li
-      className={`flex relative group px-20 py-14 gap-0 place-items-center flex-col max-w-full overflow-hidden transition-all cursor-none duration-500 hover:duration-80 hover:bg-neutral-700 hover:z-50 border border-dashed border-neutral-300 ${
+      className={`flex relative group px-20 py-12 gap-0 place-items-center flex-col max-w-full overflow-hidden transition-all cursor-none duration-500 hover:duration-80 hover:bg-neutral-700 hover:z-50 border border-dashed border-neutral-300 ${
         index % 2 ? "bg-creation-light" : "bg-creation-light"
       }`}
       onMouseMove={subtle3dEffect}
       onMouseLeave={abort3dEffect}
     >
       <div
-        className={`whitespace-nowrap leading-none text-8xl duration-500 group-hover:duration-80 group-hover:text-neutral-600 ${
-          index % 2 ? "text-creation-dark" : "text-creation-dark"
-        }`}
+        className="absolute text-creation-dark whitespace-nowrap leading-none text-8xl duration-500 group-hover:duration-80 group-hover:text-neutral-600 flex gap-0 font-extralight left-0 top-6 animate-marquee-left select-none tracking-[-0.1em]"
+        style={{
+          animationDuration: `${
+            creation.title.length * (5500 + (index % 3) * 500)
+          }ms`,
+          animationDirection: index % 2 ? "normal" : "reverse",
+        }}
       >
-        <div
-          className="absolute flex gap-0 font-extralight left-0 top-[30px] animate-marquee-left select-none tracking-[-0.1em]"
-          style={{
-            animationDuration: `${
-              creation.title.length * (5500 + (index % 3) * 500)
-            }ms`,
-            animationDirection: index % 2 ? "normal" : "reverse",
-          }}
-        >
-          {Array(4)
-            .fill(0)
-            .map((_, i) => (
-              <div key={i}>
-                <span className="group-hover:text-primary duration-100 group-hover:duration-80">
-                  {titleSpaceRemoved.charAt(0)}
-                </span>
-                {titleSpaceRemoved.slice(1)}
-              </div>
-            ))}
-        </div>
+        {Array(4)
+          .fill(0)
+          .map((_, i) => (
+            <div key={i}>
+              <span className="group-hover:text-primary duration-100 group-hover:duration-80">
+                {titleSpaceRemoved.charAt(0)}
+              </span>
+              {titleSpaceRemoved.slice(1)}
+            </div>
+          ))}
       </div>
+
       <div className="text-center whitespace-nowrap transition-colors duration-500 group-hover:duration-80 group-hover:text-neutral-50 z-50">
         {creation.title}
       </div>
