@@ -1,6 +1,6 @@
 import { Career } from "@/models/career";
 
-import CareersSeparator from "@/public/careers-separator.svg";
+import CareerItemSeparator from "./CareerItemSeparator";
 
 export default function CareerItem({
   career,
@@ -33,7 +33,9 @@ export default function CareerItem({
           {isJapanese ? career.titleJa : career.title}
         </p>
       </div>
-      {!isLast && <CareersSeparator className="rotate-90 lg:rotate-0" />}
+      {!isLast && (
+        <CareerItemSeparator className="text-neutral-400 rotate-90 lg:rotate-0" />
+      )}
     </li>
   );
 }
