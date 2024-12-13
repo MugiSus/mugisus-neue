@@ -73,9 +73,17 @@
   description: |
     An unofficial attempt to comprehensively cover the complex through-service operations and stopping patterns of major JR East lines in the Tokyo central 'Yamanote Line' area.
     All operated lines and stations are listed with no abbreviation. The actual operation may differ.
+    A successor to the Tokyo Coastline Railway Map, which was released in April 2024, added the local service lines (Yamanote Line, Keihin-Tohoku Line), with improved design.
   descriptionJa: |
     JR山手線区間に乗り入れるJR東日本の主要路線の複雑な乗り入れ先/停車パターンを網羅する試みです(非公式)。
     全ての乗り入れ先の路線や駅を省略せずに掲載しています。実際の運行情報とは異なる可能性があります。
+    2024年4月にリリースされたTokyo Coastline Railway Mapの後継で、山手線、京浜東北線などの各駅停車路線を追加し、デザインを改良しています。
+  links:
+    - text: Tokyo Coastline Railway Map
+      href: /about/tokyo-coastline-railway-map
+  linksJa:
+    - text: Tokyo Coastline Railway Map
+      href: /about/tokyo-coastline-railway-map
 
 - id: tokyo-coastline-railway-map
   href: https://github.com/MugiSus/design-library/tree/main/tokyo-coastline-railway-map
@@ -92,6 +100,12 @@
   descriptionJa: |
     東京沿岸部のJR東日本をはじめとした路線の非公式の路線図です。上野東京ラインや湘南新宿ラインをはじめとした、埼京線、横須賀線などの複雑な乗り入れ運用を直感的に可視化する取り組みです。
     全ての乗り入れ先の路線や駅を省略せずに掲載しています。実際の運行情報とは異なる可能性があります。
+  links:
+    - text: Tokyo Coastline Railway Map V2
+      href: /about/tokyo-coastline-railway-map-v2
+  linksJa:
+    - text: Tokyo Coastline Railway Map V2
+      href: /about/tokyo-coastline-railway-map-v2
 
 - id: tokyo-kanagawa-3-in-1-railway-map
   href: https://github.com/MugiSus/design-library/tree/main/tokyo-kanagawa-3-in-1-railway-map
