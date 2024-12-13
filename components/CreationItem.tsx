@@ -25,7 +25,7 @@ export default function CreationItem({
 
   const content = (
     <li
-      className={`flex relative group px-20 py-14 gap-0 place-items-center flex-col rounded-md max-w-full overflow-hidden transition-all cursor-none duration-500 hover:duration-80 hover:bg-neutral-700 hover:z-50 ${
+      className={`flex relative group px-20 py-14 gap-0 place-items-center flex-col max-w-full overflow-hidden transition-all cursor-none duration-500 hover:duration-80 hover:bg-neutral-700 hover:z-50 border border-neutral-300 ${
         index % 2 ? "bg-creation-light" : "bg-creation-light"
       }`}
       onMouseMove={subtle3dEffect}
@@ -39,7 +39,9 @@ export default function CreationItem({
         <div
           className="absolute flex gap-0 font-extralight left-0 top-[30px] animate-marquee-left select-none tracking-[-0.1em]"
           style={{
-            animationDuration: `${creation.title.length * 6000}ms`,
+            animationDuration: `${
+              creation.title.length * (5500 + (index % 3) * 500)
+            }ms`,
             animationDirection: index % 2 ? "normal" : "reverse",
           }}
         >
