@@ -20,18 +20,18 @@ export default function InteractiveIcon() {
 
       if (rand < 0.32) {
         setBlinkSpliteNumber(2);
-        await delay(80);
+        await delay(66);
         setBlinkSpliteNumber(1);
-        await delay(80);
+        await delay(66);
         setBlinkSpliteNumber(0);
       }
 
       if (rand < 0.08) {
-        await delay(160);
+        await delay(133);
         setBlinkSpliteNumber(2);
-        await delay(80);
+        await delay(66);
         setBlinkSpliteNumber(1);
-        await delay(80);
+        await delay(66);
         setBlinkSpliteNumber(0);
       }
     }, 1000);
@@ -44,12 +44,12 @@ export default function InteractiveIcon() {
       <OyagiIconBody className="absolute" />
       <div className="duration-200 group-active:translate-y-0.5">
         <OyagiIconHeadPleased className="invisible group-active:visible absolute" />
-        {blinkSpliteNumber === 0 ? (
-          <OyagiIconHead className="group-active:invisible absolute" />
-        ) : blinkSpliteNumber === 1 ? (
+        {blinkSpliteNumber === 1 ? (
           <OyagiIconHeadHalf className="group-active:invisible absolute" />
-        ) : (
+        ) : blinkSpliteNumber === 2 ? (
           <OyagiIconHeadClosed className="group-active:invisible absolute" />
+        ) : (
+          <OyagiIconHead className="group-active:invisible absolute" />
         )}
       </div>
       <OyagiIconCap className="absolute duration-200 translate-y-1 group-active:translate-y-2 group-hover:translate-y-1" />
