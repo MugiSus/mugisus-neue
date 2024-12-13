@@ -32,7 +32,7 @@ export default function CreationItem({
       onMouseLeave={abort3dEffect}
     >
       <div
-        className="absolute text-creation-dark whitespace-nowrap leading-none text-8xl duration-500 group-hover:duration-80 group-hover:text-neutral-600 flex gap-0 font-extralight left-0 top-6 animate-marquee-left select-none tracking-[-0.1em]"
+        className="absolute text-creation-dark whitespace-nowrap leading-none text-8xl duration-500 group-hover:duration-80 group-hover:text-neutral-600 flex gap-0 font-extralight left-0 top-[23px] animate-marquee-left select-none tracking-[-0.1em]"
         style={{
           animationDuration: `${
             creation.title.length * (5500 + (index % 3) * 500)
