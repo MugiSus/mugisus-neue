@@ -30,7 +30,7 @@ export default function Home() {
 
       <div className="flex flex-col place-items-center gap-8">
         <div className="text-3xl font-light">MugiSus / ムギスス</div>
-        <ul className="inline-block text-center leading-7 max-w-2xl m-4">
+        <ul className="inline-block text-center leading-7 max-w-5xl m-4">
           <Status
             icon={faBuilding}
             content="Keio University; Department of Environment and Information Studies"
