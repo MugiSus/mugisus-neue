@@ -17,10 +17,8 @@ import CreationItem from "@/components/CreationItem";
 import { Creations } from "@/lib/creations";
 import CurrentTimeString from "@/components/CurrentTimeString";
 import InteractiveIcon from "@/components/InteractiveIcon";
-import MugiSus from "@/public/mugisus.svg";
 
 import Separator from "@/public/separator.svg";
-import Link from "next/link";
 import CareerList from "@/components/CareerList";
 
 export default function Home() {
@@ -31,15 +29,13 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col place-items-center gap-8">
-        <Link href="/#top">
-          <MugiSus className="hover-inverse fill-content hover:fill-neutral-50" />
-        </Link>
+        <div className="text-3xl font-light">MugiSus / ムギスス</div>
         <ul className="inline-block text-center leading-7 max-w-2xl m-4">
           <Status
             icon={faBuilding}
             content="Keio University; Department of Environment and Information Studies"
           />
-          <Status icon={faUser} content="湊 真之 / Minato Masayuki" />
+          <Status icon={faUser} content="Minato Masayuki / 湊 真之" />
           <Status icon={faLocationDot} content="Hokkaido / Kanagawa, Japan" />
           <Status
             icon={faClock}
