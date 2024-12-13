@@ -28,9 +28,9 @@ export default function Home() {
         <InteractiveIcon />
       </div>
 
-      <div className="flex flex-col place-items-center gap-8">
-        <div className="text-3xl font-light">MugiSus / ムギスス</div>
-        <ul className="inline-block text-center leading-7 max-w-5xl m-4">
+      <div className="flex flex-col place-items-center m-4 gap-4">
+        <div className="text-2xl font-light">MugiSus / ムギスス</div>
+        <ul className="inline-block text-center leading-7 max-w-5xl">
           <Status
             icon={faBuilding}
             content="Keio University; Department of Environment and Information Studies"
