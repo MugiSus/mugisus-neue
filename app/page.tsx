@@ -72,7 +72,7 @@ export default function Home() {
 
       <Separator />
 
-      <ul className="list-none flex flex-wrap flex-row gap-4 place-items-center place-content-center max-w-full">
+      <ul className="list-none flex flex-wrap flex-row gap-3 place-items-center place-content-center max-w-full">
         {Creations.sort((a, b) => b.date.getTime() - a.date.getTime()).map(
           (creation, index) => (
             <CreationItem creation={creation} index={index} key={index} />
