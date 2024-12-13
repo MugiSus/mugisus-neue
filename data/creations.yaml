@@ -26,17 +26,6 @@
   descriptionJa: |
     東京メトロのサインシステムの文字だけで自分の名前が作れるかも。OGP画像を自動で生成する実装の習作です。
 
-- id: the-sundial
-  href: https://sundial.mugisus.com/
-  title: The Sundial / サンダイヤル
-  date: 2024-08-30
-  images:
-    - /creations/the-sundial.png
-  description: |
-    A sundial that displays the current time in your location with the highest possible accuracy using NTP servers and GPS.
-  descriptionJa: |
-    NTPサーバーとGPS情報を使用して、現在位置の時刻を可能な限り高い精度で表示するサンダイヤルです。
-
 - id: mitou-jr-demo-day-pamphlet-2024
   # href:
   title: A Pamphlet for Mitou Junior Demo Day 2024
@@ -63,6 +52,30 @@
       href: https://jr.mitou.org/final
     - text: 2024年度未踏ジュニア採択プロジェクト一覧
       href: https://jr.mitou.org/projects/#2024
+
+- id: the-sundial
+  href: https://sundial.mugisus.com/
+  title: The Sundial / サンダイヤル
+  date: 2024-09-30
+  images:
+    - /creations/the-sundial.png
+  description: |
+    A sundial that displays the current time in your location with the highest possible accuracy using NTP servers and GPS.
+  descriptionJa: |
+    NTPサーバーとGPS情報を使用して、現在位置の時刻を可能な限り高い精度で表示するサンダイヤルです。
+
+- id: tokyo-coastline-railway-map-v2
+  # href: https://github.com/MugiSus/design-library/tree/main/tokyo-coastline-railway-map-v2
+  title: Tokyo Coastline Railway Map V2
+  date: 2024-04-26
+  images:
+    - /creations/tokyo-coastline-railway-map-v2.png
+  description: |
+    An unofficial attempt to comprehensively cover the complex through-service operations and stopping patterns of major JR East lines in the Tokyo central 'Yamanote Line' area.
+    All operated lines and stations are listed with no abbreviation. The actual operation may differ.
+  descriptionJa: |
+    JR山手線区間に乗り入れるJR東日本の主要路線の複雑な乗り入れ先/停車パターンを網羅する試みです(非公式)。
+    全ての乗り入れ先の路線や駅を省略せずに掲載しています。実際の運行情報とは異なる可能性があります。
 
 - id: tokyo-coastline-railway-map
   href: https://github.com/MugiSus/design-library/tree/main/tokyo-coastline-railway-map
