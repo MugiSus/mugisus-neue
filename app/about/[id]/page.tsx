@@ -98,8 +98,8 @@ export default async function Page({ params }: Props) {
           )}
         </div>
 
-        <div className="flex flex-col gap-12 sticky self-start top-16">
-          <div className="flex flex-col text-lg text-neutral-500 pr-2">
+        <div className="flex flex-col gap-8 sticky self-start top-16">
+          <div className="flex flex-col text-lg text-neutral-500 pr-2 mb-8">
             {creation.href && (
               <Link
                 href={creation.href}
@@ -180,7 +180,7 @@ export default async function Page({ params }: Props) {
             </div>
           )}
 
-          <div className="flex gap-1 text-neutral-500 p-1">
+          <div className="flex gap-1 text-neutral-500 px-1 mt-12">
             <p>Copyright ©︎</p>
             <time dateTime={creation.date.toISOString()}>
               {creation.date
