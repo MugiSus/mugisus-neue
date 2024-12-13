@@ -69,7 +69,6 @@ export default async function Page({ params }: Props) {
                 href={creation.href || ""}
                 rel="noopener noreferrer"
                 target="_blank"
-                className=""
                 key={index}
               >
                 <Image
@@ -86,7 +85,6 @@ export default async function Page({ params }: Props) {
               href={creation.href || ""}
               rel="noopener noreferrer"
               target="_blank"
-              className=""
             >
               <div className="flex flex-col bg-neutral-200 rounded-md aspect-video self-start items-center justify-center top-16 lg:sticky">
                 <FontAwesomeIcon
