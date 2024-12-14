@@ -40,19 +40,23 @@ export default function InteractiveIcon() {
   }, []);
 
   return (
-    <div className="group relative w-80 h-80 saturate-0 hover:saturate-100 duration-200">
-      <OyagiIconBody className="absolute" />
-      <div className="duration-200 group-active:translate-y-0.5">
-        <OyagiIconHeadPleased className="invisible group-active:visible absolute" />
-        {blinkSpliteNumber === 1 ? (
-          <OyagiIconHeadHalf className="group-active:invisible absolute" />
-        ) : blinkSpliteNumber === 2 ? (
-          <OyagiIconHeadClosed className="group-active:invisible absolute" />
-        ) : (
-          <OyagiIconHead className="group-active:invisible absolute" />
+    <div className="flex items-center justify-center w-[300px] h-[300px] saturate-0 hover:saturate-100 duration-300 border border-dashed border-neutral-300 group select-none">
+      <div className="relative w-[256px] h-[256px] -translate-y-1 -translate-x-1">
+        <OyagiIconBody className="absolute" />
+
+        <OyagiIconHeadPleased className="invisible group-active:visible absolute group-active:translate-y-0.5 duration-300 transition-transform" />
+        {blinkSpliteNumber === 0 && (
+          <OyagiIconHead className="group-active:invisible absolute group-active:translate-y-0.5 duration-300 transition-transform" />
         )}
+        {blinkSpliteNumber === 1 && (
+          <OyagiIconHeadHalf className="group-active:invisible absolute group-active:translate-y-0.5 duration-300 transition-transform" />
+        )}
+        {blinkSpliteNumber === 2 && (
+          <OyagiIconHeadClosed className="group-active:invisible absolute group-active:translate-y-0.5 duration-300 transition-transform" />
+        )}
+
+        <OyagiIconCap className="absolute duration-300 translate-y-1 group-active:translate-y-2.5 group-hover:translate-y-1.5" />
       </div>
-      <OyagiIconCap className="absolute duration-200 translate-y-1 group-active:translate-y-2 group-hover:translate-y-1" />
     </div>
   );
 }
