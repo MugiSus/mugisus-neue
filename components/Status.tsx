@@ -8,7 +8,7 @@ export default function Status({
   href,
 }: {
   icon: IconProp;
-  content: string | JSX.Element;
+  content: string | React.ReactNode;
   href?: string;
 }) {
   const element = (
