@@ -32,7 +32,7 @@ export default function CareerItem({
         </p>
       </div>
       {!isLast && (
-        <div className="text-neutral-400 rotate-90 lg:rotate-0 font-thin">
+        <div className="text-content rotate-90 lg:rotate-0 font-thin">
           {"--->"}
         </div>
       )}
