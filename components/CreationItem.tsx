@@ -2,7 +2,6 @@
 
 import { Creation } from "@/models/creation";
 import Link from "next/link";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { abort3dEffect, subtle3dEffect } from "@/lib/subtle3dEffects";
 
@@ -61,10 +60,9 @@ export default function CreationItem({
         {dateString}
       </time>
       {creation.href && (
-        <FontAwesomeIcon
-          icon={faArrowRight}
-          className="opacity-0 absolute h-5 right-4 top-0 bottom-0 m-auto text-neutral-200 duration-500 group-hover:duration-80 group-hover:opacity-100 transition-all"
-        />
+        <div className="absolute flex text-xl right-2 bottom-0 top-0 items-center duration-500 group-hover:duration-80 opacity-0 group-hover:opacity-100">
+          <div className="text-neutral-50 font-light">{"->"}</div>
+        </div>
       )}
     </Link>
   );
