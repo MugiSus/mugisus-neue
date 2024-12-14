@@ -24,11 +24,11 @@ import Separator from "@/components/Separator";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center py-48 px-8 mx-auto md:px-16 gap-32">
-      <div className="mr-2 select-none md:mr-6">
-        <InteractiveIcon />
-      </div>
+      <InteractiveIcon />
 
-      <div className="flex flex-col place-items-center m-4 gap-4">
+      <Separator />
+
+      <div className="flex flex-col place-items-center gap-2 border border-dashed border-neutral-300 py-4 px-2 md:px-4">
         <div className="text-2xl font-light">MugiSus / ムギスス</div>
         <ul className="inline-block text-center leading-7 max-w-5xl">
           <Status
