@@ -64,10 +64,10 @@ export default function RootLayout({
         <div className="fixed z-50 bg-neutral-400/10 backdrop-blur-sm pointer-events-none bottom-2 right-2 md:bottom-4 md:right-4 w-12 h-12 border border-dashed border-neutral-400" />
         <div className="fixed z-50 bg-neutral-400/10 backdrop-blur-sm pointer-events-none top-2 right-2 md:top-4 md:right-4 w-12 h-12 border border-dashed border-neutral-400" />
         <div className="fixed z-50 bg-neutral-400/10 backdrop-blur-sm pointer-events-none bottom-2 left-2 md:bottom-4 md:left-4 w-12 h-12 border border-dashed border-neutral-400" />
-      </body>
 
-      <Analytics />
-      <SpeedInsights />
+        <Analytics />
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
