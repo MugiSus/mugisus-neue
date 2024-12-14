@@ -25,7 +25,9 @@ export default function TypekitLoader() {
         clearTimeout(t);
         try {
           (window as any).Typekit.load(config);
-        } catch (e) {}
+        } catch (e) {
+          console.error(e);
+        }
       };
 
       s.parentNode!.insertBefore(tk, s);
