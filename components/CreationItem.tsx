@@ -59,11 +59,10 @@ export default function CreationItem({
       >
         {dateString}
       </time>
-      {creation.href && (
-        <div className="absolute flex text-xl right-2 bottom-0 top-0 items-center duration-500 group-hover:duration-80 opacity-0 group-hover:opacity-100">
-          <div className="text-neutral-50 font-light">{"->"}</div>
-        </div>
-      )}
+
+      <div className="absolute flex text-xl right-2 bottom-0 top-0 items-center duration-500 group-hover:duration-80 opacity-0 group-hover:opacity-100">
+        <div className="text-neutral-50 font-light">{"->"}</div>
+      </div>
     </Link>
   );
 }
