@@ -39,8 +39,9 @@ export async function generateMetadata(
         : (await parent).openGraph?.images,
       description,
       title: creation.title,
-      type: "website",
+      type: "article",
       url: new URL(id, (await parent).metadataBase ?? "").toString(),
+      publishedTime: creation.date.toISOString(),
     },
   };
 }
