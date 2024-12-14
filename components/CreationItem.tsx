@@ -23,14 +23,15 @@ export default function CreationItem({
 
   const titleSpaceRemoved = creation.title.replaceAll(" ", "");
 
-  const content = (
-    <li
-      className="flex relative group px-20 py-12 gap-0 place-items-center flex-col max-w-full overflow-hidden transition-all cursor-none duration-500 hover:duration-80 hover:bg-neutral-700 hover:z-50 border border-dashed border-neutral-400 bg-creation-light"
+  return (
+    <Link
+      href={`/about/${creation.id}`}
+      className="flex relative group px-20 py-10 gap-0 place-items-center flex-col max-w-full overflow-hidden transition-all cursor-none duration-500 hover:duration-80 hover:bg-neutral-700 hover:z-50 border border-dashed border-neutral-400 bg-creation-light min-w-64"
       onMouseMove={subtle3dEffect}
       onMouseLeave={abort3dEffect}
     >
       <div
-        className="absolute text-creation-dark whitespace-nowrap leading-none text-8xl duration-500 group-hover:duration-80 group-hover:text-neutral-600 flex gap-0 font-extralight left-0 top-[23px] animate-marquee-left select-none tracking-[-0.1em]"
+        className="absolute text-creation-dark whitespace-nowrap leading-none text-8xl duration-500 group-hover:duration-80 group-hover:text-neutral-600 flex gap-0 font-extralight left-0 top-3 animate-marquee-left select-none tracking-[-0.1em]"
         style={{
           animationDuration: `${
             creation.title.length * (5500 + (index % 3) * 500)
@@ -65,12 +66,6 @@ export default function CreationItem({
           className="opacity-0 absolute h-5 right-4 top-0 bottom-0 m-auto text-neutral-200 duration-500 group-hover:duration-80 group-hover:opacity-100 transition-all"
         />
       )}
-    </li>
-  );
-
-  return (
-    <Link href={`/about/${creation.id}`} className="max-w-full">
-      {content}
     </Link>
   );
 }
