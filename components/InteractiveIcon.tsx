@@ -40,8 +40,13 @@ export default function InteractiveIcon() {
   }, []);
 
   return (
-    <div className="flex items-center justify-center w-[300px] h-[300px] saturate-0 hover:saturate-100 duration-300 border border-dashed border-neutral-400 group select-none">
-      <div className="relative w-[256px] h-[256px] -translate-y-1.5">
+    <div className="flex items-center justify-center w-[300px] h-[300px] saturate-0 hover:saturate-100 duration-300 group select-none">
+      <div className="absolute top-0 left-0 w-6 h-6 border-l border-t border-dashed border-content" />
+      <div className="absolute bottom-0 right-0 w-6 h-6 border-r border-b border-dashed border-content" />
+      <div className="absolute top-0 right-0 w-6 h-6 border-r border-t border-dashed border-content" />
+      <div className="absolute bottom-0 left-0 w-6 h-6 border-l border-b border-dashed border-content" />
+
+      <div className="relative w-[256px] h-[256px] -translate-y-2 -translate-x-0.5">
         <OyagiIconBody className="absolute" />
 
         <OyagiIconHeadPleased className="invisible group-active:visible absolute group-active:translate-y-0.5 duration-300 transition-transform" />
