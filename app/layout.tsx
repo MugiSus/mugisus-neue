@@ -38,10 +38,11 @@ export const metadata: Metadata = {
   },
   openGraph: {
     images: "/oyagi-icon.png",
-    description:
-      "The official portfolio of MugiSus. / MugiSusの公式ポートフォリオです。",
-    title: "MugiSus",
-    type: "website",
+    description: "The portfolio of MugiSus",
+    title: "MugiSus / ムギスス",
+    type: "article",
+    publishedTime: "2023-10-01T09:00:00Z",
+    modifiedTime: "2024-12-14T09:00:00Z",
     url: "https://mugisus.com/",
   },
 };
