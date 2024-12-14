@@ -1,7 +1,5 @@
 import { Career } from "@/models/career";
 
-import CareerItemSeparator from "./CareerItemSeparator";
-
 export default function CareerItem({
   career,
   isLast,
@@ -34,7 +32,9 @@ export default function CareerItem({
         </p>
       </div>
       {!isLast && (
-        <CareerItemSeparator className="text-neutral-400 rotate-90 lg:rotate-0" />
+        <div className="text-neutral-400 rotate-90 lg:rotate-0 font-thin">
+          {"--->"}
+        </div>
       )}
     </li>
   );
