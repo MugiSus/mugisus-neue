@@ -40,7 +40,7 @@ export default function InteractiveIcon() {
   }, []);
 
   return (
-    <div className="flex relative items-center justify-center w-[300px] h-[300px] text-content hover:text-primary duration-300 group select-none">
+    <div className="flex relative items-center justify-center w-[300px] h-[300px] text-content hover:text-primary duration-300 group select-none cursor-pointer no-tap-highlight">
       <div className="absolute top-0 left-0 w-6 h-6 border-l border-t border-dashed border-content" />
       <div className="absolute bottom-0 right-0 w-6 h-6 border-r border-b border-dashed border-content" />
       <div className="absolute top-0 right-0 w-6 h-6 border-r border-t border-dashed border-content" />
@@ -60,7 +60,7 @@ export default function InteractiveIcon() {
           <OyagiIconHeadClosed className="group-active:invisible absolute group-active:translate-y-0.5 duration-300 transition-transform" />
         )}
 
-        <OyagiIconCap className="absolute duration-300 translate-y-1 group-active:translate-y-2.5 group-hover:translate-y-1.5" />
+        <OyagiIconCap className="absolute duration-300 translate-y-1 group-active:translate-y-2.5 group-hover:translate-y-1.5 transition-transform" />
       </div>
     </div>
   );
