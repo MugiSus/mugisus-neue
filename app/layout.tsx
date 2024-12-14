@@ -1,6 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 import { Inter } from "next/font/google";
 import TypekitLoader from "@/lib/typekitLoader";
@@ -55,6 +56,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <TypekitLoader />
+
       <body className="font-gothicmb101 text-content font-light underline-offset-2">
         {children}
 
@@ -63,7 +65,9 @@ export default function RootLayout({
         <div className="fixed z-50 bg-neutral-400/10 backdrop-blur-sm pointer-events-none top-2 right-2 md:top-4 md:right-4 w-12 h-12 border border-dashed border-neutral-400" />
         <div className="fixed z-50 bg-neutral-400/10 backdrop-blur-sm pointer-events-none bottom-2 left-2 md:bottom-4 md:left-4 w-12 h-12 border border-dashed border-neutral-400" />
       </body>
+
       <Analytics />
+      <SpeedInsights />
     </html>
   );
 }
