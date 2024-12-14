@@ -3,16 +3,13 @@
 #   titleJa: title in Japanese
 
 - date: 2003-05-05
-  title: Born in Yokosuka, Kanagawa, Japan
-  titleJa: 神奈川県横須賀市にうまれる
-- date: 2004-03-01
-  title: Moved to Hokkaido, Japan
-  titleJa: 北海道に移住する
+  title: Born
+  titleJa: うまれる
 - date: 2014-06-02
   title: Started programming with Scratch
   titleJa: Scratchをはじめる
 - date: 2018-08-23
-  title: Started programming with Web / JS
+  title: Started Web Dev / JS
   titleJa: Webをはじめる
 - date: 2019-04-01
   title: Entered Nat'l Institute of Technology, Kisarazu College
@@ -21,7 +18,7 @@
   title: Mitou Junior 2021 "TELPort" adopted
   titleJa: 2021年度未踏ジュニアに"TELPort”で採択
 - date: 2021-09-18
-  title: Won the Excellence Award in the Muda 'Wasteful' Dev. Dept. at Geekten 2021 "TELPort"
+  title: Won the Excellence Award in the Muda 'Wasteful' Dev. Category at Geekten 2021 "TELPort"
   titleJa: 技育展2021 無駄開発部門優秀賞 "TELPort"
 - date: 2021-12-13
   title: Became a Super Creator of Mitou Junior 2021
