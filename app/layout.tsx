@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     title: "MugiSus",
   },
   openGraph: {
-    images: "/oyagi-icon.png",
+    images: "/image.png",
     description: "The portfolio of MugiSus",
     title: "MugiSus / ムギスス",
     type: "article",
