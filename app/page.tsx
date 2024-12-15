@@ -31,7 +31,7 @@ export default function Home() {
       <div className="flex flex-col place-items-center gap-4">
         <div className="text-2xl font-light">MugiSus / ムギスス</div>
         <ul className="inline-block text-center leading-7 max-w-5xl">
-          <Status icon={faHeart} content="Programming, Designing, Drawing" />
+          <Status icon={faHeart} content="Programming, UI Designing, Drawing" />
           <Status
             icon={faBuilding}
             content="Keio University; Department of Environment and Information Studies"
