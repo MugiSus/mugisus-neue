@@ -57,7 +57,7 @@ export default function RootLayout({
     <html lang="en" className={inter.variable}>
       <TypekitLoader />
 
-      <body className="font-gothicmb101 text-content font-light underline-offset-2">
+      <body className="font-gothicmb101 bg-background text-content font-light underline-offset-2">
         {children}
 
         <div className="fixed z-50 bg-neutral-400/10 backdrop-blur-sm pointer-events-none top-2 left-2 md:top-4 md:left-4 w-12 h-12 border border-dashed border-neutral-400" />

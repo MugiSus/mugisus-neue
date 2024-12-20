@@ -6,10 +6,6 @@
   scroll-behavior: smooth;
 }
 
-body {
-  background-color: #fbfbfb;
-}
-
 .no-tap-highlight {
   -webkit-tap-highlight-color: transparent;
 }

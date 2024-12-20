@@ -40,7 +40,7 @@ export default function InteractiveIcon() {
   }, []);
 
   return (
-    <div className="flex relative items-center justify-center w-[300px] h-[300px] text-content hover:text-primary duration-300 group select-none cursor-pointer no-tap-highlight">
+    <div className="flex relative items-center justify-center w-[300px] h-[300px] bg-background text-content hover:text-primary duration-300 group select-none cursor-pointer no-tap-highlight">
       <div className="absolute top-0 left-0 w-6 h-6 border-l border-t border-dashed border-content" />
       <div className="absolute bottom-0 right-0 w-6 h-6 border-r border-b border-dashed border-content" />
       <div className="absolute top-0 right-0 w-6 h-6 border-r border-t border-dashed border-content" />
