@@ -9,6 +9,10 @@ const nextConfig = {
       {
         test: /\.svg$/,
         use: ["@svgr/webpack"],
+      },
+      {
+        test: /\.glsl$/,
+        use: "raw-loader",
       }
     );
     return config;
