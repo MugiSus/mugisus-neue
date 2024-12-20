@@ -16,12 +16,17 @@ function GradientMesh() {
   });
 
   return (
-    <mesh ref={mesh} rotation={[0, 0, 0]}>
+    <mesh ref={mesh}>
       <planeGeometry args={[10000, 10000]} />
       <shaderMaterial
         fragmentShader={fragment}
         vertexShader={vertex}
-        uniforms={{ uTime: { value: 0 } }}
+        uniforms={{
+          uTime: { value: 0 },
+          uColor1: { value: [238 / 255, 238 / 255, 238 / 255] },
+          uColor2: { value: [244 / 255, 244 / 255, 244 / 255] },
+          uColor3: { value: [251 / 255, 251 / 255, 251 / 255] },
+        }}
       />
     </mesh>
   );

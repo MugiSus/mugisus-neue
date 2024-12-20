@@ -1,4 +1,7 @@
 uniform float uTime;
+uniform vec3 uColor1;
+uniform vec3 uColor2;
+uniform vec3 uColor3;
 
 //
 // Description : Array and textureless GLSL 2D/3D/4D simplex
@@ -112,7 +115,7 @@ void main(void) {
 
   float val = snoise(vec3(pos.x, pos.y, uTime / 20.0)) + snoise(vec3(pos.x * 100.0, pos.y * 100.0, uTime / 20.0)) / 10.0;
 
-  vec3 color = mix(vec3(244.0 / 255.0), vec3(251.0 / 255.0), step(0.0, val));
+  vec3 color = mix(uColor1, mix(uColor2, uColor3, step(0.15, val)), step(-0.15, val));
 
   gl_FragColor = vec4(color, 1.0);
 }
