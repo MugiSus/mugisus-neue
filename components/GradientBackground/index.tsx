@@ -23,8 +23,8 @@ function GradientMesh() {
         vertexShader={vertex}
         uniforms={{
           uTime: { value: 0 },
-          uColor1: { value: [238 / 255, 238 / 255, 238 / 255] },
-          uColor2: { value: [244 / 255, 244 / 255, 244 / 255] },
+          uColor1: { value: [241 / 255, 241 / 255, 241 / 255] },
+          uColor2: { value: [245 / 255, 245 / 255, 245 / 255] },
           uColor3: { value: [251 / 255, 251 / 255, 251 / 255] },
         }}
       />
