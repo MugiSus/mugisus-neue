@@ -11,10 +11,10 @@ function GradientMesh() {
 
   useFrame(({ clock }) => {
     if (mesh.current) {
-      const uniforms = (mesh.current.material as any).uniforms;
+      const material = mesh.current.material as any;
 
-      uniforms.uTime.value = clock.getElapsedTime();
-      uniforms.uScroll.value = window.scrollY || 0;
+      material.uniforms.uTime.value = clock.getElapsedTime();
+      material.uniforms.uScroll.value = window.scrollY;
     }
   });
 
