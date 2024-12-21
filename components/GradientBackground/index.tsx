@@ -27,8 +27,8 @@ function GradientMesh() {
         uniforms={{
           uTime: { value: 0 },
           uScroll: { value: 0 },
-          uColor1: { value: [241 / 255, 241 / 255, 241 / 255] },
-          uColor2: { value: [251 / 255, 251 / 255, 251 / 255] },
+          uColor1: { value: [251 / 255, 251 / 255, 251 / 255] },
+          uColor2: { value: [241 / 255, 241 / 255, 241 / 255] },
         }}
       />
     </mesh>
