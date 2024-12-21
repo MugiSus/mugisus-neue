@@ -14,7 +14,7 @@ function GradientMesh() {
       const uniforms = (mesh.current.material as any).uniforms;
 
       uniforms.uTime.value = clock.getElapsedTime();
-      uniforms.uScroll.value = window.scrollY;
+      uniforms.uScroll.value = window.scrollY || 0;
     }
   });
 
