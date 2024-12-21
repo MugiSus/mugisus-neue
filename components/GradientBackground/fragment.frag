@@ -1,4 +1,4 @@
-precision mediump float;
+precision highp float;
 
 uniform float uTime;
 uniform float uScroll;
@@ -109,10 +109,12 @@ float random (vec2 co) {
 }
 
 void main(void) {
-  vec2 pos = gl_FragCoord.xy / 2000.0;
+  vec2 pos = (gl_FragCoord.xy + vec2(4000.0, 4000.0)) / 2000.0;
 
   float val = snoise(vec3(pos.x, pos.y + uScroll / -2000.0, uTime / 20.0 + uScroll / 8000.0)) + snoise(vec3(pos.x * 200.0, pos.y * 200.0, uTime / 20.0)) / 5.0;
   vec3 color = mix(uColor1, uColor2, step(0.0, val));
+
+  // vec3 color = vec3(uScroll / 1000.0);
 
   gl_FragColor = vec4(color, 1.0);
 }
