@@ -11,7 +11,11 @@ const nextConfig = {
         use: ["@svgr/webpack"],
       },
       {
-        test: /\.glsl$/,
+        test: /\.frag$/,
+        use: "raw-loader",
+      },
+      {
+        test: /\.vert$/,
         use: "raw-loader",
       }
     );
