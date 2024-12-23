@@ -1,3 +1,5 @@
+// // somehow, precision declaration causes a stop at Android
+
 // precision highp float;
 
 uniform float uTime;
@@ -111,7 +113,7 @@ float random (vec2 co) {
 void main(void) {
   vec2 pos = (gl_FragCoord.xy + vec2(4000.0, 4000.0)) / 2000.0;
 
-  float val = snoise(vec3(pos.x, pos.y + uScroll / -2000.0, uTime / 20.0 + uScroll / 4000.0)) + snoise(vec3(pos.x * 300.0, pos.y * 300.0, uTime / 20.0)) / 5.0;
+  float val = snoise(vec3(pos.x, pos.y + uScroll / -4000.0, uTime / 20.0 + uScroll / 2000.0)) + snoise(vec3(pos.x * 300.0, pos.y * 300.0, uTime / 20.0)) / 5.0;
   float vnorm = (val + 1.0) / 2.0;
 
   float a = clamp(floor(vnorm * 8.0) * 0.25, 0.0, 1.0);
