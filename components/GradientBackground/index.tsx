@@ -28,7 +28,7 @@ function GradientMesh() {
           uTime: { value: 0 },
           uScroll: { value: 0 },
           uColor1: { value: [251 / 255, 251 / 255, 251 / 255] },
-          uColor2: { value: [211 / 255, 211 / 255, 211 / 255] },
+          uColor2: { value: [221 / 255, 221 / 255, 221 / 255] },
         }}
       />
     </mesh>

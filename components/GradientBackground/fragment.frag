@@ -111,10 +111,11 @@ float random (vec2 co) {
 void main(void) {
   vec2 pos = (gl_FragCoord.xy + vec2(4000.0, 4000.0)) / 2000.0;
 
-  float val = snoise(vec3(pos.x, pos.y + uScroll / -2000.0, uTime / 20.0 + uScroll / 4000.0)) + snoise(vec3(pos.x * 200.0, pos.y * 200.0, uTime / 20.0)) / 5.0;
+  float val = snoise(vec3(pos.x, pos.y + uScroll / -2000.0, uTime / 20.0 + uScroll / 4000.0)) + snoise(vec3(pos.x * 300.0, pos.y * 300.0, uTime / 20.0)) / 5.0;
+  float vnorm = (val + 1.0) / 2.0;
 
-  float a = floor((val + 1.0) / 0.5) * 0.25;
-  vec3 color = mix(uColor1, uColor2, a);
+  float a = clamp(floor(vnorm * 8.0) * 0.25, 0.0, 1.0);
+  vec3 color = mix(uColor2, uColor1, a);
 
   gl_FragColor = vec4(color, 1.0);
 }
