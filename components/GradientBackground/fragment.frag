@@ -1,6 +1,6 @@
 // // somehow, precision declaration causes a stop at Android
 
-// precision highp float;
+precision mediump float;
 
 uniform float uTime;
 uniform float uScroll;
