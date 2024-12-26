@@ -40,27 +40,27 @@ export default function InteractiveIcon() {
   }, []);
 
   return (
-    <div className="flex relative items-center justify-center w-[300px] h-[300px] bg-background text-content hover:text-primary duration-300 group select-none cursor-pointer no-tap-highlight">
-      <div className="absolute top-0 left-0 w-10 h-10 border-l border-t border-dashed border-content" />
-      <div className="absolute bottom-0 right-0 w-10 h-10 border-r border-b border-dashed border-content" />
-      <div className="absolute top-0 right-0 w-10 h-10 border-r border-t border-dashed border-content" />
-      <div className="absolute bottom-0 left-0 w-10 h-10 border-l border-b border-dashed border-content" />
+    <div className="no-tap-highlight group relative flex h-[300px] w-[300px] cursor-pointer select-none items-center justify-center bg-background text-content duration-300 hover:text-primary">
+      <div className="absolute left-0 top-0 h-10 w-10 border-l border-t border-dashed border-content" />
+      <div className="absolute bottom-0 right-0 h-10 w-10 border-b border-r border-dashed border-content" />
+      <div className="absolute right-0 top-0 h-10 w-10 border-r border-t border-dashed border-content" />
+      <div className="absolute bottom-0 left-0 h-10 w-10 border-b border-l border-dashed border-content" />
 
-      <div className="relative w-[256px] h-[256px] -translate-y-2 -translate-x-0.5">
+      <div className="relative h-[256px] w-[256px] -translate-x-0.5 -translate-y-2">
         <OyagiIconBody className="absolute" />
 
-        <OyagiIconHeadPleased className="invisible group-active:visible absolute group-active:translate-y-0.5 duration-300 transition-transform" />
+        <OyagiIconHeadPleased className="invisible absolute transition-transform duration-300 group-active:visible group-active:translate-y-0.5" />
         {blinkSpliteNumber === 0 && (
-          <OyagiIconHead className="group-active:invisible absolute group-active:translate-y-0.5 duration-300 transition-transform" />
+          <OyagiIconHead className="absolute transition-transform duration-300 group-active:invisible group-active:translate-y-0.5" />
         )}
         {blinkSpliteNumber === 1 && (
-          <OyagiIconHeadHalf className="group-active:invisible absolute group-active:translate-y-0.5 duration-300 transition-transform" />
+          <OyagiIconHeadHalf className="absolute transition-transform duration-300 group-active:invisible group-active:translate-y-0.5" />
         )}
         {blinkSpliteNumber === 2 && (
-          <OyagiIconHeadClosed className="group-active:invisible absolute group-active:translate-y-0.5 duration-300 transition-transform" />
+          <OyagiIconHeadClosed className="absolute transition-transform duration-300 group-active:invisible group-active:translate-y-0.5" />
         )}
 
-        <OyagiIconCap className="absolute duration-300 translate-y-1 group-active:translate-y-2.5 group-hover:translate-y-1.5 transition-transform" />
+        <OyagiIconCap className="absolute translate-y-1 transition-transform duration-300 group-hover:translate-y-1.5 group-active:translate-y-2.5" />
       </div>
     </div>
   );

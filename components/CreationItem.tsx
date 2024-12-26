@@ -25,12 +25,12 @@ export default function CreationItem({
   return (
     <Link
       href={`/about/${creation.id}`}
-      className="flex relative group px-20 py-10 gap-0 place-items-center flex-col max-w-full overflow-hidden transition-all cursor-none duration-500 hover:duration-80 hover:bg-neutral-700 hover:z-50 border border-dashed border-neutral-400 bg-creation-light min-w-64"
+      className="bg-creation-light group relative flex min-w-64 max-w-full cursor-none flex-col place-items-center gap-0 overflow-hidden border border-dashed border-neutral-400 px-20 py-10 transition-all duration-500 hover:z-50 hover:bg-neutral-700 hover:duration-80"
       onMouseMove={subtle3dEffect}
       onMouseLeave={abort3dEffect}
     >
       <div
-        className="absolute text-neutral-600/5 whitespace-nowrap leading-none text-8xl duration-500 group-hover:duration-80 group-hover:text-neutral-600 flex gap-0 font-extralight left-0 top-3.5 animate-marquee-left select-none tracking-[-0.1em]"
+        className="absolute left-0 top-3.5 flex animate-marquee-left select-none gap-0 whitespace-nowrap text-8xl font-extralight leading-none tracking-[-0.1em] text-neutral-600/5 duration-500 group-hover:text-neutral-600 group-hover:duration-80"
         style={{
           animationDuration: `${
             creation.title.length * (5500 + (index % 3) * 500)
@@ -42,7 +42,7 @@ export default function CreationItem({
           .fill(0)
           .map((_, i) => (
             <div key={i}>
-              <span className="group-hover:text-primary duration-100 group-hover:duration-80">
+              <span className="duration-100 group-hover:text-primary group-hover:duration-80">
                 {titleSpaceRemoved.charAt(0)}
               </span>
               {titleSpaceRemoved.slice(1)}
@@ -50,18 +50,18 @@ export default function CreationItem({
           ))}
       </div>
 
-      <div className="text-center whitespace-nowrap transition-colors duration-500 group-hover:duration-80 group-hover:text-neutral-50 z-50">
+      <div className="z-50 whitespace-nowrap text-center transition-colors duration-500 group-hover:text-neutral-50 group-hover:duration-80">
         {creation.title}
       </div>
       <time
         dateTime={creation.date.toISOString()}
-        className="text-neutral-500 text-sm transition-colors duration-500 group-hover:duration-80 group-hover:text-neutral-200 z-50"
+        className="z-50 text-sm text-neutral-500 transition-colors duration-500 group-hover:text-neutral-200 group-hover:duration-80"
       >
         {dateString}
       </time>
 
-      <div className="absolute flex text-xl right-2 inset-y-0 items-center duration-500 group-hover:duration-80 opacity-0 group-hover:opacity-100">
-        <div className="text-neutral-50 font-light">{"->"}</div>
+      <div className="absolute inset-y-0 right-2 flex items-center text-xl opacity-0 duration-500 group-hover:opacity-100 group-hover:duration-80">
+        <div className="font-light text-neutral-50">{"->"}</div>
       </div>
     </Link>
   );

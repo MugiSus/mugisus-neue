@@ -18,8 +18,8 @@ export default function CareerItem({
     .replaceAll("/", ".");
 
   return (
-    <li className="flex flex-col gap-6 lg:flex-row lg:gap-6 items-center">
-      <div className="flex flex-col gap-2 items-center hover:-translate-y-0.5 duration-200">
+    <li className="flex flex-col items-center gap-6 lg:flex-row lg:gap-6">
+      <div className="flex flex-col items-center gap-2 duration-200 hover:-translate-y-0.5">
         <time
           dateTime={career.date.toISOString()}
           className="text-sm text-neutral-400"
@@ -27,12 +27,12 @@ export default function CareerItem({
           {dateString}
         </time>
 
-        <p className="text-sm px-0.5 sm:text-base text-center">
+        <p className="px-0.5 text-center text-sm sm:text-base">
           {isJapanese ? career.titleJa : career.title}
         </p>
       </div>
       {!isLast && (
-        <div className="text-content rotate-90 lg:rotate-0 font-thin">
+        <div className="rotate-90 font-thin text-content lg:rotate-0">
           {"--->"}
         </div>
       )}

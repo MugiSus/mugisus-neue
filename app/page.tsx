@@ -23,14 +23,14 @@ import Separator from "@/components/Separator";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center py-48 px-4 mx-auto md:px-16 gap-32">
+    <main className="mx-auto flex min-h-screen flex-col items-center justify-center gap-32 px-4 py-48 md:px-16">
       <InteractiveIcon />
 
       <Separator />
 
       <div className="flex flex-col place-items-center gap-4">
         <div className="text-2xl font-light">MugiSus / ムギスス</div>
-        <ul className="inline-block text-center leading-7 max-w-5xl">
+        <ul className="inline-block max-w-5xl text-center leading-7">
           <Status icon={faHeart} content="Programming, UI Designing, Drawing" />
           <Status
             icon={faBuilding}
@@ -67,7 +67,7 @@ export default function Home() {
 
       <Separator />
 
-      <ul className="list-none flex flex-wrap flex-row gap-3 place-items-center place-content-center max-w-full">
+      <ul className="flex max-w-full list-none flex-row flex-wrap place-content-center place-items-center gap-3">
         {Creations.sort((a, b) => b.date.getTime() - a.date.getTime()).map(
           (creation, index) => (
             <CreationItem creation={creation} index={index} key={index} />
@@ -77,12 +77,12 @@ export default function Home() {
 
       <Separator />
 
-      <div className="flex flex-col gap-32 my-8">
+      <div className="my-8 flex flex-col gap-32">
         <CareerList />
         <CareerList isJapanese />
       </div>
 
-      <div className="text-sm tracking-widest py-1 px-0.5 hover:-translate-y-0.5 duration-200 mt-8">
+      <div className="mt-8 px-0.5 py-1 text-sm tracking-widest duration-200 hover:-translate-y-0.5">
         Copyright © {new Date().getFullYear()} MugiSus
       </div>
     </main>

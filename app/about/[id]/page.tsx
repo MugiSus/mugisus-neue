@@ -56,14 +56,14 @@ export default async function Page({ params }: Props) {
   }
 
   return (
-    <main className="flex flex-col flex-wrap min-h-screen gap-16 px-8 py-32 w-full items-center justify-center md:px-16">
+    <main className="flex min-h-screen w-full flex-col flex-wrap items-center justify-center gap-16 px-8 py-32 md:px-16">
       <div className="text-center">
         <h1 className="text-3xl">{creation.title}</h1>
         <div className="text-md text-neutral-500 ">{creation.id}</div>
       </div>
 
-      <div className="grid grid-cols-1 gap-16 max-w-xl lg:grid-cols-2 lg:max-w-6xl w-full">
-        <div className="flex flex-col gap-4 lg:sticky self-start top-16">
+      <div className="grid w-full max-w-xl grid-cols-1 gap-16 lg:max-w-6xl lg:grid-cols-2">
+        <div className="top-16 flex flex-col gap-4 self-start lg:sticky">
           {creation.images && creation.images.length > 0 ? (
             creation.images.map((image, index) => (
               <Link
@@ -77,7 +77,7 @@ export default async function Page({ params }: Props) {
                   height={1024}
                   src={image}
                   alt={creation.title}
-                  className="rounded-md w-full"
+                  className="w-full rounded-md"
                 />
               </Link>
             ))
@@ -87,37 +87,37 @@ export default async function Page({ params }: Props) {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <div className="flex flex-col bg-neutral-200 rounded-md aspect-video self-start items-center justify-center top-16 lg:sticky">
+              <div className="top-16 flex aspect-video flex-col items-center justify-center self-start rounded-md bg-neutral-200 lg:sticky">
                 <FontAwesomeIcon
                   icon={faCameraRetro}
-                  className="text-neutral-400 h-12"
+                  className="h-12 text-neutral-400"
                 />
               </div>
             </Link>
           )}
         </div>
 
-        <div className="flex flex-col gap-8 sticky self-start top-16">
-          <div className="flex flex-col text-lg text-neutral-500 pr-2 mb-8">
+        <div className="sticky top-16 flex flex-col gap-8 self-start">
+          <div className="mb-8 flex flex-col pr-2 text-lg text-neutral-500">
             {creation.href && (
               <Link
                 href={creation.href}
                 rel="noopener noreferrer"
                 target="_blank"
-                className="group hover-inverse p-1 py-2"
+                className="hover-inverse group p-1 py-2"
               >
                 {"---> "}
                 <span className="group-hover:underline">Visit</span>
               </Link>
             )}
-            <Link href="/" className="group hover-inverse p-1">
+            <Link href="/" className="hover-inverse group p-1">
               {"<- "}
               <span className="group-hover:underline">Go back</span>
             </Link>
           </div>
 
           {creation.description && (
-            <div className="flex flex-col gap-4 leading-loose p-1">
+            <div className="flex flex-col gap-4 p-1 leading-loose">
               {creation.description
                 .split("\n")
                 .slice(0, -1)
@@ -134,7 +134,7 @@ export default async function Page({ params }: Props) {
                   href={link.href}
                   rel="noopener noreferrer"
                   target="_blank"
-                  className="group text-neutral-500 hover-inverse p-1"
+                  className="hover-inverse group p-1 text-neutral-500"
                   key={index}
                 >
                   {"-> "}
@@ -145,7 +145,7 @@ export default async function Page({ params }: Props) {
           )}
 
           {creation.descriptionJa && (
-            <div className="flex flex-col gap-4 leading-loose p-1">
+            <div className="flex flex-col gap-4 p-1 leading-loose">
               {creation.descriptionJa
                 .split("\n")
                 .slice(0, -1)
@@ -162,7 +162,7 @@ export default async function Page({ params }: Props) {
                   href={link.href}
                   rel="noopener noreferrer"
                   target="_blank"
-                  className="group text-neutral-500 hover-inverse p-1"
+                  className="hover-inverse group p-1 text-neutral-500"
                   key={index}
                 >
                   {"-> "}
@@ -179,7 +179,7 @@ export default async function Page({ params }: Props) {
             </div>
           )}
 
-          <div className="flex gap-1 text-neutral-500 px-1 mt-12">
+          <div className="mt-12 flex gap-1 px-1 text-neutral-500">
             <p>Copyright ©︎</p>
             <time dateTime={creation.date.toISOString()}>
               {creation.date
