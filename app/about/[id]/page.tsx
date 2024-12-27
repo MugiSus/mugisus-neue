@@ -59,7 +59,7 @@ export default async function Page({ params }: Props) {
     <main className="flex min-h-screen w-full flex-col flex-wrap items-center justify-center gap-16 px-8 py-32 md:px-16">
       <div className="text-center">
         <h1 className="text-3xl">{creation.title}</h1>
-        <div className="text-md text-neutral-500 ">{creation.id}</div>
+        <div className="text-neutral-500">{creation.id}</div>
       </div>
 
       <div className="grid w-full max-w-xl grid-cols-1 gap-16 lg:max-w-6xl lg:grid-cols-2">

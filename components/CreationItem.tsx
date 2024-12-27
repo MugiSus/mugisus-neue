@@ -2,7 +2,6 @@
 
 import { Creation } from "@/models/creation";
 import Link from "next/link";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { abort3dEffect, subtle3dEffect } from "@/lib/subtle3dEffects";
 
 export default function CreationItem({
@@ -25,16 +24,15 @@ export default function CreationItem({
   return (
     <Link
       href={`/about/${creation.id}`}
-      className="bg-creation-light group relative flex min-w-64 max-w-full cursor-none flex-col place-items-center gap-0 overflow-hidden border border-dashed border-neutral-400 px-20 py-10 transition-all duration-500 hover:z-50 hover:bg-neutral-700 hover:duration-80"
+      className="group relative flex min-w-64 max-w-full cursor-none flex-col place-items-center gap-0 overflow-hidden border border-dashed border-neutral-400 px-20 py-10 transition-all duration-500 hover:z-50 hover:bg-neutral-700 hover:duration-80"
       onMouseMove={subtle3dEffect}
       onMouseLeave={abort3dEffect}
     >
       <div
-        className="absolute left-0 top-3.5 flex animate-marquee-left select-none gap-0 whitespace-nowrap text-8xl font-extralight leading-none tracking-[-0.1em] text-neutral-600/5 duration-500 group-hover:text-neutral-600 group-hover:duration-80"
+        className="absolute left-0 top-3.5 flex animate-marquee-left select-none gap-0 whitespace-nowrap text-8xl font-extralight leading-none -tracking-widest text-neutral-600/5 duration-500 group-hover:text-neutral-600 group-hover:duration-80"
         style={{
-          animationDuration: `${
-            creation.title.length * (5500 + (index % 3) * 500)
-          }ms`,
+          animationDuration: `${creation.title.length * (5500 + (index % 3) * 500)
+            }ms`,
           animationDirection: index % 2 ? "normal" : "reverse",
         }}
       >

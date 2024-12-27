@@ -61,10 +61,10 @@ export default function RootLayout({
       <body className="bg-background font-gothicmb101 font-light text-content underline-offset-2">
         {children}
 
-        <div className="pointer-events-none fixed left-2 top-2 z-50 h-12 w-12 border border-dashed border-neutral-400 bg-neutral-400/10 backdrop-blur-sm md:left-4 md:top-4" />
-        <div className="pointer-events-none fixed bottom-2 right-2 z-50 h-12 w-12 border border-dashed border-neutral-400 bg-neutral-400/10 backdrop-blur-sm md:bottom-4 md:right-4" />
-        <div className="pointer-events-none fixed right-2 top-2 z-50 h-12 w-12 border border-dashed border-neutral-400 bg-neutral-400/10 backdrop-blur-sm md:right-4 md:top-4" />
-        <div className="pointer-events-none fixed bottom-2 left-2 z-50 h-12 w-12 border border-dashed border-neutral-400 bg-neutral-400/10 backdrop-blur-sm md:bottom-4 md:left-4" />
+        <div className="pointer-events-none fixed left-2 top-2 z-50 size-12 border border-dashed border-neutral-400 bg-neutral-400/10 backdrop-blur-sm md:left-4 md:top-4" />
+        <div className="pointer-events-none fixed bottom-2 right-2 z-50 size-12 border border-dashed border-neutral-400 bg-neutral-400/10 backdrop-blur-sm md:bottom-4 md:right-4" />
+        <div className="pointer-events-none fixed right-2 top-2 z-50 size-12 border border-dashed border-neutral-400 bg-neutral-400/10 backdrop-blur-sm md:right-4 md:top-4" />
+        <div className="pointer-events-none fixed bottom-2 left-2 z-50 size-12 border border-dashed border-neutral-400 bg-neutral-400/10 backdrop-blur-sm md:bottom-4 md:left-4" />
 
         <div className="fixed inset-0 -z-50 h-lvh">
           <GradientBackground />

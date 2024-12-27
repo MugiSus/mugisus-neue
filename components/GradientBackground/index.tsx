@@ -4,14 +4,14 @@ import { useRef } from "react";
 import fragment from "./fragment.frag";
 import vertex from "./vertex.vert";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Mesh } from "three";
+import { Mesh, ShaderMaterial } from "three";
 
 function GradientMesh() {
   const mesh = useRef<Mesh>(null);
 
   useFrame(({ clock }) => {
     if (mesh.current) {
-      const material = mesh.current.material as any;
+      const material = mesh.current.material as ShaderMaterial;
 
       material.uniforms.uTime.value = clock.getElapsedTime();
       material.uniforms.uScroll.value = window.scrollY;

@@ -1,9 +1,10 @@
 {
-  "extends": "next/core-web-vitals",
-  "rules": {
-    "tailwindcss/classnames-order": "error"
-  },
-  "plugins": [
-    "tailwindcss"
+  "extends": [
+    "next/core-web-vitals",
+    "next/typescript",
+    "plugin:tailwindcss/recommended"
+  ],
+  "ignorePatterns": [
+    "lib/typekitLoader.ts"
   ]
 }
