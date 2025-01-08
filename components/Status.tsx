@@ -12,7 +12,7 @@ export default function Status({
   href?: string;
 }) {
   const element = (
-    <div className="px-1.5 text-center">
+    <div className="inline px-1 text-center">
       <FontAwesomeIcon
         icon={icon}
         className="mr-1.5 inline h-4 text-neutral-400"
@@ -22,13 +22,13 @@ export default function Status({
   );
 
   return (
-    <li className="inline-block">
+    <li className="inline">
       {href ? (
         <Link
           href={href}
           rel="noopener noreferrer"
           target="_blank"
-          className="hover-inverse inline-block hover:underline"
+          className="hover-inverse hover:underline"
         >
           {element}
         </Link>

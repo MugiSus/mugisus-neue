@@ -28,16 +28,16 @@ export default function Home() {
 
       <Separator />
 
-      <div className="flex flex-col place-items-center gap-4">
+      <div className="flex flex-col place-items-center gap-8">
         <div className="text-2xl font-light">MugiSus / ムギスス</div>
-        <ul className="inline-block max-w-5xl text-center leading-7">
+        <ul className="max-w-[300px] text-center leading-7" style={{ wordBreak: "break-all" }}>
           <Status icon={faHeart} content="Programming, UI Designing, Drawing" />
           <Status
             icon={faBuilding}
             content="Keio University; Department of Environment and Information Studies"
           />
-          <Status icon={faUser} content="Minato Masayuki / 湊 真之" />
-          <Status icon={faLocationDot} content="Hokkaido / Kanagawa, Japan" />
+          <Status icon={faUser} content="湊 真之 / Minato Masayuki" />
+          <Status icon={faLocationDot} content="Shonan, Japan" />
           <Status
             icon={faClock}
             content={<CurrentTimeString initialDate={new Date()} />}
