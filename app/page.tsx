@@ -30,7 +30,7 @@ export default function Home() {
 
       <div className="flex flex-col place-items-center gap-8">
         <div className="text-2xl font-light">MugiSus / ムギスス</div>
-        <ul className="max-w-[300px] text-center leading-7" style={{ wordBreak: "break-all" }}>
+        <ul className="max-w-2xl text-center leading-7" style={{ wordBreak: "break-all" }}>
           <Status icon={faHeart} content="Programming, UI Designing, Drawing" />
           <Status
             icon={faBuilding}
@@ -81,7 +81,7 @@ export default function Home() {
         <CareerList />
         <CareerList isJapanese />
       </div>
-      
+
       <Separator />
 
       <div className="mt-8 px-0.5 py-1 text-sm tracking-widest duration-200 hover:-translate-y-0.5">
