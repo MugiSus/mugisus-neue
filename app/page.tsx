@@ -81,6 +81,8 @@ export default function Home() {
         <CareerList />
         <CareerList isJapanese />
       </div>
+      
+      <Separator />
 
       <div className="mt-8 px-0.5 py-1 text-sm tracking-widest duration-200 hover:-translate-y-0.5">
         Copyright © {new Date().getFullYear()} MugiSus
