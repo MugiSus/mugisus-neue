@@ -4,20 +4,20 @@ const nextConfig = {
     config.module.rules.push(
       {
         test: /\.ya?ml$/,
-        use: "js-yaml-loader",
+        use: 'js-yaml-loader',
       },
       {
         test: /\.svg$/,
-        use: ["@svgr/webpack"],
+        use: ['@svgr/webpack'],
       },
       {
         test: /\.frag$/,
-        use: "raw-loader",
+        use: 'raw-loader',
       },
       {
         test: /\.vert$/,
-        use: "raw-loader",
-      }
+        use: 'raw-loader',
+      },
     );
     return config;
   },
