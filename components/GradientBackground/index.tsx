@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import { useRef } from "react";
-import fragment from "./fragment.frag";
-import vertex from "./vertex.vert";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { Mesh, ShaderMaterial } from "three";
+import { useRef } from 'react';
+import fragment from './fragment.frag';
+import vertex from './vertex.vert';
+import { Canvas, useFrame } from '@react-three/fiber';
+import { Mesh, ShaderMaterial } from 'three';
 
 function GradientMesh() {
   const mesh = useRef<Mesh>(null);

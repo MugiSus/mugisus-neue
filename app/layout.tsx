@@ -1,51 +1,51 @@
-import "./globals.css";
-import type { Metadata } from "next";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import './globals.css';
+import type { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
-import { Inter } from "next/font/google";
-import TypekitLoader from "@/lib/typekitLoader";
-import GradientBackground from "@/components/GradientBackground/";
+import { Inter } from 'next/font/google';
+import TypekitLoader from '@/lib/typekitLoader';
+import GradientBackground from '@/components/GradientBackground/';
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://mugisus.com/"),
-  title: "MugiSus",
-  description: "The portfolio of MugiSus. / MugiSusのポートフォリオです。",
+  metadataBase: new URL('https://mugisus.com/'),
+  title: 'MugiSus',
+  description: 'The portfolio of MugiSus. / MugiSusのポートフォリオです。',
   keywords: [
-    "MugiSus",
-    "mugisus",
-    "湊真之",
-    "湊 真之",
-    "MinatoMasayuki",
-    "Minato Masayuki",
-    "Masayuki Minato",
-    "MasayukiMinato",
-    "Minato",
-    "Masayuki",
-    "Portfolio",
-    "MugiSus Portfolio",
-    "ポートフォリオ",
-    "Keio University",
-    "慶應義塾大学",
-    "環境情報学部",
-    "SFC",
+    'MugiSus',
+    'mugisus',
+    '湊真之',
+    '湊 真之',
+    'MinatoMasayuki',
+    'Minato Masayuki',
+    'Masayuki Minato',
+    'MasayukiMinato',
+    'Minato',
+    'Masayuki',
+    'Portfolio',
+    'MugiSus Portfolio',
+    'ポートフォリオ',
+    'Keio University',
+    '慶應義塾大学',
+    '環境情報学部',
+    'SFC',
   ],
   twitter: {
-    card: "summary",
-    site: "@MugiSus",
-    creator: "@MugiSus",
-    title: "MugiSus",
+    card: 'summary',
+    site: '@MugiSus',
+    creator: '@MugiSus',
+    title: 'MugiSus',
   },
   openGraph: {
-    images: "/image.png",
-    description: "The portfolio of MugiSus",
-    title: "MugiSus / ムギスス",
-    type: "article",
-    publishedTime: "2023-10-01T09:00:00Z",
-    modifiedTime: "2024-12-14T09:00:00Z",
-    url: "https://mugisus.com/",
+    images: '/image.png',
+    description: 'The portfolio of MugiSus',
+    title: 'MugiSus / ムギスス',
+    type: 'article',
+    publishedTime: '2023-10-01T09:00:00Z',
+    modifiedTime: '2024-12-14T09:00:00Z',
+    url: 'https://mugisus.com/',
   },
 };
 

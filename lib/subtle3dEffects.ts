@@ -22,6 +22,6 @@ export function subtle3dEffect(event: React.MouseEvent<HTMLElement>) {
 
 export function abort3dEffect(event: React.MouseEvent<HTMLElement>) {
   const target = event.currentTarget as HTMLElement;
-  target.style.transform = "";
-  target.style.filter = "";
+  target.style.transform = '';
+  target.style.filter = '';
 }

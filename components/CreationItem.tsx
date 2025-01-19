@@ -1,8 +1,8 @@
-"use client";
+'use client';
 
-import { Creation } from "@/models/creation";
-import Link from "next/link";
-import { abort3dEffect, subtle3dEffect } from "@/lib/subtle3dEffects";
+import { Creation } from '@/models/creation';
+import Link from 'next/link';
+import { abort3dEffect, subtle3dEffect } from '@/lib/subtle3dEffects';
 
 export default function CreationItem({
   creation,
@@ -12,14 +12,14 @@ export default function CreationItem({
   index: number;
 }) {
   const dateString = creation.date
-    .toLocaleDateString("ja-JP", {
-      year: "numeric",
-      month: "2-digit",
-      day: "2-digit",
+    .toLocaleDateString('ja-JP', {
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
     })
-    .replaceAll("/", ".");
+    .replaceAll('/', '.');
 
-  const titleSpaceRemoved = creation.title.replaceAll(" ", "");
+  const titleSpaceRemoved = creation.title.replaceAll(' ', '');
 
   return (
     <Link
@@ -32,8 +32,8 @@ export default function CreationItem({
         className="absolute left-0 top-3.5 flex animate-marquee-left select-none gap-0 whitespace-nowrap text-8xl font-extralight leading-none -tracking-widest text-neutral-600/5 duration-500 group-hover:text-neutral-600 group-hover:duration-80"
         style={{
           animationDuration: `${creation.title.length * (5500 + (index % 3) * 500)
-            }ms`,
-          animationDirection: index % 2 ? "normal" : "reverse",
+          }ms`,
+          animationDirection: index % 2 ? 'normal' : 'reverse',
         }}
       >
         {Array(4)
@@ -59,7 +59,7 @@ export default function CreationItem({
       </time>
 
       <div className="absolute inset-y-0 right-2 flex items-center text-xl opacity-0 duration-500 group-hover:opacity-100 group-hover:duration-80">
-        <div className="font-light text-neutral-50">{"->"}</div>
+        <div className="font-light text-neutral-50">{'->'}</div>
       </div>
     </Link>
   );

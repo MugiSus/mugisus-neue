@@ -4,22 +4,22 @@ import {
   faHeart,
   faLocationDot,
   faUser,
-} from "@fortawesome/free-solid-svg-icons";
+} from '@fortawesome/free-solid-svg-icons';
 import {
   faTwitter,
   faGithub,
   faThreads,
   faInstagram,
-} from "@fortawesome/free-brands-svg-icons";
+} from '@fortawesome/free-brands-svg-icons';
 
-import Status from "@/components/Status";
-import CreationItem from "@/components/CreationItem";
-import { Creations } from "@/lib/creations";
-import CurrentTimeString from "@/components/CurrentTimeString";
-import InteractiveIcon from "@/components/InteractiveIcon";
+import Status from '@/components/Status';
+import CreationItem from '@/components/CreationItem';
+import { Creations } from '@/lib/creations';
+import CurrentTimeString from '@/components/CurrentTimeString';
+import InteractiveIcon from '@/components/InteractiveIcon';
 
-import CareerList from "@/components/CareerList";
-import Separator from "@/components/Separator";
+import CareerList from '@/components/CareerList';
+import Separator from '@/components/Separator';
 
 export default function Home() {
   return (
@@ -30,7 +30,7 @@ export default function Home() {
 
       <div className="flex flex-col place-items-center gap-8">
         <div className="text-2xl font-light">MugiSus / ムギスス</div>
-        <ul className="mx-8 max-w-2xl text-center leading-7" style={{ wordBreak: "break-all" }}>
+        <ul className="mx-8 max-w-2xl text-center leading-7" style={{ wordBreak: 'break-all' }}>
           <Status icon={faHeart} content="Programming, UI Designing, Drawing" />
           <Status
             icon={faBuilding}
@@ -71,7 +71,7 @@ export default function Home() {
         {Creations.sort((a, b) => b.date.getTime() - a.date.getTime()).map(
           (creation, index) => (
             <CreationItem creation={creation} index={index} key={index} />
-          )
+          ),
         )}
       </ul>
 

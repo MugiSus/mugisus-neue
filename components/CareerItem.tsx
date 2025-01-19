@@ -1,4 +1,4 @@
-import { Career } from "@/models/career";
+import { Career } from '@/models/career';
 
 export default function CareerItem({
   career,
@@ -10,12 +10,12 @@ export default function CareerItem({
   isJapanese?: boolean;
 }) {
   const dateString = career.date
-    .toLocaleDateString("ja-JP", {
-      year: "numeric",
-      month: "2-digit",
-      day: "2-digit",
+    .toLocaleDateString('ja-JP', {
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
     })
-    .replaceAll("/", ".");
+    .replaceAll('/', '.');
 
   return (
     <li className="flex flex-col items-center gap-6 lg:flex-row lg:gap-6">
@@ -33,7 +33,7 @@ export default function CareerItem({
       </div>
       {!isLast && (
         <div className="rotate-90 font-thin text-content lg:rotate-0">
-          {"--->"}
+          {'--->'}
         </div>
       )}
     </li>

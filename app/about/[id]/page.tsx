@@ -1,10 +1,10 @@
-import { Creations } from "@/lib/creations";
-import { faCameraRetro } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Link from "next/link";
-import { notFound } from "next/navigation";
-import { Metadata, ResolvingMetadata } from "next";
-import Image from "next/image";
+import { Creations } from '@/lib/creations';
+import { faCameraRetro } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { Metadata, ResolvingMetadata } from 'next';
+import Image from 'next/image';
 
 type Props = {
   params: Promise<{ id: string }>;
@@ -12,7 +12,7 @@ type Props = {
 
 export async function generateMetadata(
   { params }: Props,
-  parent: ResolvingMetadata
+  parent: ResolvingMetadata,
 ): Promise<Metadata> {
   const id = (await params).id;
 
@@ -39,8 +39,8 @@ export async function generateMetadata(
         : (await parent).openGraph?.images,
       description,
       title: creation.title,
-      type: "article",
-      url: new URL(id, (await parent).metadataBase ?? "").toString(),
+      type: 'article',
+      url: new URL(id, (await parent).metadataBase ?? '').toString(),
       publishedTime: creation.date.toISOString(),
     },
   };
@@ -67,7 +67,7 @@ export default async function Page({ params }: Props) {
           {creation.images && creation.images.length > 0 ? (
             creation.images.map((image, index) => (
               <Link
-                href={creation.href || ""}
+                href={creation.href || ''}
                 rel="noopener noreferrer"
                 target="_blank"
                 key={index}
@@ -83,7 +83,7 @@ export default async function Page({ params }: Props) {
             ))
           ) : (
             <Link
-              href={creation.href || ""}
+              href={creation.href || ''}
               rel="noopener noreferrer"
               target="_blank"
             >
@@ -106,12 +106,12 @@ export default async function Page({ params }: Props) {
                 target="_blank"
                 className="hover-inverse group p-1"
               >
-                {"---> "}
+                {'---> '}
                 <span className="group-hover:underline">Visit</span>
               </Link>
             )}
             <Link href="/" className="hover-inverse group p-1">
-              {"<- "}
+              {'<- '}
               <span className="group-hover:underline">Go back</span>
             </Link>
           </div>
@@ -119,7 +119,7 @@ export default async function Page({ params }: Props) {
           {creation.description && (
             <div className="flex flex-col gap-4 p-1 leading-loose">
               {creation.description
-                .split("\n")
+                .split('\n')
                 .slice(0, -1)
                 .map((line, index) => (
                   <p key={index}>{line}</p>
@@ -137,7 +137,7 @@ export default async function Page({ params }: Props) {
                   className="hover-inverse group p-1 text-neutral-500"
                   key={index}
                 >
-                  {"-> "}
+                  {'-> '}
                   <span className="group-hover:underline">{link.text}</span>
                 </Link>
               ))}
@@ -147,7 +147,7 @@ export default async function Page({ params }: Props) {
           {creation.descriptionJa && (
             <div className="flex flex-col gap-4 p-1 leading-loose">
               {creation.descriptionJa
-                .split("\n")
+                .split('\n')
                 .slice(0, -1)
                 .map((line, index) => (
                   <p key={index}>{line}</p>
@@ -165,7 +165,7 @@ export default async function Page({ params }: Props) {
                   className="hover-inverse group p-1 text-neutral-500"
                   key={index}
                 >
-                  {"-> "}
+                  {'-> '}
                   <span className="group-hover:underline">{link.text}</span>
                 </Link>
               ))}
@@ -183,13 +183,13 @@ export default async function Page({ params }: Props) {
             <p>Copyright ©︎</p>
             <time dateTime={creation.date.toISOString()}>
               {creation.date
-                .toLocaleDateString("ja-JP", {
-                  year: "numeric",
-                  month: "2-digit",
-                  day: "2-digit",
+                .toLocaleDateString('ja-JP', {
+                  year: 'numeric',
+                  month: '2-digit',
+                  day: '2-digit',
                 })
-                .replaceAll("/", ".")}
-            </time>{" "}
+                .replaceAll('/', '.')}
+            </time>{' '}
             <p>MugiSus</p>
           </div>
         </div>

@@ -1,5 +1,5 @@
-import { Careers } from "@/lib/careers";
-import CareerItem from "./CareerItem";
+import { Careers } from '@/lib/careers';
+import CareerItem from './CareerItem';
 
 export default function CareerList({ isJapanese }: { isJapanese?: boolean }) {
   return (
@@ -8,7 +8,7 @@ export default function CareerList({ isJapanese }: { isJapanese?: boolean }) {
         <CareerItem key={index} career={career} isJapanese={isJapanese} />
       ))}
       <CareerItem
-        career={{ date: new Date(), titleJa: "いま", title: "Now" }}
+        career={{ date: new Date(), titleJa: 'いま', title: 'Now' }}
         isLast
         isJapanese={isJapanese}
       />
