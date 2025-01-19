@@ -13,6 +13,17 @@
 #     - text: string
 #       href: string
 
+- id: tongue
+  href: https://www.pixiv.net/artworks/126369891
+  title: 舌 (Illustation)
+  date: 2025-01-19
+  images:
+    - /creations/tongue.png
+  description: |
+    An illustration of a girl sticking out her tongue.
+  descriptionJa: |
+    左を向いて舌を出している女性のイラストです。
+
 - id: sign-system-me
   href: https://signsystemme.vercel.app/
   title: Sign System Me
