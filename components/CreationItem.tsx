@@ -29,10 +29,9 @@ export default function CreationItem({
       onMouseLeave={abort3dEffect}
     >
       <div
-        className="absolute left-0 top-3.5 flex animate-marquee-left select-none gap-0 whitespace-nowrap text-8xl font-extralight leading-none -tracking-widest text-neutral-600/5 duration-500 group-hover:text-neutral-600 group-hover:duration-80"
+        className="absolute left-0 top-3.5 flex animate-marquee-left select-none gap-0 whitespace-nowrap text-8xl font-extralight leading-none -tracking-widest text-background duration-500 group-hover:text-neutral-600 group-hover:duration-80"
         style={{
-          animationDuration: `${creation.title.length * (5500 + (index % 3) * 500)
-          }ms`,
+          animationDuration: `${creation.title.length * 8000}ms`,
           animationDirection: index % 2 ? 'normal' : 'reverse',
         }}
       >
@@ -48,12 +47,12 @@ export default function CreationItem({
           ))}
       </div>
 
-      <div className="z-50 whitespace-nowrap text-center transition-colors duration-500 group-hover:text-neutral-50 group-hover:duration-80">
+      <div className="z-50 whitespace-nowrap text-center opacity-0 duration-500 group-hover:text-neutral-50 group-hover:opacity-100 group-hover:duration-80">
         {creation.title}
       </div>
       <time
         dateTime={creation.date.toISOString()}
-        className="z-50 text-sm text-neutral-500 transition-colors duration-500 group-hover:text-neutral-200 group-hover:duration-80"
+        className="z-50 text-sm text-neutral-500 opacity-0 duration-500 group-hover:text-neutral-200 group-hover:opacity-100 group-hover:duration-80"
       >
         {dateString}
       </time>
