@@ -20,7 +20,7 @@ function GradientMesh() {
 
   return (
     <mesh ref={mesh}>
-      <planeGeometry args={[10000, 10000]} />
+      <planeGeometry args={[2, 2, 1]} />
       <shaderMaterial
         fragmentShader={fragment}
         vertexShader={vertex}
