@@ -29,7 +29,7 @@ export default function Home() {
       <Separator />
 
       <div className="flex flex-col place-items-center gap-8">
-        <div className="text-2xl font-light">MugiSus / ムギスス</div>
+        <div className="text-2xl font-light">mugisus / ムギスス</div>
         <ul className="mx-8 max-w-2xl text-center leading-7" style={{ wordBreak: 'break-all' }}>
           <Status icon={faHeart} content="Programming, UI Designing, Drawing" />
           <Status
@@ -44,13 +44,13 @@ export default function Home() {
           />
           <Status
             icon={faGithub}
-            href="https://github.com/MugiSus"
-            content="MugiSus"
+            href="https://github.com/mugisus"
+            content="mugisus"
           />
           <Status
             icon={faTwitter}
-            href="https://twitter.com/MugiSus"
-            content="MugiSus"
+            href="https://twitter.com/mugisus"
+            content="mugisus"
           />
           <Status
             icon={faThreads}
@@ -85,7 +85,7 @@ export default function Home() {
       <Separator />
 
       <div className="mt-8 px-0.5 py-1 text-sm tracking-widest duration-200 hover:-translate-y-0.5">
-        Copyright © {new Date().getFullYear()} MugiSus
+        Copyright © {new Date().getFullYear()} mugisus
       </div>
     </main>
   );

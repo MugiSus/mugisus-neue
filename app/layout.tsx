@@ -11,10 +11,10 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://mugisus.com/'),
-  title: 'MugiSus',
-  description: 'The portfolio of MugiSus. / MugiSusのポートフォリオです。',
+  title: 'mugisus',
+  description: 'The portfolio of mugisus. / mugisusのポートフォリオです。',
   keywords: [
-    'MugiSus',
+    'mugisus',
     'mugisus',
     '湊真之',
     '湊 真之',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     'Minato',
     'Masayuki',
     'Portfolio',
-    'MugiSus Portfolio',
+    'mugisus Portfolio',
     'ポートフォリオ',
     'Keio University',
     '慶應義塾大学',
@@ -34,14 +34,14 @@ export const metadata: Metadata = {
   ],
   twitter: {
     card: 'summary',
-    site: '@MugiSus',
-    creator: '@MugiSus',
-    title: 'MugiSus',
+    site: '@mugisus',
+    creator: '@mugisus',
+    title: 'mugisus',
   },
   openGraph: {
     images: '/image.png',
-    description: 'The portfolio of MugiSus',
-    title: 'MugiSus / ムギスス',
+    description: 'The portfolio of mugisus',
+    title: 'mugisus / ムギスス',
     type: 'article',
     publishedTime: '2023-10-01T09:00:00Z',
     modifiedTime: '2024-12-14T09:00:00Z',

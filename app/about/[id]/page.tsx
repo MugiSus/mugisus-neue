@@ -190,7 +190,7 @@ export default async function Page({ params }: Props) {
                 })
                 .replaceAll('/', '.')}
             </time>{' '}
-            <p>MugiSus</p>
+            <p>mugisus</p>
           </div>
         </div>
       </div>
