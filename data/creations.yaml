@@ -345,9 +345,21 @@
   date: 2021-12-24
 
 - id: telport
-  href: https://telport.mugisus.com/
+  href: https://jr.mitou.org/projects/2021/telport
   title: TELPort
   date: 2021-11-03
+  images: 
+    - /creations/telport.webp
+    - /creations/telport-presentation-1.png
+    - /creations/telport-presentation-2.png
+  description: |
+    This protocol converts various data into composite waves of multiple frequencies and amplitudes, providing communication that utilizes both space and time.
+    It enables the rapid and accurate transfer of files and information that are difficult to convey verbally. Additionally, by implementing it as a smartphone application, it can be easily introduced for various purposes without the need for special equipment or significant costs.
+    This was released as the final deliverable for the Mitou Junior 2021 program.
+  descriptionJa: |
+    あらゆるデータを複数の周波数と振幅の合成波に変換し、空間と時間を活用した通信を提供するプロトコルです。
+    口頭での伝達が難しいファイルや情報を高速かつ正確に転送し、スマホアプリ化により様々な用途への導入も容易で、費用や特別な設備を必要としません。
+    未踏ジュニア2021年度の最終成果物として公開しました。
 
 - id: 3d-arrow-and-ball-with-editor
   href: https://scratch.mit.edu/projects/136146086/
