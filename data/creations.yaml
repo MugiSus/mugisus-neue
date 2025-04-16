@@ -41,10 +41,9 @@
   # href:
   title: A Pamphlet for Mitou Junior Demo Day 2024
   date: 2024-11-03
-  # images:
-  #   - /creations/mitou-jr-demo-day-pamphlet-2024-front.png
-  #   - /creations/mitou-jr-demo-day-pamphlet-2024-back.png
-  #   - /creations/mitou-jr-demo-day-pamphlet-2024-map.png
+  images:
+    - /creations/mitou-jr-demo-day-pamphlet-2024-front.png
+    - /creations/mitou-jr-demo-day-pamphlet-2024-back.png
   description: |
     A design work for the Mitou Junior 2024 demo day presentation.
   descriptionJa: |
