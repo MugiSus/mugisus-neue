@@ -21,7 +21,7 @@ const config: Config = {
       },
       colors: {
         content: '#505050',
-        primary: '#51B660',
+        primary: '#C6FF29',
         background: '#FBFBFB',
       },
       keyframes: {
