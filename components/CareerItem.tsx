@@ -16,7 +16,7 @@ export default function CareerItem({
     .replaceAll('/', '.');
 
   return (
-    <li className="flex flex-col items-center gap-6 lg:flex-row lg:gap-6">
+    <li className="flex flex-col items-center gap-6 lg:flex-row lg:gap-4">
       <div className="flex flex-col items-center gap-2 duration-200 hover:-translate-y-0.5">
         <time
           dateTime={career.date.toISOString()}
@@ -25,14 +25,12 @@ export default function CareerItem({
           {dateString}
         </time>
 
-        <div className="flex flex-col items-center gap-1">
-          <p className="px-0.5 text-center text-sm">
-            {career.title}
-          </p>
-          <p className="px-0.5 text-center">
-            {career.titleJa}
-          </p>
-        </div>
+        <p className="px-0.5 text-center text-sm">
+          {career.title}
+        </p>
+        <p className="px-0.5 text-center">
+          {career.titleJa}
+        </p>
       </div>
       {!isLast && (
         <div className="rotate-90 font-thin text-content lg:rotate-0">
