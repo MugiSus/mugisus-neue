@@ -22,18 +22,18 @@ export default function CareerItem({
       <div className="flex flex-col items-center gap-2 duration-200 hover:-translate-y-0.5">
         <time
           dateTime={career.date.toISOString()}
-          className="text-sm text-neutral-400"
+          className="text-xs text-neutral-400"
         >
           {dateString}
         </time>
 
-        <p className="px-0.5 text-center text-sm sm:text-base">
+        <p className="px-0.5 text-center text-sm">
           {isJapanese ? career.titleJa : career.title}
         </p>
       </div>
       {!isLast && (
         <div className="rotate-90 font-thin text-content lg:rotate-0">
-          {'--->'}
+          {'->'}
         </div>
       )}
     </li>
