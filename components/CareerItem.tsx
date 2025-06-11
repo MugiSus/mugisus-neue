@@ -17,7 +17,7 @@ export default function CareerItem({
 
   return (
     <li className="flex flex-col items-center gap-6 lg:flex-row lg:gap-4">
-      <div className="flex flex-col items-center gap-2 duration-200 hover:-translate-y-0.5">
+      <div className="flex flex-col items-center gap-2 duration-200">
         <time
           dateTime={career.date.toISOString()}
           className="text-xs text-neutral-400"
