@@ -15,7 +15,7 @@ export default function Status({
     <div className="inline px-1 text-center">
       <FontAwesomeIcon
         icon={icon}
-        className="mr-1.5 inline h-4 text-neutral-400"
+        className="mr-1.5 inline h-4"
       />
       {content}
     </div>
