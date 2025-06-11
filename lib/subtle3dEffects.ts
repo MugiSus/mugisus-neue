@@ -15,9 +15,9 @@ export function subtle3dEffect(event: React.MouseEvent<HTMLElement>) {
     diffX * 4
   }px) translateY(${diffY * 4}px)`;
   // higher brightness on specific angle
-  target.style.filter = `brightness(${
-    1.4 - (Math.abs(diffX + diffY - 0.5) / 2.5) * 0.4
-  })`;
+  // target.style.filter = `brightness(${
+  //   1.4 - (Math.abs(diffX + diffY - 0.5) / 2.5) * 0.4
+  // })`;
 }
 
 export function abort3dEffect(event: React.MouseEvent<HTMLElement>) {
