@@ -77,10 +77,7 @@ export default function Home() {
 
       <Separator />
 
-      <div className="my-8 flex flex-col gap-32">
-        <CareerList />
-        <CareerList isJapanese />
-      </div>
+      <CareerList />
 
       <Separator />
 
