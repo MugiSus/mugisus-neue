@@ -3,11 +3,9 @@ import { Career } from '@/models/career';
 export default function CareerItem({
   career,
   isLast,
-  isJapanese,
 }: {
   career: Career;
   isLast?: boolean;
-  isJapanese?: boolean;
 }) {
   const dateString = career.date
     .toLocaleDateString('ja-JP', {
@@ -27,9 +25,14 @@ export default function CareerItem({
           {dateString}
         </time>
 
-        <p className="px-0.5 text-center text-sm">
-          {isJapanese ? career.titleJa : career.title}
-        </p>
+        <div className="flex flex-col items-center gap-1">
+          <p className="px-0.5 text-center text-sm">
+            {career.title}
+          </p>
+          <p className="px-0.5 text-center">
+            {career.titleJa}
+          </p>
+        </div>
       </div>
       {!isLast && (
         <div className="rotate-90 font-thin text-content lg:rotate-0">
