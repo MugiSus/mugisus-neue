@@ -20,7 +20,7 @@ export default function CareerItem({
       <div className="flex flex-col items-center gap-2 duration-200">
         <time
           dateTime={career.date.toISOString()}
-          className="text-xs text-neutral-400"
+          className="text-xs text-neutral-500"
         >
           {dateString}
         </time>
