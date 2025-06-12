@@ -23,7 +23,7 @@ import Separator from '@/components/Separator';
 
 export default function Home() {
   return (
-    <main className="mx-auto flex min-h-screen max-w-[2048px] flex-col items-center justify-center gap-32 px-4 py-48 md:px-16">
+    <main className="mx-auto flex min-h-screen max-w-[2048px] flex-col items-center justify-center gap-32 px-8 py-48 md:px-16">
       <InteractiveIcon />
 
       <Separator />
