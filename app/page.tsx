@@ -83,7 +83,7 @@ export default function Home() {
 
       <Separator />
 
-      <div className="mt-8 px-0.5 py-1 text-sm tracking-widest duration-200 hover:-translate-y-0.5">
+      <div className="px-0.5 py-1 text-sm tracking-widest duration-200 hover:-translate-y-0.5">
         Copyright © {new Date().getFullYear()} mugisus
       </div>
     </main>
