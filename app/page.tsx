@@ -70,7 +70,9 @@ export default function Home() {
       <ul className="flex max-w-full list-none flex-row flex-wrap place-content-center place-items-center gap-3">
         {Creations.sort((a, b) => b.date.getTime() - a.date.getTime()).map(
           (creation, index) => (
-            <CreationItem creation={creation} index={index} key={index} />
+            <li key={index}>
+              <CreationItem creation={creation} index={index} />
+            </li>
           ),
         )}
       </ul>
