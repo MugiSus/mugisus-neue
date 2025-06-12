@@ -5,12 +5,16 @@ export default function CareerList() {
   return (
     <ul className="flex max-w-full list-none flex-col place-content-center place-items-center gap-x-4 gap-y-8 px-8 lg:flex-row lg:flex-wrap">
       {Careers.map((career, index) => (
-        <CareerItem key={index} career={career} />
+        <li key={index}>
+          <CareerItem key={index} career={career} />
+        </li>
       ))}
-      <CareerItem
-        career={{ date: new Date(), titleJa: 'いま', title: 'Now' }}
-        isLast
-      />
+      <li>
+        <CareerItem
+          career={{ date: new Date(), titleJa: 'いま', title: 'Now' }}
+          isLast
+        />
+      </li>
     </ul>
   );
 }
