@@ -62,10 +62,10 @@ export default function RootLayout({
       <body className="bg-background font-gothicmb101 text-sm font-light text-content underline-offset-2">
         {children}
 
-        <div className="pointer-events-none fixed left-0 top-0 z-50 m-8 size-6 border border-dashed border-neutral-400 bg-primary backdrop-blur-sm md:m-8" />
-        <div className="pointer-events-none fixed bottom-0 right-0 z-50 m-8 size-6 border border-dashed border-neutral-400 bg-primary backdrop-blur-sm md:m-8" />
-        <div className="pointer-events-none fixed right-0 top-0 z-50 m-8 size-6 border border-dashed border-neutral-400 bg-primary backdrop-blur-sm md:m-8" />
-        <div className="pointer-events-none fixed bottom-0 left-0 z-50 m-8 size-6 border border-dashed border-neutral-400 bg-primary backdrop-blur-sm md:m-8" />
+        <div className="pointer-events-none fixed left-0 top-0 z-50 m-8 size-6 border border-dashed border-neutral-400 bg-primary/20 backdrop-blur-sm md:m-8" />
+        <div className="pointer-events-none fixed bottom-0 right-0 z-50 m-8 size-6 border border-dashed border-neutral-400 bg-primary/20 backdrop-blur-sm md:m-8" />
+        <div className="pointer-events-none fixed right-0 top-0 z-50 m-8 size-6 border border-dashed border-neutral-400 bg-primary/20 backdrop-blur-sm md:m-8" />
+        <div className="pointer-events-none fixed bottom-0 left-0 z-50 m-8 size-6 border border-dashed border-neutral-400 bg-primary/20 backdrop-blur-sm md:m-8" />
 
         <div className="fixed inset-0 -z-50 h-lvh">
           {/* <GradientBackground /> */}
