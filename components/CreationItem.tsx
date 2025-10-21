@@ -24,7 +24,7 @@ export default function CreationItem({
   return (
     <Link
       href={`/about/${creation.id}`}
-      className="group relative flex max-w-full cursor-none flex-col place-items-center gap-0 overflow-x-clip border border-dashed border-neutral-400 px-20 py-10 transition-all duration-500 hover:z-50 hover:bg-primary hover:duration-80"
+      className="group relative flex max-w-full cursor-none flex-col place-items-center gap-0 overflow-x-clip border border-dashed border-neutral-400 px-20 py-10 mix-blend-multiply transition-all duration-500 hover:z-50 hover:bg-primary hover:duration-80"
       onMouseMove={subtle3dEffect}
       onMouseLeave={abort3dEffect}
     >

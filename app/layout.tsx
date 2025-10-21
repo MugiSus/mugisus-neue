@@ -6,7 +6,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import { Inter } from 'next/font/google';
 import TypekitLoader from '@/lib/typekitLoader';
-// import GradientBackground from '@/components/GradientBackground/';
+import GradientBackground from '@/components/GradientBackground/';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
@@ -68,7 +68,7 @@ export default function RootLayout({
         <div className="pointer-events-none fixed bottom-0 left-0 z-50 m-8 size-6 border border-dashed border-neutral-400 bg-primary/20 backdrop-blur-sm md:m-8" />
 
         <div className="fixed inset-0 -z-50 h-lvh">
-          {/* <GradientBackground /> */}
+          <GradientBackground />
         </div>
 
         <Analytics />
