@@ -29,6 +29,7 @@ const eslintConfig = [
         ignoreStrings: true,
         ignoreTemplateLiterals: true,
         ignoreRegExpLiterals: true,
+        ignoreComments: true,
       }],
       '@stylistic/comma-dangle': ['error', 'always-multiline'],
       '@stylistic/no-multi-spaces': 'error',

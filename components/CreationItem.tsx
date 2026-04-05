@@ -57,9 +57,9 @@ export default function CreationItem({
         {dateString}
       </time>
 
-      <div className="absolute inset-y-0 right-4 flex items-center text-xl opacity-0 duration-500 group-hover:opacity-100 group-hover:duration-80">
-        <div className="font-extralight text-neutral-500">{'->'}</div>
-      </div>
+      {/* <div className="absolute right-2 top-1 flex items-center text-xl opacity-0 duration-500 group-hover:opacity-100 group-hover:duration-80">
+        <div className="-rotate-45 font-extralight text-neutral-500">{'->'}</div>
+      </div> */}
     </Link>
   );
 }
